@@ -1,1 +1,2 @@
-# code
+## Payments
+A Payments APIs index.
