@@ -1,3 +1,4 @@
+---
 name: Atlassian
 description: >-
   Atlassian Corporation is an Australian software company that develops products
@@ -128,3 +129,4 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: atlassian
+---

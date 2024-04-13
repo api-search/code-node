@@ -1,3 +1,4 @@
+---
 name: GitHub
 description: >-
   GitHub is a platform and cloud-based service for software development and
@@ -584,3 +585,4 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: github
+---
