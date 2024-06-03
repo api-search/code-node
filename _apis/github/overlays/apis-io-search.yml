@@ -28,13 +28,67 @@ apis:
         url: overlays/github-openapi-api-evangelist-ratings.yml
     aid: github:github-rest-api
   - name: GitHub GraphQL API
-    description: >+
+    description: >
       To create integrations, retrieve data, and automate your workflows, use
       the GitHub GraphQL API. The GitHub GraphQL API offers more precise and
       flexible queries than the GitHub REST API.
     tags: []
     overlays: []
     aid: github:github-graphql-api
+  - name: ' admin'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-admin-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-admin-openapi-search.yml
+  - name: ' app'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-app-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-app-openapi-search.yml
+  - name: ' auth'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-auth-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-auth-openapi-search.yml
+  - name: ' codes '
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-codes-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-codes-openapi-search.yml
+  - name: ' emojis/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-emojis--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-emojis--openapi-search.yml
+  - name: ' enterprise'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-enterprise-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-enterprise-openapi-search.yml
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
