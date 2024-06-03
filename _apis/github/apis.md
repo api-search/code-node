@@ -71,6 +71,60 @@ apis:
           https://docs.github.com/en/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api
     overlays: []
     aid: github:github-graphql-api
+  - name: ' admin'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-admin-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-admin-openapi-search.yml
+  - name: ' app'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-app-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-app-openapi-search.yml
+  - name: ' auth'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-auth-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-auth-openapi-search.yml
+  - name: ' codes '
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-codes-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-codes-openapi-search.yml
+  - name: ' emojis/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-emojis--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-emojis--openapi-search.yml
+  - name: ' enterprise'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-enterprise-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-enterprise-openapi-search.yml
 common:
   - type: WebHooks
     url: https://docs.github.com/en/webhooks
@@ -104,4 +158,5 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: github
+
 ---
