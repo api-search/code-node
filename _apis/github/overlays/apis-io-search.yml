@@ -27,7 +27,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/github-openapi-api-evangelist-ratings.yml
     aid: github:github-rest-api
-  - name: GitHub GraphQL API
+  - name: GitHub Graph API
     description: >
       To create integrations, retrieve data, and automate your workflows, use
       the GitHub GraphQL API. The GitHub GraphQL API offers more precise and
@@ -35,7 +35,7 @@ apis:
     tags: []
     overlays: []
     aid: github:github-graphql-api
-  - name: ' admin'
+  - name: GitHub Admin API
     description: Needs description.
     tags: []
     properties:
@@ -44,7 +44,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-admin-openapi-search.yml
-  - name: ' app'
+  - name: GitHub App API
     description: Needs description.
     tags: []
     properties:
@@ -53,7 +53,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-app-openapi-search.yml
-  - name: ' auth'
+  - name: GitHub Auth API
     description: Needs description.
     tags: []
     properties:
@@ -62,7 +62,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-auth-openapi-search.yml
-  - name: ' codes '
+  - name: GitHub Codes API
     description: Needs description.
     tags: []
     properties:
@@ -71,7 +71,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-codes-openapi-search.yml
-  - name: ' emojis/'
+  - name: GitHub Emojis API
     description: Needs description.
     tags: []
     properties:
@@ -80,7 +80,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-emojis--openapi-search.yml
-  - name: ' enterprise'
+  - name: GitHub Enterprise API
     description: Needs description.
     tags: []
     properties:
@@ -89,7 +89,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-enterprise-openapi-search.yml
-  - name: ' events/'
+  - name: GitHub Events API
     description: Needs description.
     tags: []
     properties:
@@ -98,7 +98,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-events--openapi-search.yml
-  - name: ' feeds/'
+  - name: GitHub Feeds API
     description: Needs description.
     tags: []
     properties:
@@ -107,7 +107,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-feeds--openapi-search.yml
-  - name: ' gists/'
+  - name: GitHub Gists API
     description: Needs description.
     tags: []
     properties:
@@ -116,7 +116,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-gists--openapi-search.yml
-  - name: ' gitignore/templates/'
+  - name: GitHub Gitignore Templates API
     description: Needs description.
     tags: []
     properties:
@@ -125,7 +125,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-gitignore-templates--openapi-search.yml
-  - name: ' installation'
+  - name: GitHub Installation API
     description: Needs description.
     tags: []
     properties:
@@ -134,7 +134,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-installation-openapi-search.yml
-  - name: ' issues/'
+  - name: GitHub Issues API
     description: Needs description.
     tags: []
     properties:
@@ -143,7 +143,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-issues--openapi-search.yml
-  - name: ' licenses/'
+  - name: GitHub Licenses API
     description: Needs description.
     tags: []
     properties:
@@ -152,7 +152,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-licenses--openapi-search.yml
-  - name: ' manage'
+  - name: GitHub Manage API
     description: Needs description.
     tags: []
     properties:
@@ -161,7 +161,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-manage-openapi-search.yml
-  - name: ' markdown/'
+  - name: GitHub Markdown API
     description: Needs description.
     tags: []
     properties:
@@ -170,7 +170,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-markdown--openapi-search.yml
-  - name: ' meta/'
+  - name: GitHub Meta API
     description: Needs description.
     tags: []
     properties:
@@ -179,7 +179,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-meta--openapi-search.yml
-  - name: ' networks'
+  - name: GitHub Networks API
     description: Needs description.
     tags: []
     properties:
@@ -188,7 +188,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-networks-openapi-search.yml
-  - name: ' notifications/'
+  - name: GitHub Notifications API
     description: Needs description.
     tags: []
     properties:
@@ -197,7 +197,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-notifications--openapi-search.yml
-  - name: ' octocat/'
+  - name: GitHub Octocat API
     description: Needs description.
     tags: []
     properties:
@@ -206,7 +206,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-octocat--openapi-search.yml
-  - name: ' org'
+  - name: GitHub Org API
     description: Needs description.
     tags: []
     properties:
@@ -215,7 +215,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-org-openapi-search.yml
-  - name: ' projects'
+  - name: GitHub Projects API
     description: Needs description.
     tags: []
     properties:
@@ -224,7 +224,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-projects-openapi-search.yml
-  - name: ' rate limit/'
+  - name: GitHub Rate Limit API
     description: Needs description.
     tags: []
     properties:
@@ -233,7 +233,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-rate-limit--openapi-search.yml
-  - name: ' repos'
+  - name: GitHub Repos API
     description: Needs description.
     tags: []
     properties:
@@ -242,7 +242,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-repos-openapi-search.yml
-  - name: ' scim'
+  - name: GitHub Scim API
     description: Needs description.
     tags: []
     properties:
@@ -251,7 +251,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-scim-openapi-search.yml
-  - name: ' search'
+  - name: GitHub Search API
     description: Needs description.
     tags: []
     properties:
@@ -260,7 +260,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-search-openapi-search.yml
-  - name: ' setup'
+  - name: GitHub Setup API
     description: Needs description.
     tags: []
     properties:
@@ -269,7 +269,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-setup-openapi-search.yml
-  - name: ' teams'
+  - name: GitHub Teams API
     description: Needs description.
     tags: []
     properties:
@@ -278,7 +278,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-teams-openapi-search.yml
-  - name: ' teams'
+  - name: GitHub Teams API
     description: Needs description.
     tags: []
     properties:
@@ -287,7 +287,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-teams-openapi-search.yml
-  - name: ' zen/'
+  - name: GitHub Zen API
     description: Needs description.
     tags: []
     properties:
@@ -296,7 +296,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-zen--openapi-search.yml
-  - name: ' user'
+  - name: GitHub User API
     description: Needs description.
     tags: []
     properties:
