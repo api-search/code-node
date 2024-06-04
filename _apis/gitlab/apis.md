@@ -73,6 +73,96 @@ apis:
         url: https://docs.gitlab.com/ee/api/graphql/#limits
     overlays: []
     aid: gitlab:gitlab-graphql-api
+  - name: ' api/v4/groups'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-groups-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-groups-openapi-search.yml
+  - name: ' api/v4/projects'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-projects-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-projects-openapi-search.yml
+  - name: ' api/v4/admin'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-admin-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-admin-openapi-search.yml
+  - name: ' api/v4/applications'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-applications-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-applications-openapi-search.yml
+  - name: ' api/v4/avatar'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-avatar-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-avatar-openapi-search.yml
+  - name: ' api/v4/broadcast messages'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-broadcast-messages-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-broadcast-messages-openapi-search.yml
+  - name: ' api/v4/bulk imports'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-bulk-imports-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-bulk-imports-openapi-search.yml
+  - name: ' api/v4/application'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-application-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-application-openapi-search.yml
+  - name: ' api/v4/metadata'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-metadata-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-metadata-openapi-search.yml
+  - name: ' api/v4/version'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/gitlab-api-v4-version-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/gitlab-api-v4-version-openapi-search.yml
 common:
   - type: Terms of Service
     url: https://about.gitlab.com/terms/
@@ -94,4 +184,5 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: gitlab
+
 ---
