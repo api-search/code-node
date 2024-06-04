@@ -83,9 +83,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get custom field option
+      summary: 'Get Custom Field Option '
       tags:
-        - - - - Issue custom field options
+        - Custom
+        - Fields
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
