@@ -1,0 +1,1117 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/projects'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/projects/{id}/repository/merged_branches:
+    delete:
+      tags:
+        - - - - branches
+      description: Delete all merged branches
+      operationId: deleteApiV4ProjectsIdRepositoryMergedBranches
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+      responses:
+        '202':
+          description: 202 Accepted
+          content: {}
+        '404':
+          description: 404 Project Not Found
+          content: {}
+  /api/v4/projects/{id}/repository/branches/{branch}:
+    get:
+      tags:
+        - - - - branches
+      description: Get a single repository branch
+      operationId: getApiV4ProjectsIdRepositoryBranchesBranch
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Get a single repository branch
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Branch'
+        '404':
+          description: Branch Not Found
+          content: {}
+    delete:
+      tags:
+        - - - - branches
+      description: Delete a branch
+      operationId: deleteApiV4ProjectsIdRepositoryBranchesBranch
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: path
+          description: The name of the branch
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Delete a branch
+          content: {}
+        '404':
+          description: Branch Not Found
+          content: {}
+    head:
+      tags:
+        - - - - branches
+      description: Check if a branch exists
+      operationId: headApiV4ProjectsIdRepositoryBranchesBranch
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: path
+          description: The name of the branch
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+          content: {}
+        '404':
+          description: Not Found
+          content: {}
+  /api/v4/projects/{id}/repository/branches:
+    get:
+      tags:
+        - - - - branches
+      description: Get a project repository branches
+      operationId: getApiV4ProjectsIdRepositoryBranches
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: search
+          in: query
+          description: Return list of branches matching the search criteria
+          schema:
+            type: string
+        - name: regex
+          in: query
+          description: Return list of branches matching the regex
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: Return list of branches sorted by the given field
+          schema:
+            type: string
+            enum:
+              - name_asc
+              - updated_asc
+              - updated_desc
+        - name: page_token
+          in: query
+          description: Name of branch to start the pagination from
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Get a project repository branches
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Branch'
+        '404':
+          description: 404 Project Not Found
+          content: {}
+    post:
+      tags:
+        - - - - branches
+      description: Create branch
+      operationId: postApiV4ProjectsIdRepositoryBranches
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: query
+          description: The name of the branch
+          required: true
+          schema:
+            type: string
+        - name: ref
+          in: query
+          description: Create branch from commit sha or existing branch
+          required: true
+          schema:
+            type: string
+      responses:
+        '201':
+          description: Create branch
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Branch'
+        '400':
+          description: Failed to create branch
+          content: {}
+  /api/v4/projects/{id}/repository/branches/{branch}/unprotect:
+    put:
+      tags:
+        - - - - branches
+      description: Unprotect a single branch
+      operationId: putApiV4ProjectsIdRepositoryBranchesBranchUnprotect
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: path
+          description: The name of the branch
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Unprotect a single branch
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Branch'
+        '404':
+          description: 404 Project Not Found
+          content: {}
+  /api/v4/projects/{id}/repository/branches/{branch}/protect:
+    put:
+      tags:
+        - - - - branches
+      description: Protect a single branch
+      operationId: putApiV4ProjectsIdRepositoryBranchesBranchProtect
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: branch
+          in: path
+          description: The name of the branch
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                developers_can_push:
+                  type: boolean
+                  description: Flag if developers can push to that branch
+                developers_can_merge:
+                  type: boolean
+                  description: Flag if developers can merge to that branch
+      responses:
+        '200':
+          description: Protect a single branch
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Branch'
+        '404':
+          description: 404 Branch Not Found
+          content: {}
+  /api/v4/projects/{id}/badges/{badge_id}:
+    get:
+      tags:
+        - - - - badges
+      summary: Gets a badge of a project.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: getApiV4ProjectsIdBadgesBadgeId
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+        - name: badge_id
+          in: path
+          description: The badge ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Gets a badge of a project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Badge'
+    put:
+      tags:
+        - - - - badges
+      summary: Updates a badge of a project.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: putApiV4ProjectsIdBadgesBadgeId
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+        - name: badge_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                link_url:
+                  type: string
+                  description: URL of the badge link
+                image_url:
+                  type: string
+                  description: URL of the badge image
+                name:
+                  type: string
+                  description: Name for the badge
+      responses:
+        '200':
+          description: Updates a badge of a project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Badge'
+    delete:
+      tags:
+        - - - - badges
+      summary: Removes a badge from the project.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: deleteApiV4ProjectsIdBadgesBadgeId
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+        - name: badge_id
+          in: path
+          description: The badge ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: Removes a badge from the project.
+          content: {}
+  /api/v4/projects/{id}/badges:
+    get:
+      tags:
+        - - - - badges
+      summary: Gets a list of project badges viewable by the authenticated user.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: getApiV4ProjectsIdBadges
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: name
+          in: query
+          description: Name for the badge
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Gets a list of project badges viewable by the authenticated user.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Badge'
+    post:
+      tags:
+        - - - - badges
+      summary: Adds a badge to a project.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: postApiV4ProjectsIdBadges
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - image_url
+                - link_url
+              properties:
+                link_url:
+                  type: string
+                  description: URL of the badge link
+                image_url:
+                  type: string
+                  description: URL of the badge image
+                name:
+                  type: string
+                  description: Name for the badge
+        required: true
+      responses:
+        '201':
+          description: Adds a badge to a project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Badge'
+  /api/v4/projects/{id}/badges/render:
+    get:
+      tags:
+        - - - - badges
+      summary: Preview a badge from a project.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: getApiV4ProjectsIdBadgesRender
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user.
+          required: true
+          schema:
+            type: string
+        - name: link_url
+          in: query
+          description: URL of the badge link
+          required: true
+          schema:
+            type: string
+        - name: image_url
+          in: query
+          description: URL of the badge image
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Preview a badge from a project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BasicBadgeDetails'
+  /api/v4/projects/{id}/access_requests/{user_id}:
+    delete:
+      tags:
+        - - - - access_requests
+      summary: Denies an access request for the given user.
+      description: This feature was introduced in GitLab 8.11.
+      operationId: deleteApiV4ProjectsIdAccessRequestsUserId
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user
+          required: true
+          schema:
+            type: string
+        - name: user_id
+          in: path
+          description: The user ID of the access requester
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: Denies an access request for the given user.
+          content: {}
+  /api/v4/projects/{id}/access_requests/{user_id}/approve:
+    put:
+      tags:
+        - - - - access_requests
+      summary: Approves an access request for the given user.
+      description: This feature was introduced in GitLab 8.11.
+      operationId: putApiV4ProjectsIdAccessRequestsUserIdApprove
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user
+          required: true
+          schema:
+            type: string
+        - name: user_id
+          in: path
+          description: The user ID of the access requester
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                access_level:
+                  type: integer
+                  description: 'A valid access level (defaults: `30`, the Developer role)'
+                  format: int32
+                  default: 30
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_AccessRequester'
+            successfull_response:
+              example:
+                id: 1
+                username: raymond_smith
+                name: Raymond Smith
+                state: active
+                created_at: '2012-10-22T14:13:35.000Z'
+                access_level: 20
+  /api/v4/projects/{id}/access_requests:
+    get:
+      tags:
+        - - - - access_requests
+      summary: Gets a list of access requests for a project.
+      description: This feature was introduced in GitLab 8.11.
+      operationId: getApiV4ProjectsIdAccessRequests
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Gets a list of access requests for a project.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_AccessRequester'
+    post:
+      tags:
+        - - - - access_requests
+      summary: Requests access for the authenticated user to a project.
+      description: This feature was introduced in GitLab 8.11.
+      operationId: postApiV4ProjectsIdAccessRequests
+      parameters:
+        - name: id
+          in: path
+          description: >-
+            The ID or URL-encoded path of the project owned by the authenticated
+            user
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_AccessRequester'
+            successfull_response:
+              example:
+                id: 1
+                username: raymond_smith
+                name: Raymond Smith
+                state: active
+                created_at: '2012-10-22T14:13:35.000Z'
+                access_level: 20
+  /api/v4/projects/{id}/alert_management_alerts/{alert_iid}/metric_images/{metric_image_id}:
+    put:
+      tags:
+        - - - - alert_management
+      description: Update a metric image for an alert
+      operationId: putApiV4ProjectsIdAlertManagementAlertsAlertIidMetricImagesMetricImageId
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: alert_iid
+          in: path
+          description: The IID of the Alert
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: metric_image_id
+          in: path
+          description: The ID of metric image
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                url:
+                  type: string
+                  description: The url to view more metric info
+                url_text:
+                  type: string
+                  description: A description of the image or URL
+      responses:
+        '200':
+          description: Update a metric image for an alert
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_MetricImage'
+        '403':
+          description: Forbidden
+          content: {}
+        '422':
+          description: Unprocessable entity
+          content: {}
+    delete:
+      tags:
+        - - - - alert_management
+      description: Remove a metric image for an alert
+      operationId: >-
+        deleteApiV4ProjectsIdAlertManagementAlertsAlertIidMetricImagesMetricImageId
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: alert_iid
+          in: path
+          description: The IID of the Alert
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: metric_image_id
+          in: path
+          description: The ID of metric image
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: Remove a metric image for an alert
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_MetricImage'
+        '403':
+          description: Forbidden
+          content: {}
+        '422':
+          description: Unprocessable entity
+          content: {}
+  /api/v4/projects/{id}/alert_management_alerts/{alert_iid}/metric_images:
+    get:
+      tags:
+        - - - - alert_management
+      description: Metric Images for alert
+      operationId: getApiV4ProjectsIdAlertManagementAlertsAlertIidMetricImages
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: alert_iid
+          in: path
+          description: The IID of the Alert
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Metric Images for alert
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_MetricImage'
+        '404':
+          description: Not found
+          content: {}
+    post:
+      tags:
+        - - - - alert_management
+      description: Upload a metric image for an alert
+      operationId: postApiV4ProjectsIdAlertManagementAlertsAlertIidMetricImages
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: alert_iid
+          in: path
+          description: The IID of the Alert
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  description: The image file to be uploaded
+                  format: binary
+                url:
+                  type: string
+                  description: The url to view more metric info
+                url_text:
+                  type: string
+                  description: A description of the image or URL
+        required: true
+      responses:
+        '200':
+          description: Upload a metric image for an alert
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_MetricImage'
+        '403':
+          description: Forbidden
+          content: {}
+  /api/v4/projects/{id}/alert_management_alerts/{alert_iid}/metric_images/authorize:
+    post:
+      tags:
+        - - - - alert_management
+      description: Workhorse authorize metric image file upload
+      operationId: postApiV4ProjectsIdAlertManagementAlertsAlertIidMetricImagesAuthorize
+      parameters:
+        - name: id
+          in: path
+          description: The ID or URL-encoded path of the project
+          required: true
+          schema:
+            type: string
+        - name: alert_iid
+          in: path
+          description: The IID of the Alert
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Workhorse authorize metric image file upload
+          content: {}
+        '403':
+          description: Forbidden
+          content: {}
+  /api/v4/projects/{id}/jobs:
+    get:
+      tags:
+        - - - - jobs
+      summary: List jobs for a project
+      operationId: listProjectJobs
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the project
+          schema:
+            type: integer
+        - name: scope
+          in: query
+          required: false
+          description: Return all jobs with the specified statuses
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: An array of jobs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Job'
+  /api/v4/projects/{id}/jobs/{job_id}:
+    get:
+      tags:
+        - - - - jobs
+      summary: Get a single job by ID
+      operationId: getSingleJob
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the project
+          schema:
+            type: integer
+        - name: job_id
+          in: path
+          required: true
+          description: The ID of the job
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: A single job object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Job'
+  /api/v4/projects/{id}/jobs/{job_id}/play:
+    post:
+      tags:
+        - - - - jobs
+      summary: Run a manual job
+      operationId: triggerManualJob
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The ID of the project
+          schema:
+            type: integer
+        - name: job_id
+          in: path
+          required: true
+          description: The ID of the manual job to run
+          schema:
+            type: integer
+        - name: job_variables_attributes
+          in: query
+          required: false
+          description: An array containing the custom variables available to the job
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: Job started successfully
+components:
+  schemas:
+    API_Entities_Branch:
+      type: object
+      properties:
+        name:
+          type: string
+          example: master
+        commit:
+          $ref: '#/components/schemas/API_Entities_Commit'
+        merged:
+          type: boolean
+          example: true
+        protected:
+          type: boolean
+          example: true
+        developers_can_push:
+          type: boolean
+          example: true
+        developers_can_merge:
+          type: boolean
+          example: true
+        can_push:
+          type: boolean
+          example: true
+        default:
+          type: boolean
+          example: true
+        web_url:
+          type: string
+          example: https://gitlab.example.com/Commit921/the-dude/-/tree/master
+      description: API_Entities_Branch model
+    API_Entities_Badge:
+      type: object
+      properties:
+        name:
+          type: string
+        link_url:
+          type: string
+        image_url:
+          type: string
+        rendered_link_url:
+          type: string
+        rendered_image_url:
+          type: string
+        id:
+          type: string
+        kind:
+          type: string
+      description: API_Entities_Badge model
+    API_Entities_BasicBadgeDetails:
+      type: object
+      properties:
+        name:
+          type: string
+        link_url:
+          type: string
+        image_url:
+          type: string
+        rendered_link_url:
+          type: string
+        rendered_image_url:
+          type: string
+      description: API_Entities_BasicBadgeDetails model
+    API_Entities_AccessRequester:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        username:
+          type: string
+          example: admin
+        name:
+          type: string
+          example: Administrator
+        state:
+          type: string
+          example: active
+        avatar_url:
+          type: string
+          example: https://gravatar.com/avatar/1
+        avatar_path:
+          type: string
+          example: /user/avatar/28/The-Big-Lebowski-400-400.png
+        custom_attributes:
+          type: array
+          items:
+            $ref: '#/components/schemas/API_Entities_CustomAttribute'
+        web_url:
+          type: string
+          example: https://gitlab.example.com/root
+        email:
+          type: string
+        requested_at:
+          type: string
+      description: API_Entities_AccessRequester model
+    API_Entities_MetricImage:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 23
+        created_at:
+          type: string
+          format: date-time
+          example: '2020-11-13T00:06:18.084Z'
+        filename:
+          type: string
+          example: file.png
+        file_path:
+          type: string
+          example: /uploads/-/system/alert_metric_image/file/23/file.png
+        url:
+          type: string
+          example: https://example.com/metric
+        url_text:
+          type: string
+          example: An example metric
+      description: API_Entities_MetricImage model
+    API_Entities_Job:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The ID of the job
+        name:
+          type: string
+          description: The name of the job
+        status:
+          type: string
+          description: The current status of the job
+        stage:
+          type: string
+          description: The stage of the job in the CI/CD pipeline
+        created_at:
+          type: string
+          format: date-time
+          example: '2016-01-11T10:13:33.506Z'
+          description: The creation time of the job
+        started_at:
+          type: string
+          format: date-time
+          example: '2016-01-11T10:13:33.506Z'
+          description: The start time of the job
+        finished_at:
+          type: string
+          format: date-time
+          example: '2016-01-11T10:13:33.506Z'
+          description: The finish time of the job
+        commit:
+          $ref: '#/components/schemas/API_Entities_Commit'
+        archived:
+          type: boolean
+          description: Indicates if the job is archived
+        allow_failure:
+          type: boolean
+          description: Indicates if the job is allowed to fail
+        erased_at:
+          type: string
+          format: date-time
+          example: '2016-01-11T10:13:33.506Z'
+          description: The time when the job was erased, if applicable
+        duration:
+          type: integer
+          description: The duration of the job in seconds
+        queued_duration:
+          type: number
+          description: The duration the job was queued before execution, in seconds
+        ref:
+          type: string
+          description: The reference for the job
+        artifacts:
+          type: array
+          description: The artifacts produced by the job
+        tag:
+          type: boolean
+          description: Indicates if the job is tagged
+        web_url:
+          type: string
+          description: The URL for accessing the job in the web interface
+        project:
+          type: object
+          properties:
+            ci_job_token_scope_enabled:
+              type: boolean
+              description: >-
+                Indicates if the CI/CD job token scope setting is enabled for
+                the project
+        user:
+          $ref: '#/components/schemas/API_Entities_UserBasic'
+          description: The user that started the job
+      description: API_Entities_Job model
