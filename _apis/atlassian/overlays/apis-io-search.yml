@@ -879,7 +879,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
-  - name: ' addon/'
+  - name: Atlassian Addon API
     description: Needs description.
     tags: []
     properties:
@@ -888,7 +888,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-addon--openapi-search.yml
-  - name: ' hook events/'
+  - name: Atlassian Hook Events API
     description: Needs description.
     tags: []
     properties:
@@ -897,7 +897,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-hook-events--openapi-search.yml
-  - name: ' pullrequests/{selected user}/'
+  - name: Atlassian Pullrequests Selected User API
     description: Needs description.
     tags: []
     properties:
@@ -906,7 +906,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-pullrequests-selected-user--openapi-search.yml
-  - name: ' repositories/'
+  - name: Atlassian Repositories API
     description: Needs description.
     tags: []
     properties:
@@ -915,7 +915,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-repositories--openapi-search.yml
-  - name: ' snippets/'
+  - name: Atlassian Snippets API
     description: Needs description.
     tags: []
     properties:
@@ -924,7 +924,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-snippets--openapi-search.yml
-  - name: ' teams/'
+  - name: Atlassian Teams API
     description: Needs description.
     tags: []
     properties:
@@ -933,7 +933,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-teams--openapi-search.yml
-  - name: ' user'
+  - name: Atlassian User API
     description: Needs description.
     tags: []
     properties:
@@ -942,7 +942,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-user-openapi-search.yml
-  - name: ' workspaces/'
+  - name: Atlassian Workspaces API
     description: Needs description.
     tags: []
     properties:
