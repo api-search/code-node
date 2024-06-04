@@ -57,7 +57,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bitbucket-openapi-api-evangelist-ratings.yml
     aid: atlassian:bitbucket-api
-  - name: Atlassian Confluence Announcement Banner API
+  - name: Atlassian Jira Announcement Banner API
     description: Needs description.
     tags: []
     properties:
@@ -67,7 +67,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-announcementbanner--openapi-search.yml
-  - name: Atlassian Confluence App API
+  - name: Atlassian Jira App API
     description: Needs description.
     tags: []
     properties:
@@ -76,7 +76,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
-  - name: Atlassian Confluence Application Properties API
+  - name: Atlassian Jira Application Properties API
     description: Needs description.
     tags: []
     properties:
@@ -87,7 +87,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
-  - name: Atlassian Confluence Application Role API
+  - name: Atlassian Jira Application Role API
     description: Needs description.
     tags: []
     properties:
@@ -96,7 +96,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-applicationrole--openapi-search.yml
-  - name: Atlassian Confluence Attachment API
+  - name: Atlassian Jira Attachment API
     description: Needs description.
     tags: []
     properties:
@@ -105,7 +105,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-attachment--openapi-search.yml
-  - name: Atlassian Confluence Auditing API
+  - name: Atlassian Jira Auditing API
     description: Needs description.
     tags: []
     properties:
@@ -114,7 +114,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
-  - name: Atlassian Confluence Avatar API
+  - name: Atlassian Jira Avatar API
     description: Needs description.
     tags: []
     properties:
@@ -123,7 +123,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-avatar--openapi-search.yml
-  - name: Atlassian Confluence Classification Levels API
+  - name: Atlassian Jira Classification Levels API
     description: Needs description.
     tags: []
     properties:
@@ -134,7 +134,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-classification-levels--openapi-search.yml
-  - name: Atlassian Confluence Comment API
+  - name: Atlassian Jira Comment API
     description: Needs description.
     tags: []
     properties:
@@ -143,7 +143,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-comment--openapi-search.yml
-  - name: Atlassian Confluence Component API
+  - name: Atlassian Jira Component API
     description: Needs description.
     tags: []
     properties:
@@ -152,7 +152,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-component--openapi-search.yml
-  - name: Atlassian Confluence Configuration API
+  - name: Atlassian Jira Configuration API
     description: Needs description.
     tags: []
     properties:
@@ -161,7 +161,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-configuration--openapi-search.yml
-  - name: Atlassian Confluence Custom Field Option API
+  - name: Atlassian Jira Custom Field Option API
     description: Needs description.
     tags: []
     properties:
@@ -171,7 +171,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-customfieldoption--openapi-search.yml
-  - name: Atlassian Confluence Dashboard API
+  - name: Atlassian Jira Dashboard API
     description: Needs description.
     tags: []
     properties:
@@ -180,7 +180,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-dashboard--openapi-search.yml
-  - name: Atlassian Confluence Data Policy API
+  - name: Atlassian Jira Data Policy API
     description: Needs description.
     tags: []
     properties:
@@ -189,7 +189,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-data-policy--openapi-search.yml
-  - name: Atlassian Confluence Events API
+  - name: Atlassian Jira Events API
     description: Needs description.
     tags: []
     properties:
@@ -198,7 +198,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-events--openapi-search.yml
-  - name: Atlassian Confluence Expression API
+  - name: Atlassian Jira Expression API
     description: Needs description.
     tags: []
     properties:
@@ -207,7 +207,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-expression--openapi-search.yml
-  - name: Atlassian Confluence Field API
+  - name: Atlassian Jira Field API
     description: Needs description.
     tags: []
     properties:
@@ -216,7 +216,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-field--openapi-search.yml
-  - name: Atlassian Confluence Field Configuration API
+  - name: Atlassian Jira Field Configuration API
     description: Needs description.
     tags: []
     properties:
@@ -226,7 +226,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-fieldconfiguration--openapi-search.yml
-  - name: Atlassian Confluence Field Configuration Scheme API
+  - name: Atlassian Jira Field Configuration Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -237,7 +237,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-fieldconfigurationscheme--openapi-search.yml
-  - name: Atlassian Confluence Filter API
+  - name: Atlassian Jira Filter API
     description: Needs description.
     tags: []
     properties:
@@ -246,7 +246,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-filter--openapi-search.yml
-  - name: Atlassian Confluence Group API
+  - name: Atlassian Jira Group API
     description: Needs description.
     tags: []
     properties:
@@ -255,7 +255,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-group--openapi-search.yml
-  - name: Atlassian Confluence Groups API
+  - name: Atlassian Jira Groups API
     description: Needs description.
     tags: []
     properties:
@@ -264,7 +264,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-groups--openapi-search.yml
-  - name: Atlassian Confluence Group User Picker API
+  - name: Atlassian Jira Group User Picker API
     description: Needs description.
     tags: []
     properties:
@@ -273,7 +273,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-groupuserpicker--openapi-search.yml
-  - name: Atlassian Confluence Instance API
+  - name: Atlassian Jira Instance API
     description: Needs description.
     tags: []
     properties:
@@ -282,7 +282,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-instance--openapi-search.yml
-  - name: Atlassian Confluence Issue API
+  - name: Atlassian Jira Issue API
     description: Needs description.
     tags: []
     properties:
@@ -291,7 +291,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issue--openapi-search.yml
-  - name: Atlassian Confluence Issue Link API
+  - name: Atlassian Jira Issue Link API
     description: Needs description.
     tags: []
     properties:
@@ -300,7 +300,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelink--openapi-search.yml
-  - name: Atlassian Confluence Issue Link Type API
+  - name: Atlassian Jira Issue Link Type API
     description: Needs description.
     tags: []
     properties:
@@ -309,7 +309,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
-  - name: Atlassian Confluence Issue Link Type API
+  - name: Atlassian Jira Issue Link Type API
     description: Needs description.
     tags: []
     properties:
@@ -318,7 +318,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
-  - name: Atlassian Confluence Issues API
+  - name: Atlassian Jira Issues API
     description: Needs description.
     tags: []
     properties:
@@ -327,7 +327,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issues--openapi-search.yml
-  - name: Atlassian Confluence Issue Security Schemes API
+  - name: Atlassian Jira Issue Security Schemes API
     description: Needs description.
     tags: []
     properties:
@@ -337,7 +337,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuesecurityschemes--openapi-search.yml
-  - name: Atlassian Confluence Issue Type API
+  - name: Atlassian Jira Issue Type API
     description: Needs description.
     tags: []
     properties:
@@ -346,7 +346,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetype--openapi-search.yml
-  - name: Atlassian Confluence Issue Type Scheme API
+  - name: Atlassian Jira Issue Type Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -355,7 +355,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetypescheme--openapi-search.yml
-  - name: Atlassian Confluence Issue Type Screen Scheme API
+  - name: Atlassian Jira Issue Type Screen Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -366,7 +366,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-issuetypescreenscheme--openapi-search.yml
-  - name: Atlassian Confluence Jql API
+  - name: Atlassian Jira Jql API
     description: Needs description.
     tags: []
     properties:
@@ -375,7 +375,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-jql--openapi-search.yml
-  - name: Atlassian Confluence Label API
+  - name: Atlassian Jira Label API
     description: Needs description.
     tags: []
     properties:
@@ -384,7 +384,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-label--openapi-search.yml
-  - name: Atlassian Confluence License API
+  - name: Atlassian Jira License API
     description: Needs description.
     tags: []
     properties:
@@ -393,7 +393,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-license--openapi-search.yml
-  - name: Atlassian Confluence My Permissions API
+  - name: Atlassian Jira My Permissions API
     description: Needs description.
     tags: []
     properties:
@@ -402,7 +402,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-mypermissions--openapi-search.yml
-  - name: Atlassian Confluence My Preferences API
+  - name: Atlassian Jira My Preferences API
     description: Needs description.
     tags: []
     properties:
@@ -411,7 +411,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-mypreferences--openapi-search.yml
-  - name: Atlassian Confluence Myself API
+  - name: Atlassian Jira Myself API
     description: Needs description.
     tags: []
     properties:
@@ -420,7 +420,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-myself--openapi-search.yml
-  - name: Atlassian Confluence Notification Scheme API
+  - name: Atlassian Jira Notification Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -430,7 +430,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-notificationscheme--openapi-search.yml
-  - name: Atlassian Confluence Permissions API
+  - name: Atlassian Jira Permissions API
     description: Needs description.
     tags: []
     properties:
@@ -439,7 +439,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-permissions--openapi-search.yml
-  - name: Atlassian Confluence Permission Scheme API
+  - name: Atlassian Jira Permission Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -448,7 +448,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-permissionscheme--openapi-search.yml
-  - name: Atlassian Confluence Priority API
+  - name: Atlassian Jira Priority API
     description: Needs description.
     tags: []
     properties:
@@ -457,7 +457,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-priority--openapi-search.yml
-  - name: Atlassian Confluence Project API
+  - name: Atlassian Jira Project API
     description: Needs description.
     tags: []
     properties:
@@ -466,7 +466,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-project--openapi-search.yml
-  - name: Atlassian Confluence Project Category API
+  - name: Atlassian Jira Project Category API
     description: Needs description.
     tags: []
     properties:
@@ -475,7 +475,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-projectcategory--openapi-search.yml
-  - name: Atlassian Confluence Project Validate API
+  - name: Atlassian Jira Project Validate API
     description: Needs description.
     tags: []
     properties:
@@ -484,7 +484,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-projectvalidate--openapi-search.yml
-  - name: Atlassian Confluence Resolution API
+  - name: Atlassian Jira Resolution API
     description: Needs description.
     tags: []
     properties:
@@ -493,7 +493,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-resolution--openapi-search.yml
-  - name: Atlassian Confluence Role API
+  - name: Atlassian Jira Role API
     description: Needs description.
     tags: []
     properties:
@@ -502,7 +502,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-role--openapi-search.yml
-  - name: Atlassian Confluence Screens API
+  - name: Atlassian Jira Screens API
     description: Needs description.
     tags: []
     properties:
@@ -511,7 +511,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screens--openapi-search.yml
-  - name: Atlassian Confluence Screens Scheme API
+  - name: Atlassian Jira Screens Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -520,7 +520,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screenscheme--openapi-search.yml
-  - name: Atlassian Confluence Search API
+  - name: Atlassian Jira Search API
     description: Needs description.
     tags: []
     properties:
@@ -529,7 +529,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-search--openapi-search.yml
-  - name: Atlassian Confluence Security Level API
+  - name: Atlassian Jira Security Level API
     description: Needs description.
     tags: []
     properties:
@@ -538,7 +538,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-securitylevel--openapi-search.yml
-  - name: Atlassian Confluence Server Info API
+  - name: Atlassian Jira Server Info API
     description: Needs description.
     tags: []
     properties:
@@ -547,7 +547,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-serverinfo--openapi-search.yml
-  - name: Atlassian Confluence Settings API
+  - name: Atlassian Jira Settings API
     description: Needs description.
     tags: []
     properties:
@@ -556,7 +556,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-settings--openapi-search.yml
-  - name: Atlassian Confluence Status API
+  - name: Atlassian Jira Status API
     description: Needs description.
     tags: []
     properties:
@@ -565,7 +565,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-status--openapi-search.yml
-  - name: Atlassian Confluence Status Category API
+  - name: Atlassian Jira Status Category API
     description: Needs description.
     tags: []
     properties:
@@ -574,7 +574,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuscategory--openapi-search.yml
-  - name: Atlassian Confluence Statuses API
+  - name: Atlassian Jira Statuses API
     description: Needs description.
     tags: []
     properties:
@@ -583,7 +583,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuses--openapi-search.yml
-  - name: Atlassian Confluence Task API
+  - name: Atlassian Jira Task API
     description: Needs description.
     tags: []
     properties:
@@ -592,7 +592,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
-  - name: Atlassian Confluence UI Modifications API
+  - name: Atlassian Jira UI Modifications API
     description: Needs description.
     tags: []
     properties:
@@ -601,7 +601,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-uimodifications--openapi-search.yml
-  - name: Atlassian Confluence Universal Avatar API
+  - name: Atlassian Jira Universal Avatar API
     description: Needs description.
     tags: []
     properties:
@@ -610,7 +610,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-universal-avatar--openapi-search.yml
-  - name: Atlassian Confluence User API
+  - name: Atlassian Jira User API
     description: Needs description.
     tags: []
     properties:
@@ -619,7 +619,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-user--openapi-search.yml
-  - name: Atlassian Confluence Users API
+  - name: Atlassian Jira Users API
     description: Needs description.
     tags: []
     properties:
@@ -628,7 +628,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-users--openapi-search.yml
-  - name: Atlassian Confluence Version API
+  - name: Atlassian Jira Version API
     description: Needs description.
     tags: []
     properties:
@@ -637,7 +637,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-version--openapi-search.yml
-  - name: Atlassian Confluence Webhook API
+  - name: Atlassian Jira Webhook API
     description: Needs description.
     tags: []
     properties:
@@ -646,7 +646,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-webhook--openapi-search.yml
-  - name: Atlassian Confluence Workflow API
+  - name: Atlassian Jira Workflow API
     description: Needs description.
     tags: []
     properties:
@@ -655,7 +655,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflow--openapi-search.yml
-  - name: Atlassian Confluence Workflows API
+  - name: Atlassian Jira Workflows API
     description: Needs description.
     tags: []
     properties:
@@ -664,7 +664,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflows--openapi-search.yml
-  - name: Atlassian Confluence Workflow Scheme API
+  - name: Atlassian Jira Workflow Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -673,7 +673,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflowscheme--openapi-search.yml
-  - name: Atlassian Confluence Worklog API
+  - name: Atlassian Jira Worklog API
     description: Needs description.
     tags: []
     properties:
@@ -682,7 +682,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-worklog--openapi-search.yml
-  - name: Atlassian Confluence Connect Addons API
+  - name: Atlassian Jira Connect Addons API
     description: Needs description.
     tags: []
     properties:
@@ -692,7 +692,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-addons--openapi-search.yml
-  - name: Atlassian Confluence Connect App API
+  - name: Atlassian Jira Connect App API
     description: Needs description.
     tags: []
     properties:
@@ -702,7 +702,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-app--openapi-search.yml
-  - name: Atlassian Confluence Connect Migration API
+  - name: Atlassian Jira Connect Migration API
     description: Needs description.
     tags: []
     properties:
@@ -713,7 +713,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-migration--openapi-search.yml
-  - name: Atlassian Confluence Connect Service Registry API
+  - name: Atlassian Jira Connect Service Registry API
     description: Needs description.
     tags: []
     properties:
@@ -724,7 +724,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-service-registry--openapi-search.yml
-  - name: Atlassian Confluence Forge App API
+  - name: Atlassian Jira Forge App API
     description: Needs description.
     tags: []
     properties:
