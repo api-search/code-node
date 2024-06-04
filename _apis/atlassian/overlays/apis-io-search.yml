@@ -9,7 +9,7 @@ modified: 2024/04/14
 specificationVersion: '0.16'
 tags: []
 apis:
-  - name: Jira API
+  - name: Atlassian Jira API
     description: >-
       The Jira REST API enables you to interact with Jira programmatically. Use
       this API to build apps, script interactions with Jira, or develop any
@@ -26,7 +26,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/jira-openapi-api-evangelist-ratings.yml
     aid: atlassian:jira-api
-  - name: Confluence API
+  - name: Atlassian Confluence API
     description: >-
       This is the reference for the Confluence Cloud REST API. This API is the
       primary way to get and modify data in Confluence Cloud, whether you are
@@ -43,7 +43,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/confluence-openapi-api-evangelist-ratings.yml
     aid: atlassian:confluence-api
-  - name: BitBucket API
+  - name: Atlassian Bit Bucket API
     description: >-
       The purpose of this section is to describe how to authenticate when making
       API calls using the Bitbucket REST API.
@@ -57,7 +57,7 @@ apis:
       - type: API Evangelist Ratings
         url: overlays/bitbucket-openapi-api-evangelist-ratings.yml
     aid: atlassian:bitbucket-api
-  - name: ' rest/api/3/announcementBanner/'
+  - name: Atlassian Rest Api 3 Announcement Banner API
     description: Needs description.
     tags: []
     properties:
@@ -67,7 +67,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-announcementbanner--openapi-search.yml
-  - name: ' rest/api/3/app/'
+  - name: Atlassian Rest Api 3 App API
     description: Needs description.
     tags: []
     properties:
@@ -76,7 +76,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
-  - name: ' rest/api/3/application-properties/'
+  - name: Atlassian Rest Api 3 Application Properties API
     description: Needs description.
     tags: []
     properties:
@@ -87,7 +87,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
-  - name: ' rest/api/3/applicationrole/'
+  - name: Atlassian Rest Api 3 Applicationrole API
     description: Needs description.
     tags: []
     properties:
@@ -96,7 +96,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-applicationrole--openapi-search.yml
-  - name: ' rest/api/3/attachment/'
+  - name: Atlassian Rest Api 3 Attachment API
     description: Needs description.
     tags: []
     properties:
@@ -105,7 +105,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-attachment--openapi-search.yml
-  - name: ' rest/api/3/auditing/'
+  - name: Atlassian Rest Api 3 Auditing API
     description: Needs description.
     tags: []
     properties:
@@ -114,7 +114,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
-  - name: ' rest/api/3/avatar/'
+  - name: Atlassian Rest Api 3 Avatar API
     description: Needs description.
     tags: []
     properties:
@@ -123,7 +123,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-avatar--openapi-search.yml
-  - name: ' rest/api/3/classification-levels/'
+  - name: Atlassian Rest Api 3 Classification Levels API
     description: Needs description.
     tags: []
     properties:
@@ -134,7 +134,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-classification-levels--openapi-search.yml
-  - name: ' rest/api/3/comment/'
+  - name: Atlassian Rest Api 3 Comment API
     description: Needs description.
     tags: []
     properties:
@@ -143,7 +143,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-comment--openapi-search.yml
-  - name: ' rest/api/3/component/'
+  - name: Atlassian Rest Api 3 Component API
     description: Needs description.
     tags: []
     properties:
@@ -152,7 +152,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-component--openapi-search.yml
-  - name: ' rest/api/3/configuration/'
+  - name: Atlassian Rest Api 3 Configuration API
     description: Needs description.
     tags: []
     properties:
@@ -161,7 +161,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-configuration--openapi-search.yml
-  - name: ' rest/api/3/customFieldOption/'
+  - name: Atlassian Rest Api 3 Custom Field Option API
     description: Needs description.
     tags: []
     properties:
@@ -171,7 +171,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-customfieldoption--openapi-search.yml
-  - name: ' rest/api/3/dashboard/'
+  - name: Atlassian Rest Api 3 Dashboard API
     description: Needs description.
     tags: []
     properties:
@@ -180,7 +180,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-dashboard--openapi-search.yml
-  - name: ' rest/api/3/data-policy/'
+  - name: Atlassian Rest Api 3 Data Policy API
     description: Needs description.
     tags: []
     properties:
@@ -189,7 +189,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-data-policy--openapi-search.yml
-  - name: ' rest/api/3/events/'
+  - name: Atlassian Rest Api 3 Events API
     description: Needs description.
     tags: []
     properties:
@@ -198,7 +198,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-events--openapi-search.yml
-  - name: ' rest/api/3/expression/'
+  - name: Atlassian Rest Api 3 Expression API
     description: Needs description.
     tags: []
     properties:
@@ -207,7 +207,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-expression--openapi-search.yml
-  - name: ' rest/api/3/field/'
+  - name: Atlassian Rest Api 3 Field API
     description: Needs description.
     tags: []
     properties:
@@ -216,7 +216,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-field--openapi-search.yml
-  - name: ' rest/api/3/fieldconfiguration/'
+  - name: Atlassian Rest Api 3 Fieldconfiguration API
     description: Needs description.
     tags: []
     properties:
@@ -226,7 +226,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-fieldconfiguration--openapi-search.yml
-  - name: ' rest/api/3/fieldconfigurationscheme/'
+  - name: Atlassian Rest Api 3 Fieldconfigurationscheme API
     description: Needs description.
     tags: []
     properties:
@@ -237,7 +237,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-fieldconfigurationscheme--openapi-search.yml
-  - name: ' rest/api/3/filter/'
+  - name: Atlassian Rest Api 3 Filter API
     description: Needs description.
     tags: []
     properties:
@@ -246,7 +246,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-filter--openapi-search.yml
-  - name: ' rest/api/3/group/'
+  - name: Atlassian Rest Api 3 Group API
     description: Needs description.
     tags: []
     properties:
@@ -255,7 +255,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-group--openapi-search.yml
-  - name: ' rest/api/3/groups/'
+  - name: Atlassian Rest Api 3 Groups API
     description: Needs description.
     tags: []
     properties:
@@ -264,7 +264,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-groups--openapi-search.yml
-  - name: ' rest/api/3/groupuserpicker/'
+  - name: Atlassian Rest Api 3 Groupuserpicker API
     description: Needs description.
     tags: []
     properties:
@@ -273,7 +273,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-groupuserpicker--openapi-search.yml
-  - name: ' rest/api/3/instance/'
+  - name: Atlassian Rest Api 3 Instance API
     description: Needs description.
     tags: []
     properties:
@@ -282,7 +282,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-instance--openapi-search.yml
-  - name: ' rest/api/3/issue/'
+  - name: Atlassian Rest Api 3 Issue API
     description: Needs description.
     tags: []
     properties:
@@ -291,7 +291,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issue--openapi-search.yml
-  - name: ' rest/api/3/issueLink/'
+  - name: Atlassian Rest Api 3 Issue Link API
     description: Needs description.
     tags: []
     properties:
@@ -300,7 +300,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelink--openapi-search.yml
-  - name: ' rest/api/3/issueLinkType/'
+  - name: Atlassian Rest Api 3 Issue Link Type API
     description: Needs description.
     tags: []
     properties:
@@ -309,7 +309,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
-  - name: ' rest/api/3/issueLinkType/'
+  - name: Atlassian Rest Api 3 Issue Link Type API
     description: Needs description.
     tags: []
     properties:
@@ -318,7 +318,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
-  - name: ' rest/api/3/issues/'
+  - name: Atlassian Rest Api 3 Issues API
     description: Needs description.
     tags: []
     properties:
@@ -327,7 +327,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issues--openapi-search.yml
-  - name: ' rest/api/3/issuesecurityschemes/'
+  - name: Atlassian Rest Api 3 Issuesecurityschemes API
     description: Needs description.
     tags: []
     properties:
@@ -337,7 +337,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuesecurityschemes--openapi-search.yml
-  - name: ' rest/api/3/issuetype/'
+  - name: Atlassian Rest Api 3 Issuetype API
     description: Needs description.
     tags: []
     properties:
@@ -346,7 +346,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetype--openapi-search.yml
-  - name: ' rest/api/3/issuetypescheme/'
+  - name: Atlassian Rest Api 3 Issuetypescheme API
     description: Needs description.
     tags: []
     properties:
@@ -355,7 +355,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetypescheme--openapi-search.yml
-  - name: ' rest/api/3/issuetypescreenscheme/'
+  - name: Atlassian Rest Api 3 Issuetypescreenscheme API
     description: Needs description.
     tags: []
     properties:
@@ -366,7 +366,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-issuetypescreenscheme--openapi-search.yml
-  - name: ' rest/api/3/jql/'
+  - name: Atlassian Rest Api 3 Jql API
     description: Needs description.
     tags: []
     properties:
@@ -375,7 +375,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-jql--openapi-search.yml
-  - name: ' rest/api/3/label/'
+  - name: Atlassian Rest Api 3 Label API
     description: Needs description.
     tags: []
     properties:
@@ -384,7 +384,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-label--openapi-search.yml
-  - name: ' rest/api/3/license/'
+  - name: Atlassian Rest Api 3 License API
     description: Needs description.
     tags: []
     properties:
@@ -393,7 +393,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-license--openapi-search.yml
-  - name: ' rest/api/3/mypermissions/'
+  - name: Atlassian Rest Api 3 Mypermissions API
     description: Needs description.
     tags: []
     properties:
@@ -402,7 +402,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-mypermissions--openapi-search.yml
-  - name: ' rest/api/3/mypreferences/'
+  - name: Atlassian Rest Api 3 Mypreferences API
     description: Needs description.
     tags: []
     properties:
@@ -411,7 +411,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-mypreferences--openapi-search.yml
-  - name: ' rest/api/3/myself/'
+  - name: Atlassian Rest Api 3 Myself API
     description: Needs description.
     tags: []
     properties:
@@ -420,7 +420,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-myself--openapi-search.yml
-  - name: ' rest/api/3/notificationscheme/'
+  - name: Atlassian Rest Api 3 Notificationscheme API
     description: Needs description.
     tags: []
     properties:
@@ -430,7 +430,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-notificationscheme--openapi-search.yml
-  - name: ' rest/api/3/permissions/'
+  - name: Atlassian Rest Api 3 Permissions API
     description: Needs description.
     tags: []
     properties:
@@ -439,7 +439,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-permissions--openapi-search.yml
-  - name: ' rest/api/3/permissionscheme/'
+  - name: Atlassian Rest Api 3 Permissionscheme API
     description: Needs description.
     tags: []
     properties:
@@ -448,7 +448,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-permissionscheme--openapi-search.yml
-  - name: ' rest/api/3/priority/'
+  - name: Atlassian Rest Api 3 Priority API
     description: Needs description.
     tags: []
     properties:
@@ -457,7 +457,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-priority--openapi-search.yml
-  - name: ' rest/api/3/project/'
+  - name: Atlassian Rest Api 3 Project API
     description: Needs description.
     tags: []
     properties:
@@ -466,7 +466,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-project--openapi-search.yml
-  - name: ' rest/api/3/projectCategory/'
+  - name: Atlassian Rest Api 3 Project Category API
     description: Needs description.
     tags: []
     properties:
@@ -475,7 +475,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-projectcategory--openapi-search.yml
-  - name: ' rest/api/3/projectvalidate/'
+  - name: Atlassian Rest Api 3 Projectvalidate API
     description: Needs description.
     tags: []
     properties:
@@ -484,7 +484,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-projectvalidate--openapi-search.yml
-  - name: ' rest/api/3/resolution/'
+  - name: Atlassian Rest Api 3 Resolution API
     description: Needs description.
     tags: []
     properties:
@@ -493,7 +493,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-resolution--openapi-search.yml
-  - name: ' rest/api/3/role/'
+  - name: Atlassian Rest Api 3 Role API
     description: Needs description.
     tags: []
     properties:
@@ -502,7 +502,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-role--openapi-search.yml
-  - name: ' rest/api/3/screens/'
+  - name: Atlassian Rest Api 3 Screens API
     description: Needs description.
     tags: []
     properties:
@@ -511,7 +511,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screens--openapi-search.yml
-  - name: ' rest/api/3/screenscheme/'
+  - name: Atlassian Rest Api 3 Screenscheme API
     description: Needs description.
     tags: []
     properties:
@@ -520,7 +520,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screenscheme--openapi-search.yml
-  - name: ' rest/api/3/search/'
+  - name: Atlassian Rest Api 3 Search API
     description: Needs description.
     tags: []
     properties:
@@ -529,7 +529,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-search--openapi-search.yml
-  - name: ' rest/api/3/securitylevel/'
+  - name: Atlassian Rest Api 3 Securitylevel API
     description: Needs description.
     tags: []
     properties:
@@ -538,7 +538,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-securitylevel--openapi-search.yml
-  - name: ' rest/api/3/serverInfo/'
+  - name: Atlassian Rest Api 3 Server Info API
     description: Needs description.
     tags: []
     properties:
@@ -547,7 +547,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-serverinfo--openapi-search.yml
-  - name: ' rest/api/3/settings/'
+  - name: Atlassian Rest Api 3 Settings API
     description: Needs description.
     tags: []
     properties:
@@ -556,7 +556,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-settings--openapi-search.yml
-  - name: ' rest/api/3/status/'
+  - name: Atlassian Rest Api 3 Status API
     description: Needs description.
     tags: []
     properties:
@@ -565,7 +565,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-status--openapi-search.yml
-  - name: ' rest/api/3/statuscategory/'
+  - name: Atlassian Rest Api 3 Statuscategory API
     description: Needs description.
     tags: []
     properties:
@@ -574,7 +574,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuscategory--openapi-search.yml
-  - name: ' rest/api/3/statuses/'
+  - name: Atlassian Rest Api 3 Statuses API
     description: Needs description.
     tags: []
     properties:
@@ -583,7 +583,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuses--openapi-search.yml
-  - name: ' rest/api/3/task/'
+  - name: Atlassian Rest Api 3 Task API
     description: Needs description.
     tags: []
     properties:
@@ -592,7 +592,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
-  - name: ' rest/api/3/uiModifications/'
+  - name: Atlassian Rest Api 3 Ui Modifications API
     description: Needs description.
     tags: []
     properties:
@@ -601,7 +601,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-uimodifications--openapi-search.yml
-  - name: ' rest/api/3/universal avatar/'
+  - name: Atlassian Rest Api 3 Universal Avatar API
     description: Needs description.
     tags: []
     properties:
@@ -610,7 +610,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-universal-avatar--openapi-search.yml
-  - name: ' rest/api/3/user/'
+  - name: Atlassian Rest Api 3 User API
     description: Needs description.
     tags: []
     properties:
@@ -619,7 +619,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-user--openapi-search.yml
-  - name: ' rest/api/3/users/'
+  - name: Atlassian Rest Api 3 Users API
     description: Needs description.
     tags: []
     properties:
@@ -628,7 +628,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-users--openapi-search.yml
-  - name: ' rest/api/3/version/'
+  - name: Atlassian Rest Api 3 Version API
     description: Needs description.
     tags: []
     properties:
@@ -637,7 +637,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-version--openapi-search.yml
-  - name: ' rest/api/3/webhook/'
+  - name: Atlassian Rest Api 3 Webhook API
     description: Needs description.
     tags: []
     properties:
@@ -646,7 +646,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-webhook--openapi-search.yml
-  - name: ' rest/api/3/workflow/'
+  - name: Atlassian Rest Api 3 Workflow API
     description: Needs description.
     tags: []
     properties:
@@ -655,7 +655,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflow--openapi-search.yml
-  - name: ' rest/api/3/workflows/'
+  - name: Atlassian Rest Api 3 Workflows API
     description: Needs description.
     tags: []
     properties:
@@ -664,7 +664,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflows--openapi-search.yml
-  - name: ' rest/api/3/workflowscheme/'
+  - name: Atlassian Rest Api 3 Workflowscheme API
     description: Needs description.
     tags: []
     properties:
@@ -673,7 +673,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflowscheme--openapi-search.yml
-  - name: ' rest/api/3/worklog/'
+  - name: Atlassian Rest Api 3 Worklog API
     description: Needs description.
     tags: []
     properties:
@@ -682,7 +682,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-worklog--openapi-search.yml
-  - name: ' rest/atlassian-connect/1/addons/'
+  - name: Rest Atlassian Connect 1 Addons API
     description: Needs description.
     tags: []
     properties:
@@ -692,7 +692,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-addons--openapi-search.yml
-  - name: ' rest/atlassian-connect/1/app/'
+  - name: Rest Atlassian Connect 1 App API
     description: Needs description.
     tags: []
     properties:
@@ -702,7 +702,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-app--openapi-search.yml
-  - name: ' rest/atlassian-connect/1/migration/'
+  - name: Rest Atlassian Connect 1 Migration API
     description: Needs description.
     tags: []
     properties:
@@ -713,7 +713,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-migration--openapi-search.yml
-  - name: ' rest/atlassian-connect/1/service-registry/'
+  - name: Rest Atlassian Connect 1 Service Registry API
     description: Needs description.
     tags: []
     properties:
@@ -724,7 +724,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-service-registry--openapi-search.yml
-  - name: ' rest/forge/1/app/'
+  - name: Atlassian Rest Forge 1 App API
     description: Needs description.
     tags: []
     properties:
