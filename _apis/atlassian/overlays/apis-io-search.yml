@@ -733,6 +733,152 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-forge-1-app--openapi-search.yml
+  - name: ' wiki/rest/api/audit/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-audit--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-audit--openapi-search.yml
+  - name: ' wiki/rest/api/content/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-content--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-content--openapi-search.yml
+  - name: ' wiki/rest/api/content-states/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: >-
+          properties/atlassian-wiki-rest-api-content-states--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-content-states--openapi-search.yml
+  - name: ' wiki/rest/api/contentbody/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-contentbody--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-contentbody--openapi-search.yml
+  - name: ' wiki/rest/api/inlinetasks/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-inlinetasks--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-inlinetasks--openapi-search.yml
+  - name: ' wiki/rest/api/label/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-label--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-label--openapi-search.yml
+  - name: ' wiki/rest/api/group/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-group--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-group--openapi-search.yml
+  - name: ' wiki/rest/api/longtask/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-longtask--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-longtask--openapi-search.yml
+  - name: ' wiki/rest/api/relation/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-relation--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-relation--openapi-search.yml
+  - name: ' wiki/rest/api/search/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-search--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-search--openapi-search.yml
+  - name: ' wiki/rest/api/settings/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-settings--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-settings--openapi-search.yml
+  - name: ' wiki/rest/api/space/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-space--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-space--openapi-search.yml
+  - name: ' wiki/rest/api/template/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-template--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-template--openapi-search.yml
+  - name: ' wiki/rest/api/user/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-user--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-user--openapi-search.yml
+  - name: ' atlassian-connect/1/app/module/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: >-
+          properties/atlassian-atlassian-connect-1-app-module--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
+  - name: ' wiki/rest/api/analytics/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-wiki-rest-api-analytics--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
