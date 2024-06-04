@@ -125,6 +125,222 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-enterprise-openapi-search.yml
+  - name: ' events/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-events--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-events--openapi-search.yml
+  - name: ' feeds/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-feeds--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-feeds--openapi-search.yml
+  - name: ' gists/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-gists--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-gists--openapi-search.yml
+  - name: ' gitignore/templates/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-gitignore-templates--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-gitignore-templates--openapi-search.yml
+  - name: ' installation'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-installation-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-installation-openapi-search.yml
+  - name: ' issues/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-issues--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-issues--openapi-search.yml
+  - name: ' licenses/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-licenses--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-licenses--openapi-search.yml
+  - name: ' manage'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-manage-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-manage-openapi-search.yml
+  - name: ' markdown/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-markdown--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-markdown--openapi-search.yml
+  - name: ' meta/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-meta--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-meta--openapi-search.yml
+  - name: ' networks'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-networks-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-networks-openapi-search.yml
+  - name: ' notifications/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-notifications--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-notifications--openapi-search.yml
+  - name: ' octocat/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-octocat--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-octocat--openapi-search.yml
+  - name: ' org'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-org-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-org-openapi-search.yml
+  - name: ' projects'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-projects-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-projects-openapi-search.yml
+  - name: ' rate limit/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-rate-limit--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-rate-limit--openapi-search.yml
+  - name: ' repos'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-repos-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-repos-openapi-search.yml
+  - name: ' scim'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-scim-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-scim-openapi-search.yml
+  - name: ' search'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-search-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-search-openapi-search.yml
+  - name: ' setup'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-setup-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-setup-openapi-search.yml
+  - name: ' teams'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-teams-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-teams-openapi-search.yml
+  - name: ' teams'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-teams-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-teams-openapi-search.yml
+  - name: ' zen/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-zen--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-zen--openapi-search.yml
+  - name: ' user'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/github-user-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-user-openapi-search.yml
 common:
   - type: WebHooks
     url: https://docs.github.com/en/webhooks
