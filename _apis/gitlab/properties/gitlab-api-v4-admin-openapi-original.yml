@@ -1,0 +1,775 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/admin'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/admin/batched_background_migrations/{id}:
+    get:
+      tags:
+        - - - - batched_background_migrations
+      description: Retrieve a batched background migration
+      operationId: getApiV4AdminBatchedBackgroundMigrationsId
+      parameters:
+        - name: database
+          in: query
+          description: The name of the database
+          schema:
+            type: string
+            default: main
+            enum:
+              - main
+              - ci
+              - embedding
+              - main_clusterwide
+              - geo
+        - name: id
+          in: path
+          description: The batched background migration id
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Retrieve a batched background migration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BatchedBackgroundMigration'
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+        '404':
+          description: 404 Not found
+          content: {}
+  /api/v4/admin/batched_background_migrations:
+    get:
+      tags:
+        - - - - batched_background_migrations
+      description: Get the list of batched background migrations
+      operationId: getApiV4AdminBatchedBackgroundMigrations
+      parameters:
+        - name: database
+          in: query
+          description: The name of the database, the default `main`
+          schema:
+            type: string
+            default: main
+            enum:
+              - main
+              - ci
+              - embedding
+              - main_clusterwide
+              - geo
+      responses:
+        '200':
+          description: Get the list of batched background migrations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_BatchedBackgroundMigration'
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+  /api/v4/admin/batched_background_migrations/{id}/resume:
+    put:
+      tags:
+        - - - - batched_background_migrations
+      description: Resume a batched background migration
+      operationId: putApiV4AdminBatchedBackgroundMigrationsIdResume
+      parameters:
+        - name: id
+          in: path
+          description: The batched background migration id
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                database:
+                  type: string
+                  description: The name of the database
+                  default: main
+                  enum:
+                    - main
+                    - ci
+                    - embedding
+                    - main_clusterwide
+                    - geo
+      responses:
+        '200':
+          description: Resume a batched background migration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BatchedBackgroundMigration'
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+        '404':
+          description: 404 Not found
+          content: {}
+        '422':
+          description: You can resume only `paused` batched background migrations.
+          content: {}
+  /api/v4/admin/batched_background_migrations/{id}/pause:
+    put:
+      tags:
+        - - - - batched_background_migrations
+      description: Pause a batched background migration
+      operationId: putApiV4AdminBatchedBackgroundMigrationsIdPause
+      parameters:
+        - name: id
+          in: path
+          description: The batched background migration id
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                database:
+                  type: string
+                  description: The name of the database
+                  default: main
+                  enum:
+                    - main
+                    - ci
+                    - embedding
+                    - main_clusterwide
+                    - geo
+      responses:
+        '200':
+          description: Pause a batched background migration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BatchedBackgroundMigration'
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+        '404':
+          description: 404 Not found
+          content: {}
+        '422':
+          description: You can pause only `active` batched background migrations.
+          content: {}
+  /api/v4/admin/ci/variables/{key}:
+    get:
+      tags:
+        - - - - ci_variables
+      description: Get the details of a specific instance-level variable
+      operationId: getApiV4AdminCiVariablesKey
+      parameters:
+        - name: key
+          in: path
+          description: The key of a variable
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Get the details of a specific instance-level variable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Ci_Variable'
+        '404':
+          description: Instance Variable Not Found
+          content: {}
+    put:
+      tags:
+        - - - - ci_variables
+      description: Update an instance-level variable
+      operationId: putApiV4AdminCiVariablesKey
+      parameters:
+        - name: key
+          in: path
+          description: The key of a variable
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                value:
+                  type: string
+                  description: The value of a variable
+                protected:
+                  type: boolean
+                  description: Whether the variable is protected
+                masked:
+                  type: boolean
+                  description: Whether the variable is masked
+                raw:
+                  type: boolean
+                  description: Whether the variable will be expanded
+                variable_type:
+                  type: string
+                  description: >-
+                    The type of a variable. Available types are: env_var
+                    (default) and file
+                  enum:
+                    - env_var
+                    - file
+      responses:
+        '200':
+          description: Update an instance-level variable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Ci_Variable'
+        '404':
+          description: Instance Variable Not Found
+          content: {}
+    delete:
+      tags:
+        - - - - ci_variables
+      description: Delete an existing instance-level variable
+      operationId: deleteApiV4AdminCiVariablesKey
+      parameters:
+        - name: key
+          in: path
+          description: The key of a variable
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Delete an existing instance-level variable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Ci_Variable'
+        '404':
+          description: Instance Variable Not Found
+          content: {}
+  /api/v4/admin/ci/variables:
+    get:
+      tags:
+        - - - - ci_variables
+      description: List all instance-level variables
+      operationId: getApiV4AdminCiVariables
+      parameters:
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: List all instance-level variables
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Ci_Variable'
+    post:
+      tags:
+        - - - - ci_variables
+      description: Create a new instance-level variable
+      operationId: postApiV4AdminCiVariables
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - key
+                - value
+              properties:
+                key:
+                  type: string
+                  description: The key of the variable. Max 255 characters
+                value:
+                  type: string
+                  description: The value of a variable
+                protected:
+                  type: boolean
+                  description: Whether the variable is protected
+                masked:
+                  type: boolean
+                  description: Whether the variable is masked
+                raw:
+                  type: boolean
+                  description: Whether the variable will be expanded
+                variable_type:
+                  type: string
+                  description: >-
+                    The type of a variable. Available types are: env_var
+                    (default) and file
+                  enum:
+                    - env_var
+                    - file
+        required: true
+      responses:
+        '201':
+          description: Create a new instance-level variable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Ci_Variable'
+        '400':
+          description: 400 Bad Request
+          content: {}
+  /api/v4/admin/databases/{database_name}/dictionary/tables/{table_name}:
+    get:
+      tags:
+        - - - - admin
+      description: Retrieve dictionary details
+      operationId: getApiV4AdminDatabasesDatabaseNameDictionaryTablesTableName
+      parameters:
+        - name: database_name
+          in: path
+          description: The database name
+          required: true
+          schema:
+            type: string
+            enum:
+              - main
+              - ci
+        - name: table_name
+          in: path
+          description: The table name
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Retrieve dictionary details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Dictionary_Table'
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+        '404':
+          description: 404 Not found
+          content: {}
+  /api/v4/admin/clusters/{cluster_id}:
+    get:
+      tags:
+        - - - - clusters
+      summary: Get a single instance cluster
+      description: >-
+        This feature was introduced in GitLab 13.2. Returns a single instance
+        cluster.
+      operationId: getApiV4AdminClustersClusterId
+      parameters:
+        - name: cluster_id
+          in: path
+          description: The cluster ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Get a single instance cluster
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Cluster'
+        '403':
+          description: Forbidden
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+    put:
+      tags:
+        - - - - clusters
+      summary: Edit instance cluster
+      description: >-
+        This feature was introduced in GitLab 13.2. Updates an existing instance
+        cluster.
+      operationId: putApiV4AdminClustersClusterId
+      parameters:
+        - name: cluster_id
+          in: path
+          description: The cluster ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                name:
+                  type: string
+                  description: Cluster name
+                enabled:
+                  type: boolean
+                  description: >-
+                    Enable or disable Gitlab's connection to your Kubernetes
+                    cluster
+                environment_scope:
+                  type: string
+                  description: The associated environment to the cluster
+                namespace_per_environment:
+                  type: boolean
+                  description: Deploy each environment to a separate Kubernetes namespace
+                  default: true
+                domain:
+                  type: string
+                  description: Cluster base domain
+                management_project_id:
+                  type: integer
+                  description: The ID of the management project
+                  format: int32
+                managed:
+                  type: boolean
+                  description: >-
+                    Determines if GitLab will manage namespaces and service
+                    accounts for this cluster
+                platform_kubernetes_attributes[api_url]:
+                  type: string
+                  description: URL to access the Kubernetes API
+                platform_kubernetes_attributes[token]:
+                  type: string
+                  description: Token to authenticate against Kubernetes
+                platform_kubernetes_attributes[ca_cert]:
+                  type: string
+                  description: >-
+                    TLS certificate (needed if API is using a self-signed TLS
+                    certificate)
+                platform_kubernetes_attributes[namespace]:
+                  type: string
+                  description: Unique namespace related to Project
+      responses:
+        '200':
+          description: Edit instance cluster
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Cluster'
+        '400':
+          description: Validation error
+          content: {}
+        '403':
+          description: Forbidden
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+    delete:
+      tags:
+        - - - - clusters
+      summary: Delete instance cluster
+      description: >-
+        This feature was introduced in GitLab 13.2. Deletes an existing instance
+        cluster. Does not remove existing resources within the connected
+        Kubernetes cluster.
+      operationId: deleteApiV4AdminClustersClusterId
+      parameters:
+        - name: cluster_id
+          in: path
+          description: The cluster ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: Delete instance cluster
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Cluster'
+        '403':
+          description: Forbidden
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+  /api/v4/admin/clusters/add:
+    post:
+      tags:
+        - - - - clusters
+      summary: Add existing instance cluster
+      description: >-
+        This feature was introduced in GitLab 13.2. Adds an existing Kubernetes
+        instance cluster.
+      operationId: postApiV4AdminClustersAdd
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - name
+                - platform_kubernetes_attributes[api_url]
+                - platform_kubernetes_attributes[token]
+              properties:
+                name:
+                  type: string
+                  description: Cluster name
+                enabled:
+                  type: boolean
+                  description: Determines if cluster is active or not, defaults to true
+                  default: true
+                environment_scope:
+                  type: string
+                  description: The associated environment to the cluster
+                  default: '*'
+                namespace_per_environment:
+                  type: boolean
+                  description: Deploy each environment to a separate Kubernetes namespace
+                  default: true
+                domain:
+                  type: string
+                  description: Cluster base domain
+                management_project_id:
+                  type: integer
+                  description: The ID of the management project
+                  format: int32
+                managed:
+                  type: boolean
+                  description: >-
+                    Determines if GitLab will manage namespaces and service
+                    accounts for this cluster, defaults to true
+                  default: true
+                platform_kubernetes_attributes[api_url]:
+                  type: string
+                  description: URL to access the Kubernetes API
+                platform_kubernetes_attributes[token]:
+                  type: string
+                  description: Token to authenticate against Kubernetes
+                platform_kubernetes_attributes[ca_cert]:
+                  type: string
+                  description: >-
+                    TLS certificate (needed if API is using a self-signed TLS
+                    certificate)
+                platform_kubernetes_attributes[namespace]:
+                  type: string
+                  description: Unique namespace related to Project
+                platform_kubernetes_attributes[authorization_type]:
+                  type: string
+                  description: Cluster authorization type, defaults to RBAC
+                  default: rbac
+                  enum:
+                    - unknown_authorization
+                    - rbac
+                    - abac
+        required: true
+      responses:
+        '201':
+          description: Add existing instance cluster
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Cluster'
+        '400':
+          description: Validation error
+          content: {}
+        '403':
+          description: Forbidden
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+  /api/v4/admin/clusters:
+    get:
+      tags:
+        - - - - clusters
+      summary: List instance clusters
+      description: >-
+        This feature was introduced in GitLab 13.2. Returns a list of instance
+        clusters.
+      operationId: getApiV4AdminClusters
+      responses:
+        '200':
+          description: List instance clusters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Cluster'
+        '403':
+          description: Forbidden
+          content: {}
+  /api/v4/admin/migrations/{timestamp}/mark:
+    post:
+      tags:
+        - - - - migrations
+      description: Mark the migration as successfully executed
+      operationId: postApiV4AdminMigrationsTimestampMark
+      parameters:
+        - name: timestamp
+          in: path
+          description: The migration version timestamp
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                database:
+                  type: string
+                  description: The name of the database
+                  default: main
+                  enum:
+                    - main
+                    - ci
+                    - embedding
+                    - main_clusterwide
+                    - geo
+      responses:
+        '201':
+          description: 201 Created
+          content: {}
+        '401':
+          description: 401 Unauthorized
+          content: {}
+        '403':
+          description: 403 Forbidden
+          content: {}
+        '404':
+          description: 404 Not found
+          content: {}
+        '422':
+          description: You can mark only pending migrations
+          content: {}
+components:
+  schemas:
+    API_Entities_BatchedBackgroundMigration:
+      type: object
+      properties:
+        id:
+          type: string
+          example: '1234'
+        job_class_name:
+          type: string
+          example: CopyColumnUsingBackgroundMigrationJob
+        table_name:
+          type: string
+          example: events
+        status:
+          type: string
+          example: active
+        progress:
+          type: number
+          format: float
+          example: 50
+        created_at:
+          type: string
+          format: date-time
+          example: '2022-11-28T14:26:39.000Z'
+      description: API_Entities_BatchedBackgroundMigration model
+    API_Entities_Ci_Variable:
+      type: object
+      properties:
+        variable_type:
+          type: string
+          example: env_var
+        key:
+          type: string
+          example: TEST_VARIABLE_1
+        value:
+          type: string
+          example: TEST_1
+        protected:
+          type: boolean
+        masked:
+          type: boolean
+        raw:
+          type: boolean
+        environment_scope:
+          type: string
+          example: '*'
+      description: API_Entities_Ci_Variable model
+    API_Entities_Dictionary_Table:
+      type: object
+      properties:
+        table_name:
+          type: string
+          example: users
+        feature_categories:
+          type: array
+          items:
+            type: string
+            example: database
+      description: API_Entities_Dictionary_Table model
+    API_Entities_Cluster:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        created_at:
+          type: string
+        domain:
+          type: string
+        enabled:
+          type: string
+        managed:
+          type: string
+        provider_type:
+          type: string
+        platform_type:
+          type: string
+        environment_scope:
+          type: string
+        cluster_type:
+          type: string
+        namespace_per_environment:
+          type: string
+        user:
+          $ref: '#/components/schemas/API_Entities_UserBasic'
+        platform_kubernetes:
+          $ref: '#/components/schemas/API_Entities_Platform_Kubernetes'
+        provider_gcp:
+          $ref: '#/components/schemas/API_Entities_Provider_Gcp'
+        management_project:
+          $ref: '#/components/schemas/API_Entities_ProjectIdentity'
+      description: API_Entities_Cluster model
