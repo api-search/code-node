@@ -1,0 +1,486 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/application'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/applications/{id}:
+    delete:
+      tags:
+        - - - - applications
+      summary: Delete an application
+      description: Delete a specific application
+      operationId: deleteApiV4ApplicationsId
+      parameters:
+        - name: id
+          in: path
+          description: The ID of the application (not the application_id)
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '204':
+          description: Delete an application
+          content: {}
+  /api/v4/applications:
+    get:
+      tags:
+        - - - - applications
+      summary: Get applications
+      description: List all registered applications
+      operationId: getApiV4Applications
+      responses:
+        '200':
+          description: Get applications
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Application'
+    post:
+      tags:
+        - - - - applications
+      summary: Create a new application
+      description: This feature was introduced in GitLab 10.5
+      operationId: postApiV4Applications
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - name
+                - redirect_uri
+                - scopes
+              properties:
+                name:
+                  type: string
+                  description: Name of the application.
+                redirect_uri:
+                  type: string
+                  description: Redirect URI of the application.
+                scopes:
+                  type: string
+                  description: >-
+                    Scopes of the application. You can specify multiple scopes
+                    by separating\
+                                                     each scope using a space
+                confidential:
+                  type: boolean
+                  description: >-
+                    The application is used where the client secret can be kept
+                    confidential. Native mobile apps \
+                                            and Single Page Apps are considered non-confidential. Defaults to true if not supplied
+                  default: true
+        required: true
+      responses:
+        '200':
+          description: Create a new application
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_ApplicationWithSecret'
+  /api/v4/application/appearance:
+    get:
+      tags:
+        - - - - application
+      description: Get the current appearance
+      operationId: getApiV4ApplicationAppearance
+      responses:
+        '200':
+          description: Get the current appearance
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Appearance'
+    put:
+      tags:
+        - - - - application
+      description: Modify appearance
+      operationId: putApiV4ApplicationAppearance
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                title:
+                  type: string
+                  description: Instance title on the sign in / sign up page
+                description:
+                  type: string
+                  description: Markdown text shown on the sign in / sign up page
+                pwa_name:
+                  type: string
+                  description: Name of the Progressive Web App
+                pwa_short_name:
+                  type: string
+                  description: Optional, short name for Progressive Web App
+                pwa_description:
+                  type: string
+                  description: An explanation of what the Progressive Web App does
+                logo:
+                  type: string
+                  description: Instance image used on the sign in / sign up page
+                  format: binary
+                pwa_icon:
+                  type: string
+                  description: Icon used for Progressive Web App
+                  format: binary
+                header_logo:
+                  type: string
+                  description: Instance image used for the main navigation bar
+                  format: binary
+                favicon:
+                  type: string
+                  description: Instance favicon in .ico/.png format
+                  format: binary
+                new_project_guidelines:
+                  type: string
+                  description: Markdown text shown on the new project page
+                profile_image_guidelines:
+                  type: string
+                  description: Markdown text shown on the profile page below Public Avatar
+                header_message:
+                  type: string
+                  description: Message within the system header bar
+                footer_message:
+                  type: string
+                  description: Message within the system footer bar
+                message_background_color:
+                  type: string
+                  description: Background color for the system header / footer bar
+                message_font_color:
+                  type: string
+                  description: Font color for the system header / footer bar
+                email_header_and_footer_enabled:
+                  type: boolean
+                  description: Add header and footer to all outgoing emails if enabled
+      responses:
+        '200':
+          description: Modify appearance
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Appearance'
+  /api/v4/application/plan_limits:
+    get:
+      tags:
+        - - - - plan_limits
+      summary: Get current plan limits
+      description: List the current limits of a plan on the GitLab instance.
+      operationId: getApiV4ApplicationPlanLimits
+      parameters:
+        - name: plan_name
+          in: query
+          description: 'Name of the plan to get the limits from. Default: default.'
+          schema:
+            type: string
+            default: default
+            enum:
+              - default
+              - free
+              - bronze
+              - silver
+              - premium
+              - gold
+              - ultimate
+              - ultimate_trial
+              - premium_trial
+              - opensource
+      responses:
+        '200':
+          description: Get current plan limits
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_PlanLimit'
+        '401':
+          description: Unauthorized
+          content: {}
+        '403':
+          description: Forbidden
+          content: {}
+    put:
+      tags:
+        - - - - plan_limits
+      summary: Change plan limits
+      description: Modify the limits of a plan on the GitLab instance.
+      operationId: putApiV4ApplicationPlanLimits
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - plan_name
+              properties:
+                plan_name:
+                  type: string
+                  description: Name of the plan to update
+                  enum:
+                    - default
+                    - free
+                    - bronze
+                    - silver
+                    - premium
+                    - gold
+                    - ultimate
+                    - ultimate_trial
+                    - premium_trial
+                    - opensource
+                ci_pipeline_size:
+                  type: integer
+                  description: Maximum number of jobs in a single pipeline
+                  format: int32
+                ci_active_jobs:
+                  type: integer
+                  description: Total number of jobs in currently active pipelines
+                  format: int32
+                ci_project_subscriptions:
+                  type: integer
+                  description: >-
+                    Maximum number of pipeline subscriptions to and from a
+                    project
+                  format: int32
+                ci_pipeline_schedules:
+                  type: integer
+                  description: Maximum number of pipeline schedules
+                  format: int32
+                ci_needs_size_limit:
+                  type: integer
+                  description: Maximum number of DAG dependencies that a job can have
+                  format: int32
+                ci_registered_group_runners:
+                  type: integer
+                  description: Maximum number of runners registered per group
+                  format: int32
+                ci_registered_project_runners:
+                  type: integer
+                  description: Maximum number of runners registered per project
+                  format: int32
+                conan_max_file_size:
+                  type: integer
+                  description: Maximum Conan package file size in bytes
+                  format: int32
+                enforcement_limit:
+                  type: integer
+                  description: >-
+                    Maximum storage size for the root namespace enforcement in
+                    MiB
+                  format: int32
+                generic_packages_max_file_size:
+                  type: integer
+                  description: Maximum generic package file size in bytes
+                  format: int32
+                helm_max_file_size:
+                  type: integer
+                  description: Maximum Helm chart file size in bytes
+                  format: int32
+                maven_max_file_size:
+                  type: integer
+                  description: Maximum Maven package file size in bytes
+                  format: int32
+                notification_limit:
+                  type: integer
+                  description: >-
+                    Maximum storage size for the root namespace notifications in
+                    MiB
+                  format: int32
+                npm_max_file_size:
+                  type: integer
+                  description: Maximum NPM package file size in bytes
+                  format: int32
+                nuget_max_file_size:
+                  type: integer
+                  description: Maximum NuGet package file size in bytes
+                  format: int32
+                pypi_max_file_size:
+                  type: integer
+                  description: Maximum PyPI package file size in bytes
+                  format: int32
+                terraform_module_max_file_size:
+                  type: integer
+                  description: Maximum Terraform Module package file size in bytes
+                  format: int32
+                storage_size_limit:
+                  type: integer
+                  description: Maximum storage size for the root namespace in MiB
+                  format: int32
+                pipeline_hierarchy_size:
+                  type: integer
+                  description: >-
+                    Maximum number of downstream pipelines in a pipeline's
+                    hierarchy tree
+                  format: int32
+        required: true
+      responses:
+        '200':
+          description: Change plan limits
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_PlanLimit'
+        '400':
+          description: Bad request
+          content: {}
+        '401':
+          description: Unauthorized
+          content: {}
+        '403':
+          description: Forbidden
+          content: {}
+components:
+  schemas:
+    API_Entities_ApplicationWithSecret:
+      type: object
+      properties:
+        id:
+          type: string
+        application_id:
+          type: string
+          example: 5832fc6e14300a0d962240a8144466eef4ee93ef0d218477e55f11cf12fc3737
+        application_name:
+          type: string
+          example: MyApplication
+        callback_url:
+          type: string
+          example: https://redirect.uri
+        confidential:
+          type: boolean
+          example: true
+        secret:
+          type: string
+          example: ee1dd64b6adc89cf7e2c23099301ccc2c61b441064e9324d963c46902a85ec34
+      description: API_Entities_ApplicationWithSecret model
+    API_Entities_Appearance:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        pwa_name:
+          type: string
+        pwa_short_name:
+          type: string
+        pwa_description:
+          type: string
+        logo:
+          type: string
+        pwa_icon:
+          type: string
+        header_logo:
+          type: string
+        favicon:
+          type: string
+        new_project_guidelines:
+          type: string
+        profile_image_guidelines:
+          type: string
+        header_message:
+          type: string
+        footer_message:
+          type: string
+        message_background_color:
+          type: string
+        message_font_color:
+          type: string
+        email_header_and_footer_enabled:
+          type: string
+      description: API_Entities_Appearance model
+    API_Entities_PlanLimit:
+      type: object
+      properties:
+        ci_pipeline_size:
+          type: integer
+          format: int32
+          example: 0
+        ci_active_jobs:
+          type: integer
+          format: int32
+          example: 0
+        ci_project_subscriptions:
+          type: integer
+          format: int32
+          example: 2
+        ci_pipeline_schedules:
+          type: integer
+          format: int32
+          example: 10
+        ci_needs_size_limit:
+          type: integer
+          format: int32
+          example: 50
+        ci_registered_group_runners:
+          type: integer
+          format: int32
+          example: 1000
+        ci_registered_project_runners:
+          type: integer
+          format: int32
+          example: 1000
+        conan_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        enforcement_limit:
+          type: integer
+          format: int32
+          example: 15000
+        generic_packages_max_file_size:
+          type: integer
+          format: int32
+          example: 5368709120
+        helm_max_file_size:
+          type: integer
+          format: int32
+          example: 5242880
+        limits_history:
+          type: object
+          properties: {}
+          example: >-
+            {"enforcement_limit"=>[{"timestamp"=>1686909124, "user_id"=>1,
+            "username"=>"x", "value"=>5}],
+                               "notification_limit"=>[{"timestamp"=>1686909124, "user_id"=>2, "username"=>"y", "value"=>7}]}
+        maven_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        notification_limit:
+          type: integer
+          format: int32
+          example: 15000
+        npm_max_file_size:
+          type: integer
+          format: int32
+          example: 524288000
+        nuget_max_file_size:
+          type: integer
+          format: int32
+          example: 524288000
+        pipeline_hierarchy_size:
+          type: integer
+          format: int32
+          example: 1000
+        pypi_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        terraform_module_max_file_size:
+          type: integer
+          format: int32
+          example: 1073741824
+        storage_size_limit:
+          type: integer
+          format: int32
+          example: 15000
+      description: API_Entities_PlanLimit model
