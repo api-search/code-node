@@ -37,7 +37,38 @@ apis:
     aid: github:github-graphql-api
   - name: GitHub Admin API
     description: Needs description.
-    tags: []
+    tags:
+      - Access
+      - Administrative
+      - Authorization
+      - Download
+      - Downloads
+      - Environments
+      - Global
+      - Hook
+      - Hooks
+      - Impersonation
+      - Keys
+      - LDAP
+      - Latest
+      - Mapping
+      - Names
+      - OAuth
+      - Organizations
+      - Personal
+      - Ping
+      - Pings
+      - Pre
+      - Pre Receive
+      - Public
+      - Receive
+      - Status
+      - Sync
+      - Teams
+      - Tokens
+      - User Names
+      - Users
+      - Webhooks
     properties:
       - type: OpenAPI
         url: properties/github-admin-openapi-original.yml
