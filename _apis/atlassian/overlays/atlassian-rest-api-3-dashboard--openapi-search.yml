@@ -306,9 +306,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Bulk edit dashboards
+      summary: 'Bulk Edit Dashboards '
       tags:
-        - - - - Dashboards
+        - Bulk
+        - Dashboard
+        - Dashboards
+        - Edit
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -372,9 +376,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get available gadgets
+      summary: 'Get Available Gadgets '
       tags:
-        - - - - Dashboards
+        - Available
+        - Dashboard
+        - Gadgets
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -574,9 +581,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Search for dashboards
+      summary: 'Search For Dashboards '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Dashboards
+        - REST
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -685,9 +695,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get gadgets
+      summary: 'Get Gadgets '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Gadgets
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -768,9 +780,11 @@ paths:
         - OAuth2:
             - write:jira-work
             - read:jira-work
-      summary: Add gadget to dashboard
+      summary: 'Add Gadget To Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Gadgets
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -835,9 +849,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Remove gadget from dashboard
+      summary: 'Remove Gadget From Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Gadgets
+        - REST
+        - Removes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -917,9 +934,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Update gadget on dashboard
+      summary: 'Update Gadget On Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Gadgets
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -992,9 +1011,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get dashboard item property keys
+      summary: 'Get Dashboard Item Property Keys '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Items
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1078,9 +1101,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete dashboard item property
+      summary: 'Delete Dashboard Item Property '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Items
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1180,9 +1207,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get dashboard item property
+      summary: 'Get Dashboard Item Property '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Items
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1327,9 +1358,14 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set dashboard item property
+      summary: 'Set Dashboard Item Property '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - Items
+        - Keys
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1379,9 +1415,10 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete dashboard
+      summary: 'Delete Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1451,9 +1488,10 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get dashboard
+      summary: 'Get Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1544,9 +1582,10 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Update dashboard
+      summary: 'Update Dashboard '
       tags:
-        - - - - Dashboards
+        - Dashboard
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1639,9 +1678,11 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Copy dashboard
+      summary: 'Copy Dashboard '
       tags:
-        - - - - Dashboards
+        - Copy
+        - Dashboard
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
