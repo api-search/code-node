@@ -217,9 +217,10 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Delete component
+      summary: 'Delete Component '
       tags:
-        - - - - Project components
+        - Components
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -278,9 +279,10 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get component
+      summary: 'Get Component '
       tags:
-        - - - - Project components
+        - Components
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -371,9 +373,10 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Update component
+      summary: 'Update Component '
       tags:
-        - - - - Project components
+        - Components
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -435,9 +438,14 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get component issues count
+      summary: 'Get Component Issues Count '
       tags:
-        - - - - Project components
+        - Components
+        - Count
+        - Counts
+        - Issues
+        - REST
+        - Related
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
