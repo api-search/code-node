@@ -87,7 +87,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
-  - name: Atlassian Confluence Applicationrole API
+  - name: Atlassian Confluence Application Role API
     description: Needs description.
     tags: []
     properties:
@@ -327,7 +327,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issues--openapi-search.yml
-  - name: Atlassian Confluence Issuesecurityschemes API
+  - name: Atlassian Confluence Issue Security Schemes API
     description: Needs description.
     tags: []
     properties:
@@ -337,7 +337,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuesecurityschemes--openapi-search.yml
-  - name: Atlassian Confluence Issuetype API
+  - name: Atlassian Confluence Issue Type API
     description: Needs description.
     tags: []
     properties:
@@ -346,7 +346,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetype--openapi-search.yml
-  - name: Atlassian Confluence Issuetypescheme API
+  - name: Atlassian Confluence Issue Type Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -355,7 +355,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetypescheme--openapi-search.yml
-  - name: Atlassian Confluence Issuetypescreenscheme API
+  - name: Atlassian Confluence Issue Type Screen Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -393,7 +393,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-license--openapi-search.yml
-  - name: Atlassian Confluence Mypermissions API
+  - name: Atlassian Confluence My Permissions API
     description: Needs description.
     tags: []
     properties:
@@ -402,7 +402,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-mypermissions--openapi-search.yml
-  - name: Atlassian Confluence Mypreferences API
+  - name: Atlassian Confluence My Preferences API
     description: Needs description.
     tags: []
     properties:
@@ -420,7 +420,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-myself--openapi-search.yml
-  - name: Atlassian Confluence Notificationscheme API
+  - name: Atlassian Confluence Notification Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -439,7 +439,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-permissions--openapi-search.yml
-  - name: Atlassian Confluence Permissionscheme API
+  - name: Atlassian Confluence Permission Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -475,7 +475,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-projectcategory--openapi-search.yml
-  - name: Atlassian Confluence Projectvalidate API
+  - name: Atlassian Confluence Project Validate API
     description: Needs description.
     tags: []
     properties:
@@ -511,7 +511,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screens--openapi-search.yml
-  - name: Atlassian Confluence Screenscheme API
+  - name: Atlassian Confluence Screens Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -529,7 +529,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-search--openapi-search.yml
-  - name: Atlassian Confluence Securitylevel API
+  - name: Atlassian Confluence Security Level API
     description: Needs description.
     tags: []
     properties:
@@ -565,7 +565,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-status--openapi-search.yml
-  - name: Atlassian Confluence Statuscategory API
+  - name: Atlassian Confluence Status Category API
     description: Needs description.
     tags: []
     properties:
@@ -592,7 +592,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
-  - name: Atlassian Confluence Ui Modifications API
+  - name: Atlassian Confluence UI Modifications API
     description: Needs description.
     tags: []
     properties:
@@ -664,7 +664,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflows--openapi-search.yml
-  - name: Atlassian Confluence Workflowscheme API
+  - name: Atlassian Confluence Workflow Scheme API
     description: Needs description.
     tags: []
     properties:
@@ -682,7 +682,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-worklog--openapi-search.yml
-  - name: Rest Atlassian Connect 1 Addons API
+  - name: Atlassian Confluence Connect Addons API
     description: Needs description.
     tags: []
     properties:
@@ -692,7 +692,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-addons--openapi-search.yml
-  - name: Rest Atlassian Connect 1 App API
+  - name: Atlassian Confluence Connect App API
     description: Needs description.
     tags: []
     properties:
@@ -702,7 +702,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-app--openapi-search.yml
-  - name: Rest Atlassian Connect 1 Migration API
+  - name: Atlassian Confluence Connect Migration API
     description: Needs description.
     tags: []
     properties:
@@ -713,7 +713,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-migration--openapi-search.yml
-  - name: Rest Atlassian Connect 1 Service Registry API
+  - name: Atlassian Confluence Connect Service Registry API
     description: Needs description.
     tags: []
     properties:
@@ -724,7 +724,7 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-service-registry--openapi-search.yml
-  - name: Atlassian Rest Forge 1 App API
+  - name: Atlassian Confluence Forge App API
     description: Needs description.
     tags: []
     properties:
