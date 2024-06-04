@@ -879,6 +879,78 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
+  - name: ' addon/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-addon--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-addon--openapi-search.yml
+  - name: ' hook events/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-hook-events--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-hook-events--openapi-search.yml
+  - name: ' pullrequests/{selected user}/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-pullrequests-selected-user--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-pullrequests-selected-user--openapi-search.yml
+  - name: ' repositories/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-repositories--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-repositories--openapi-search.yml
+  - name: ' snippets/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-snippets--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-snippets--openapi-search.yml
+  - name: ' teams/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-teams--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-teams--openapi-search.yml
+  - name: ' user'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-user-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-user-openapi-search.yml
+  - name: ' workspaces/'
+    description: Needs description.
+    tags: []
+    properties:
+      - type: OpenAPI
+        url: properties/atlassian-workspaces--openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/atlassian-workspaces--openapi-search.yml
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
