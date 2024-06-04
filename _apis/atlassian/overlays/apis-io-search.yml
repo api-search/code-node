@@ -733,7 +733,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-forge-1-app--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Audit API
+  - name: Atlassian Confluence Audit API
     description: Needs description.
     tags: []
     properties:
@@ -742,7 +742,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-audit--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Content API
+  - name: Atlassian Confluence Content API
     description: Needs description.
     tags: []
     properties:
@@ -751,7 +751,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Content States API
+  - name: Atlassian Confluence Content States API
     description: Needs description.
     tags: []
     properties:
@@ -761,7 +761,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content-states--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Contentbody API
+  - name: Atlassian Confluence Content Body API
     description: Needs description.
     tags: []
     properties:
@@ -770,7 +770,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-contentbody--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Inlinetasks API
+  - name: Atlassian Confluence Inline Tasks API
     description: Needs description.
     tags: []
     properties:
@@ -779,7 +779,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-inlinetasks--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Label API
+  - name: Atlassian Confluence Label API
     description: Needs description.
     tags: []
     properties:
@@ -788,7 +788,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-label--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Group API
+  - name: Atlassian Confluence Group API
     description: Needs description.
     tags: []
     properties:
@@ -797,7 +797,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-group--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Longtask API
+  - name: Atlassian Confluence Longtask API
     description: Needs description.
     tags: []
     properties:
@@ -806,7 +806,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-longtask--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Relation API
+  - name: Atlassian Confluence Relation API
     description: Needs description.
     tags: []
     properties:
@@ -815,7 +815,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-relation--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Search API
+  - name: Atlassian Confluence Search API
     description: Needs description.
     tags: []
     properties:
@@ -824,7 +824,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-search--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Settings API
+  - name: Atlassian Confluence Settings API
     description: Needs description.
     tags: []
     properties:
@@ -833,7 +833,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-settings--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Space API
+  - name: Atlassian Confluence Space API
     description: Needs description.
     tags: []
     properties:
@@ -842,7 +842,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-space--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Template API
+  - name: Atlassian Confluence Template API
     description: Needs description.
     tags: []
     properties:
@@ -851,7 +851,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-template--openapi-search.yml
-  - name: Atlassian Wiki Rest Api User API
+  - name: Atlassian Confluence User API
     description: Needs description.
     tags: []
     properties:
@@ -860,7 +860,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-user--openapi-search.yml
-  - name: Atlassian Connect 1 App Module API
+  - name: Atlassian Confluence Connect App Module API
     description: Needs description.
     tags: []
     properties:
@@ -870,7 +870,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
-  - name: Atlassian Wiki Rest Api Analytics API
+  - name: Atlassian Confluence Analytics API
     description: Needs description.
     tags: []
     properties:
