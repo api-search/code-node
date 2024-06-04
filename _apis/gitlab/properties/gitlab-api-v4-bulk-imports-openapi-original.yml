@@ -1,0 +1,441 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/bulk imports'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/bulk_imports/{import_id}/entities/{entity_id}:
+    get:
+      tags:
+        - - - - bulk_imports
+      summary: Get GitLab Migration entity details
+      description: This feature was introduced in GitLab 14.1.
+      operationId: getApiV4BulkImportsImportIdEntitiesEntityId
+      parameters:
+        - name: import_id
+          in: path
+          description: The ID of user's GitLab Migration
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: entity_id
+          in: path
+          description: The ID of GitLab Migration entity
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Get GitLab Migration entity details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BulkImports'
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+  /api/v4/bulk_imports/{import_id}/entities:
+    get:
+      tags:
+        - - - - bulk_imports
+      summary: List GitLab Migration entities
+      description: This feature was introduced in GitLab 14.1.
+      operationId: getApiV4BulkImportsImportIdEntities
+      parameters:
+        - name: import_id
+          in: path
+          description: The ID of user's GitLab Migration
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: status
+          in: query
+          description: Return import entities with specified status
+          schema:
+            type: string
+            enum:
+              - created
+              - started
+              - finished
+              - timeout
+              - failed
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: List GitLab Migration entities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_BulkImports'
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+  /api/v4/bulk_imports/{import_id}:
+    get:
+      tags:
+        - - - - bulk_imports
+      summary: Get GitLab Migration details
+      description: This feature was introduced in GitLab 14.1.
+      operationId: getApiV4BulkImportsImportId
+      parameters:
+        - name: import_id
+          in: path
+          description: The ID of user's GitLab Migration
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Get GitLab Migration details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BulkImport'
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+  /api/v4/bulk_imports/entities:
+    get:
+      tags:
+        - - - - bulk_imports
+      summary: List all GitLab Migrations' entities
+      description: This feature was introduced in GitLab 14.1.
+      operationId: getApiV4BulkImportsEntities
+      parameters:
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          description: Return GitLab Migrations sorted in created by `asc` or `desc` order.
+          schema:
+            type: string
+            default: desc
+            enum:
+              - asc
+              - desc
+        - name: status
+          in: query
+          description: Return all GitLab Migrations' entities with specified status
+          schema:
+            type: string
+            enum:
+              - created
+              - started
+              - finished
+              - timeout
+              - failed
+      responses:
+        '200':
+          description: List all GitLab Migrations' entities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_BulkImports'
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+  /api/v4/bulk_imports:
+    get:
+      tags:
+        - - - - bulk_imports
+      summary: List all GitLab Migrations
+      description: This feature was introduced in GitLab 14.1.
+      operationId: getApiV4BulkImports
+      parameters:
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          description: Return GitLab Migrations sorted in created by `asc` or `desc` order.
+          schema:
+            type: string
+            default: desc
+            enum:
+              - asc
+              - desc
+        - name: status
+          in: query
+          description: Return GitLab Migrations with specified status
+          schema:
+            type: string
+            enum:
+              - created
+              - started
+              - finished
+              - timeout
+              - failed
+      responses:
+        '200':
+          description: List all GitLab Migrations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_BulkImport'
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+    post:
+      tags:
+        - - - - bulk_imports
+      summary: Start a new GitLab Migration
+      description: This feature was introduced in GitLab 14.2.
+      operationId: postApiV4BulkImports
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              required:
+                - configuration[access_token]
+                - configuration[url]
+                - entities[destination_namespace]
+                - entities[source_full_path]
+                - entities[source_type]
+              properties:
+                configuration[url]:
+                  type: string
+                  description: Source GitLab instance URL
+                configuration[access_token]:
+                  type: string
+                  description: Access token to the source GitLab instance
+                entities[source_type]:
+                  type: array
+                  description: Source entity type
+                  items:
+                    type: string
+                    enum:
+                      - group_entity
+                      - project_entity
+                entities[source_full_path]:
+                  type: array
+                  description: Relative path of the source entity to import
+                  items:
+                    type: string
+                entities[destination_namespace]:
+                  type: array
+                  description: Destination namespace for the entity
+                  items:
+                    type: string
+                entities[destination_slug]:
+                  type: array
+                  description: Destination slug for the entity
+                  items:
+                    type: string
+                entities[destination_name]:
+                  type: array
+                  description: >-
+                    Deprecated: Use :destination_slug instead. Destination slug
+                    for the entity
+                  items:
+                    type: string
+                entities[migrate_projects]:
+                  type: array
+                  description: Indicates group migration should include nested projects
+                  items:
+                    type: boolean
+        required: true
+      responses:
+        '200':
+          description: Start a new GitLab Migration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BulkImport'
+        '400':
+          description: Bad request
+          content: {}
+        '401':
+          description: Unauthorized
+          content: {}
+        '404':
+          description: Not found
+          content: {}
+        '422':
+          description: Unprocessable entity
+          content: {}
+        '503':
+          description: Service unavailable
+          content: {}
+components:
+  schemas:
+    API_Entities_BulkImports:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        bulk_import_id:
+          type: integer
+          format: int32
+          example: 1
+        status:
+          type: string
+          example: created
+          enum:
+            - created
+            - started
+            - finished
+            - timeout
+            - failed
+        entity_type:
+          type: string
+          enum:
+            - group
+            - project
+        source_full_path:
+          type: string
+          example: source_group
+        destination_full_path:
+          type: string
+          example: some_group/source_project
+        destination_name:
+          type: string
+          example: destination_slug
+        destination_slug:
+          type: string
+          example: destination_slug
+        destination_namespace:
+          type: string
+          example: destination_path
+        parent_id:
+          type: integer
+          format: int32
+          example: 1
+        namespace_id:
+          type: integer
+          format: int32
+          example: 1
+        project_id:
+          type: integer
+          format: int32
+          example: 1
+        created_at:
+          type: string
+          format: date-time
+          example: '2012-05-28T11:42:42.000Z'
+        updated_at:
+          type: string
+          format: date-time
+          example: '2012-05-28T11:42:42.000Z'
+        failures:
+          type: array
+          items:
+            $ref: '#/components/schemas/API_Entities_BulkImports_EntityFailure'
+        migrate_projects:
+          type: boolean
+          example: true
+      description: API_Entities_BulkImports model
+    API_Entities_BulkImport:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        status:
+          type: string
+          example: finished
+          enum:
+            - created
+            - started
+            - finished
+            - timeout
+            - failed
+        source_type:
+          type: string
+          example: gitlab
+        created_at:
+          type: string
+          format: date-time
+          example: '2012-05-28T11:42:42.000Z'
+        updated_at:
+          type: string
+          format: date-time
+          example: '2012-05-28T11:42:42.000Z'
+      description: API_Entities_BulkImport model
