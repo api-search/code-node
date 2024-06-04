@@ -56,7 +56,6 @@ apis:
       - OAuth
       - Organizations
       - Personal
-      - Ping
       - Pings
       - Pre
       - Pre Receive
@@ -77,7 +76,51 @@ apis:
         url: overlays/github-admin-openapi-search.yml
   - name: GitHub App API
     description: Needs description.
-    tags: []
+    tags:
+      - Applications
+      - Authenticated
+      - Code
+      - Conversions
+      - Git
+      - Hub
+      - Manifests
+      - Configurations
+      - Hook
+      - Webhooks
+      - Deliveries
+      - Attempts
+      - Redeliver
+      - Installations
+      - Access
+      - Tokens
+      - Suspend
+      - Suspended
+      - Unsuspend
+      - Grants
+      - Your
+      - Grants""
+      - Single
+      - Authorization
+      - Clients
+      - Checks
+      - Reset
+      - Scoped
+      - Slug
+      - Actions
+      - Approvals
+      - History
+      - Owners
+      - Repositories
+      - Reviews
+      - Runs
+      - Workflows
+      - Branch
+      - Branches
+      - Protected
+      - Protection
+      - Restrictions
+      - Sets
+      - Removes
     properties:
       - type: OpenAPI
         url: properties/github-app-openapi-original.yml
@@ -86,7 +129,29 @@ apis:
         url: overlays/github-app-openapi-search.yml
   - name: GitHub Auth API
     description: Needs description.
-    tags: []
+    tags:
+      - Administrative
+      - Authorization
+      - Impersonation
+      - OAuth
+      - Tokens
+      - User Names
+      - Users
+      - Your
+      - Applications
+      - Clients
+      - Get Or Create
+      - Specific
+      - Fingerprint
+      - Get Or Create
+      - Single
+      - Existing
+      - Authorized
+      - Keys
+      - SSH
+      - Settings
+      - Setup
+      - Removes
     properties:
       - type: OpenAPI
         url: properties/github-auth-openapi-original.yml
@@ -95,7 +160,11 @@ apis:
         url: overlays/github-auth-openapi-search.yml
   - name: GitHub Codes API
     description: Needs description.
-    tags: []
+    tags:
+      - Codes
+      - Conduct
+      - Code
+      - Keys
     properties:
       - type: OpenAPI
         url: properties/github-codes-openapi-original.yml
@@ -122,7 +191,16 @@ apis:
         url: overlays/github-enterprise-openapi-search.yml
   - name: GitHub Events API
     description: Needs description.
-    tags: []
+    tags:
+      - Events
+      - Issues
+      - Owners
+      - Repositories
+      - Authenticated
+      - Organizations
+      - User Names
+      - Users
+      - Public
     properties:
       - type: OpenAPI
         url: properties/github-events--openapi-original.yml
@@ -140,7 +218,21 @@ apis:
         url: overlays/github-feeds--openapi-search.yml
   - name: GitHub Gists API
     description: Needs description.
-    tags: []
+    tags:
+      - Gists
+      - Public
+      - Starred
+      - Comments
+      - Commits
+      - Forks
+      - Fork
+      - Checks
+      - If
+      - Is
+      - Star
+      - Unstar
+      - Revisions
+      - SHA
     properties:
       - type: OpenAPI
         url: properties/github-gists--openapi-original.yml
@@ -149,7 +241,10 @@ apis:
         url: overlays/github-gists--openapi-search.yml
   - name: GitHub Gitignore Templates API
     description: Needs description.
-    tags: []
+    tags:
+      - Git Ignore
+      - Names
+      - Templates
     properties:
       - type: OpenAPI
         url: properties/github-gitignore-templates--openapi-original.yml
@@ -158,7 +253,23 @@ apis:
         url: overlays/github-gitignore-templates--openapi-search.yml
   - name: GitHub Installation API
     description: Needs description.
-    tags: []
+    tags:
+      - Applications
+      - Authenticated
+      - Installations
+      - Access
+      - Tokens
+      - Suspend
+      - Suspended
+      - Unsuspend
+      - Accessible
+      - Repositories
+      - Revoke
+      - Organizations
+      - Owners
+      - Users
+      - Removes
+      - User Names
     properties:
       - type: OpenAPI
         url: properties/github-installation-openapi-original.yml
@@ -167,7 +278,27 @@ apis:
         url: overlays/github-installation-openapi-search.yml
   - name: GitHub Issues API
     description: Needs description.
-    tags: []
+    tags:
+      - Comments
+      - Issues
+      - Owners
+      - Repositories
+      - Reactions
+      - Events
+      - Numbers
+      - Assignees
+      - Removes
+      - Assigned
+      - Assignee
+      - Checks
+      - If
+      - Users
+      - Labels
+      - Sets
+      - Names
+      - Locks
+      - Unlock
+      - Timeline
     properties:
       - type: OpenAPI
         url: properties/github-issues--openapi-original.yml
@@ -176,7 +307,8 @@ apis:
         url: overlays/github-issues--openapi-search.yml
   - name: GitHub Licenses API
     description: Needs description.
-    tags: []
+    tags:
+      - Licenses
     properties:
       - type: OpenAPI
         url: properties/github-licenses--openapi-original.yml
@@ -185,7 +317,19 @@ apis:
         url: overlays/github-licenses--openapi-search.yml
   - name: GitHub Manage API
     description: Needs description.
-    tags: []
+    tags:
+      - Configurations
+      - GHES
+      - Manage
+      - Metadata
+      - Nodes
+      - Replicas
+      - Replication
+      - Running
+      - Services
+      - Status
+      - Releases
+      - Versions
     properties:
       - type: OpenAPI
         url: properties/github-manage-openapi-original.yml
@@ -194,7 +338,12 @@ apis:
         url: overlays/github-manage-openapi-search.yml
   - name: GitHub Markdown API
     description: Needs description.
-    tags: []
+    tags:
+      - Documents
+      - Markdown
+      - Mode
+      - Raw
+      - Render
     properties:
       - type: OpenAPI
         url: properties/github-markdown--openapi-original.yml
@@ -212,7 +361,12 @@ apis:
         url: overlays/github-meta--openapi-search.yml
   - name: GitHub Networks API
     description: Needs description.
-    tags: []
+    tags:
+      - Events
+      - Networks
+      - Owners
+      - Public
+      - Repositories
     properties:
       - type: OpenAPI
         url: properties/github-networks-openapi-original.yml
@@ -221,7 +375,15 @@ apis:
         url: overlays/github-networks-openapi-search.yml
   - name: GitHub Notifications API
     description: Needs description.
-    tags: []
+    tags:
+      - Notifications
+      - Threads
+      - Mark
+      - Read
+      - Authenticated
+      - Subscriptions
+      - Users
+      - Sets
     properties:
       - type: OpenAPI
         url: properties/github-notifications--openapi-original.yml
@@ -239,7 +401,152 @@ apis:
         url: overlays/github-octocat--openapi-search.yml
   - name: GitHub Org API
     description: Needs description.
-    tags: []
+    tags:
+      - Administrative
+      - Organizations
+      - Names
+      - Enterprise
+      - Statistics
+      - Actions
+      - Enabled
+      - Enterprises
+      - Git
+      - Hub
+      - Permissions
+      - Selected
+      - Sets
+      - Enable
+      - Disable
+      - Access
+      - Groups
+      - Runners
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Removes
+      - Self Hosted
+      - Custom
+      - Deprecated
+      - Repositories
+      - Roles
+      - Cache
+      - Usage
+      - Claim
+      - Customizations
+      - OIDC
+      - Subjects
+      - Templates
+      - Allowed
+      - Default
+      - Workflows
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Applications
+      - Downloads
+      - Registrations
+      - Tokens
+      - Self Hosted
+      - Self Hosted
+      - Labels
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Secrets
+      - Keys
+      - Public
+      - Variables
+      - Announcement
+      - Banner
+      - Audit
+      - Logs
+      - Alerts
+      - Code
+      - Scanning
+      - Dependabot
+      - Conflicting
+      - Conflicts
+      - Docker
+      - During
+      - Migrations
+      - Packages
+      - Events
+      - External
+      - Hooks
+      - Webhooks
+      - Hook
+      - Configurations
+      - Deliveries
+      - Attempts
+      - Redeliver
+      - Ping
+      - Pings
+      - Authenticated
+      - Installations
+      - Assigned
+      - Issues
+      - Users
+      - Members
+      - Checks
+      - Memberships
+      - User Names
+      - Status
+      - Archive
+      - Download
+      - Locks
+      - Unlock
+      - Collaborators
+      - Outside
+      - Convert
+      - Types
+      - Restore
+      - Owned
+      - Versions
+      - Pre
+      - Pre Receive
+      - Receive
+      - Pre Receive
+      - Enforcement
+      - Pre Receive
+      - Pre Receive
+      - Projects
+      - Fine
+      - Fine Grained
+      - Grained
+      - Managers
+      - Security
+      - Teams
+      - Slug
+      - Active
+      - Advanced
+      - Billing
+      - Committers
+      - Settings
+      - Discussions
+      - Discussion
+      - Numbers
+      - Comments
+      - Reactions
+      - Between
+      - Connections
+      - Owners
+      - Child
+      - Enablement
+      - Feature
+      - Products
     properties:
       - type: OpenAPI
         url: properties/github-org-openapi-original.yml
@@ -248,7 +555,26 @@ apis:
         url: overlays/github-org-openapi-search.yml
   - name: GitHub Projects API
     description: Needs description.
-    tags: []
+    tags:
+      - Organizations
+      - Projects
+      - Slug
+      - Teams
+      - Checks
+      - Permissions
+      - Removes
+      - Cards
+      - Columns
+      - Existing
+      - Move
+      - Moves
+      - Collaborators
+      - User Names
+      - Users
+      - Permission
+      - Owners
+      - Repositories
+      - (Legacy)
     properties:
       - type: OpenAPI
         url: properties/github-projects-openapi-original.yml
@@ -266,7 +592,268 @@ apis:
         url: overlays/github-rate-limit--openapi-search.yml
   - name: GitHub Repos API
     description: Needs description.
-    tags: []
+    tags:
+      - Enterprise
+      - Repositories
+      - Statistics
+      - Accessible
+      - Applications
+      - Installations
+      - Actions
+      - Enabled
+      - Git
+      - Hub
+      - Organizations
+      - Permissions
+      - Selected
+      - Sets
+      - Enable
+      - Disable
+      - Access
+      - Groups
+      - Runners
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Removes
+      - Self Hosted
+      - Names
+      - Secrets
+      - Variables
+      - Dependabot
+      - Locks
+      - Migrations
+      - Unlock
+      - Fine
+      - Fine Grained
+      - Grained
+      - Slug
+      - Teams
+      - Checks
+      - Owners
+      - Artifacts
+      - Archive
+      - Download
+      - Format
+      - Cache
+      - Usage
+      - Policies
+      - Caches
+      - (using
+      - Keys
+      - ID)
+      - Jobs
+      - Runs
+      - Workflows
+      - Logs
+      - Re Run
+      - Rerun
+      - Claim
+      - Customizations
+      - OIDC
+      - Subjects
+      - Templates
+      - Levels
+      - Outside
+      - Allowed
+      - Default
+      - Self Hosted
+      - Downloads
+      - Registrations
+      - Tokens
+      - Self Hosted
+      - Self Hosted
+      - Labels
+      - Self Hosted
+      - Custom
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Self Hosted
+      - Approvals
+      - History
+      - Reviews
+      - Attempt
+      - Attempts
+      - Numbers
+      - Cancel
+      - Deployments
+      - Pending
+      - Re Run
+      - Failed
+      - Re Run
+      - Public
+      - Dispatch
+      - Dispatches
+      - Events
+      - Assignees
+      - Assigned
+      - Assignee
+      - If
+      - Users
+      - Auto Links
+      - Auto Link
+      - References
+      - Branches
+      - Branch
+      - Protection
+      - Administrative
+      - Administrator
+      - Enforce
+      - Pull
+      - Required
+      - Commit
+      - Signatures
+      - Status
+      - Contexts
+      - Restrictions
+      - Protected
+      - Rename
+      - Annotations
+      - Rerequest
+      - Suites
+      - Preferences
+      - Alerts
+      - Code
+      - Scanning
+      - Instances
+      - Analysis
+      - Configurations
+      - Setup
+      - Data
+      - SARIF
+      - Uploads
+      - About
+      - Information
+      - Sarif
+      - CODEOWNERS
+      - Code Owners
+      - Errors
+      - Collaborators
+      - Is
+      - User Names
+      - Permission
+      - Comments
+      - Reactions
+      - Commits
+      - HEAD
+      - Head
+      - SHA
+      - Associated
+      - Pulls
+      - Combined
+      - Specific
+      - Statuses
+      - Basehead
+      - Compare
+      - Content
+      - Contents
+      - Paths
+      - Files
+      - Contributors
+      - Between
+      - Dependencies
+      - Difference
+      - Graphs
+      - (SBOM)
+      - Bill
+      - Exports
+      - Materials
+      - Software
+      - Snapshots
+      - Environments
+      - Forks
+      - Fork
+      - Blobs
+      - Objects
+      - Matching
+      - Tags
+      - Trees
+      - Hooks
+      - Webhooks
+      - Hook
+      - Deliveries
+      - Redeliver
+      - Ping
+      - Pings
+      - Tests
+      - Authenticated
+      - Invitations
+      - Invitation
+      - Issues
+      - Timeline
+      - Deploy
+      - Languages
+      - LFS
+      - Licenses
+      - Merge
+      - Sync
+      - Upstream
+      - Merges
+      - Milestones
+      - Notifications
+      - Mark
+      - Read
+      - Pages
+      - Servers
+      - Sites
+      - Builds
+      - Build
+      - Latest
+      - Pre
+      - Pre Receive
+      - Receive
+      - Pre Receive
+      - Enforcement
+      - Pre Receive
+      - Pre Receive
+      - Projects
+      - Replies
+      - Replies''
+      - Merged
+      - Requested
+      - Reviewers
+      - Dismiss
+      - Dismissals
+      - Submit
+      - README
+      - Readme
+      - Directory
+      - Releases
+      - Assets
+      - Generate
+      - Notes
+      - Replicas
+      - Replication
+      - Locations
+      - Stargazers
+      - Activity
+      - Frequency
+      - Weekly
+      - Last
+      - Years
+      - Count
+      - Participation
+      - Cards
+      - Days
+      - Hourly
+      - Punch
+      - Subscribers
+      - Watchers
+      - Subscriptions
+      - States
+      - (tar)
+      - Targets
+      - Topics
+      - Replace
+      - Transfers
+      - Vulnerabilities
+      - (zip)
+      - Using
+      - Search
+      - (Legacy)
+      - Accept
+      - Decline
     properties:
       - type: OpenAPI
         url: properties/github-repos-openapi-original.yml
@@ -275,7 +862,18 @@ apis:
         url: overlays/github-repos-openapi-search.yml
   - name: GitHub Scim API
     description: Needs description.
-    tags: []
+    tags:
+      - Enterprise
+      - Groups
+      - Provisioned
+      - SCIM
+      - Provision
+      - Information
+      - Provisioning
+      - Sets
+      - Attributes
+      - Identities
+      - Users
     properties:
       - type: OpenAPI
         url: properties/github-scim-openapi-original.yml
@@ -284,7 +882,16 @@ apis:
         url: overlays/github-scim-openapi-search.yml
   - name: GitHub Search API
     description: Needs description.
-    tags: []
+    tags:
+      - Code
+      - Search
+      - Commits
+      - Issues
+      - Pull
+      - Labels
+      - Repositories
+      - Topics
+      - Users
     properties:
       - type: OpenAPI
         url: properties/github-search-openapi-original.yml
@@ -293,7 +900,27 @@ apis:
         url: overlays/github-search-openapi-search.yml
   - name: GitHub Setup API
     description: Needs description.
-    tags: []
+    tags:
+      - Configuration Check
+      - Configurations
+      - Setup
+      - Status
+      - Configure
+      - Process
+      - Maintenance
+      - Disable
+      - Enable
+      - Mode
+      - Settings
+      - Sets
+      - Authorized
+      - Keys
+      - SSH
+      - Removes
+      - Git
+      - Hub
+      - Licenses
+      - Upgrade
     properties:
       - type: OpenAPI
         url: properties/github-setup-openapi-original.yml
@@ -302,7 +929,46 @@ apis:
         url: overlays/github-setup-openapi-search.yml
   - name: GitHub Teams API
     description: Needs description.
-    tags: []
+    tags:
+      - Administrative
+      - LDAP
+      - Mapping
+      - Teams
+      - Sync
+      - Managers
+      - Organizations
+      - Security
+      - Slug
+      - Removes
+      - Names
+      - Discussions
+      - Discussion
+      - Numbers
+      - Comments
+      - Reactions
+      - Between
+      - Connections
+      - External
+      - Groups
+      - Members
+      - Memberships
+      - User Names
+      - Users
+      - Projects
+      - Checks
+      - Permissions
+      - Repositories
+      - Owners
+      - Child
+      - Access
+      - Branch
+      - Branches
+      - Protected
+      - Protection
+      - Restrictions
+      - Sets
+      - (Legacy)
+      - Authenticated
     properties:
       - type: OpenAPI
         url: properties/github-teams-openapi-original.yml
@@ -311,7 +977,46 @@ apis:
         url: overlays/github-teams-openapi-search.yml
   - name: GitHub Teams API
     description: Needs description.
-    tags: []
+    tags:
+      - Administrative
+      - LDAP
+      - Mapping
+      - Teams
+      - Sync
+      - Managers
+      - Organizations
+      - Security
+      - Slug
+      - Removes
+      - Names
+      - Discussions
+      - Discussion
+      - Numbers
+      - Comments
+      - Reactions
+      - Between
+      - Connections
+      - External
+      - Groups
+      - Members
+      - Memberships
+      - User Names
+      - Users
+      - Projects
+      - Checks
+      - Permissions
+      - Repositories
+      - Owners
+      - Child
+      - Access
+      - Branch
+      - Branches
+      - Protected
+      - Protection
+      - Restrictions
+      - Sets
+      - (Legacy)
+      - Authenticated
     properties:
       - type: OpenAPI
         url: properties/github-teams-openapi-original.yml
@@ -329,7 +1034,100 @@ apis:
         url: overlays/github-zen--openapi-search.yml
   - name: GitHub User API
     description: Needs description.
-    tags: []
+    tags:
+      - Administrative
+      - LDAP
+      - Mapping
+      - User Names
+      - Users
+      - Sync
+      - Authorization
+      - Impersonation
+      - OAuth
+      - Tokens
+      - Enterprise
+      - Statistics
+      - Access
+      - Branch
+      - Branches
+      - Owners
+      - Protected
+      - Protection
+      - Repositories
+      - Restrictions
+      - Sets
+      - Removes
+      - Search
+      - Authenticated
+      - Authenticated User
+      - Conflicting
+      - Conflicts
+      - Docker
+      - During
+      - Migrations
+      - Packages
+      - Addresses
+      - Emails
+      - Followers
+      - Following
+      - Follows
+      - People
+      - Checks
+      - Followed
+      - If
+      - Is
+      - Person
+      - Follow
+      - Unfollowing
+      - GPG
+      - Gpg
+      - Keys
+      - Accessible
+      - Applications
+      - Installations
+      - Accounts
+      - Assigned
+      - Issues
+      - Public
+      - SSH
+      - Memberships
+      - Organizations
+      - Archive
+      - Download
+      - Namespaces
+      - Names
+      - Types
+      - Restore
+      - Owned
+      - Versions
+      - Projects
+      - Invitations
+      - Accept
+      - Invitation
+      - Decline
+      - Social
+      - Signing
+      - Starred
+      - Star
+      - Unstar
+      - Subscriptions
+      - Watched
+      - Teams
+      - Events
+      - Another
+      - Targets
+      - Gists
+      - Contextual
+      - Hovercard
+      - Information
+      - Received
+      - Administrator
+      - Promote
+      - Sites
+      - Demote
+      - Suspend
+      - Suspended
+      - Unsuspend
     properties:
       - type: OpenAPI
         url: properties/github-user-openapi-original.yml
