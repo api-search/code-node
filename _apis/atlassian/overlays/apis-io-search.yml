@@ -9,54 +9,6 @@ modified: 2024/04/14
 specificationVersion: '0.16'
 tags: []
 apis:
-  - name: Atlassian Jira API
-    description: >-
-      The Jira REST API enables you to interact with Jira programmatically. Use
-      this API to build apps, script interactions with Jira, or develop any
-      other type of integration. This page documents the REST resources
-      available in Jira Cloud, including the HTTP response codes and example
-      requests and responses.
-    tags: []
-    overlays:
-      - type: APIs.io Search
-        url: >-
-          overlays/https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json?_v=1.6660.0-0.1294.0-openapi-search.yml
-      - type: APIs.io Search
-        url: overlays/jira-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/jira-openapi-api-evangelist-ratings.yml
-    aid: atlassian:jira-api
-  - name: Atlassian Confluence API
-    description: >-
-      This is the reference for the Confluence Cloud REST API. This API is the
-      primary way to get and modify data in Confluence Cloud, whether you are
-      developing an app or any other integration. Use it to interact with
-      Confluence entities, like pages and blog posts, spaces, users, groups, and
-      more.
-    tags: []
-    overlays:
-      - type: APIs.io Search
-        url: >-
-          overlays/https://dac-static.atlassian.com/cloud/confluence/swagger.v3.json?_v=1.6660.0-0.1294.0-openapi-search.yml
-      - type: APIs.io Search
-        url: overlays/confluence-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/confluence-openapi-api-evangelist-ratings.yml
-    aid: atlassian:confluence-api
-  - name: Atlassian Bit Bucket API
-    description: >-
-      The purpose of this section is to describe how to authenticate when making
-      API calls using the Bitbucket REST API.
-    tags: []
-    overlays:
-      - type: APIs.io Search
-        url: >-
-          overlays/https://dac-static.atlassian.com/cloud/bitbucket/swagger.v3.json?_v=2.300.9-0.1294.0-openapi-search.yml
-      - type: APIs.io Search
-        url: overlays/bitbucket-openapi-search.yml
-      - type: API Evangelist Ratings
-        url: overlays/bitbucket-openapi-api-evangelist-ratings.yml
-    aid: atlassian:bitbucket-api
   - name: Atlassian Jira Announcement Banner API
     description: Needs description.
     tags: []
@@ -879,7 +831,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
-  - name: Atlassian Addon API
+  - name: Atlassian BitBucket Addon API
     description: Needs description.
     tags: []
     properties:
@@ -888,7 +840,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-addon--openapi-search.yml
-  - name: Atlassian Hook Events API
+  - name: Atlassian BitBucket Hook Events API
     description: Needs description.
     tags: []
     properties:
@@ -897,7 +849,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-hook-events--openapi-search.yml
-  - name: Atlassian Pullrequests Selected User API
+  - name: Atlassian BitBucket Pull Requests Selected User API
     description: Needs description.
     tags: []
     properties:
@@ -906,7 +858,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-pullrequests-selected-user--openapi-search.yml
-  - name: Atlassian Repositories API
+  - name: Atlassian BitBucket Repositories API
     description: Needs description.
     tags: []
     properties:
@@ -915,7 +867,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-repositories--openapi-search.yml
-  - name: Atlassian Snippets API
+  - name: Atlassian BitBucket Snippets API
     description: Needs description.
     tags: []
     properties:
@@ -924,7 +876,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-snippets--openapi-search.yml
-  - name: Atlassian Teams API
+  - name: Atlassian BitBucket Teams API
     description: Needs description.
     tags: []
     properties:
@@ -933,7 +885,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-teams--openapi-search.yml
-  - name: Atlassian User API
+  - name: Atlassian BitBucket User API
     description: Needs description.
     tags: []
     properties:
@@ -942,7 +894,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-user-openapi-search.yml
-  - name: Atlassian Workspaces API
+  - name: Atlassian BitBucket Workspaces API
     description: Needs description.
     tags: []
     properties:
