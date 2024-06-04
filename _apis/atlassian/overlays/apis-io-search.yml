@@ -592,7 +592,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
-  - name: Atlassian Jira UI Modifications API
+  - name: Atlassian Jira Ui Modifications API
     description: Needs description.
     tags: []
     properties:
@@ -733,7 +733,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-forge-1-app--openapi-search.yml
-  - name: ' wiki/rest/api/audit/'
+  - name: Atlassian Wiki Rest Api Audit API
     description: Needs description.
     tags: []
     properties:
@@ -742,7 +742,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-audit--openapi-search.yml
-  - name: ' wiki/rest/api/content/'
+  - name: Atlassian Wiki Rest Api Content API
     description: Needs description.
     tags: []
     properties:
@@ -751,7 +751,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content--openapi-search.yml
-  - name: ' wiki/rest/api/content-states/'
+  - name: Atlassian Wiki Rest Api Content States API
     description: Needs description.
     tags: []
     properties:
@@ -761,7 +761,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content-states--openapi-search.yml
-  - name: ' wiki/rest/api/contentbody/'
+  - name: Atlassian Wiki Rest Api Contentbody API
     description: Needs description.
     tags: []
     properties:
@@ -770,7 +770,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-contentbody--openapi-search.yml
-  - name: ' wiki/rest/api/inlinetasks/'
+  - name: Atlassian Wiki Rest Api Inlinetasks API
     description: Needs description.
     tags: []
     properties:
@@ -779,7 +779,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-inlinetasks--openapi-search.yml
-  - name: ' wiki/rest/api/label/'
+  - name: Atlassian Wiki Rest Api Label API
     description: Needs description.
     tags: []
     properties:
@@ -788,7 +788,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-label--openapi-search.yml
-  - name: ' wiki/rest/api/group/'
+  - name: Atlassian Wiki Rest Api Group API
     description: Needs description.
     tags: []
     properties:
@@ -797,7 +797,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-group--openapi-search.yml
-  - name: ' wiki/rest/api/longtask/'
+  - name: Atlassian Wiki Rest Api Longtask API
     description: Needs description.
     tags: []
     properties:
@@ -806,7 +806,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-longtask--openapi-search.yml
-  - name: ' wiki/rest/api/relation/'
+  - name: Atlassian Wiki Rest Api Relation API
     description: Needs description.
     tags: []
     properties:
@@ -815,7 +815,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-relation--openapi-search.yml
-  - name: ' wiki/rest/api/search/'
+  - name: Atlassian Wiki Rest Api Search API
     description: Needs description.
     tags: []
     properties:
@@ -824,7 +824,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-search--openapi-search.yml
-  - name: ' wiki/rest/api/settings/'
+  - name: Atlassian Wiki Rest Api Settings API
     description: Needs description.
     tags: []
     properties:
@@ -833,7 +833,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-settings--openapi-search.yml
-  - name: ' wiki/rest/api/space/'
+  - name: Atlassian Wiki Rest Api Space API
     description: Needs description.
     tags: []
     properties:
@@ -842,7 +842,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-space--openapi-search.yml
-  - name: ' wiki/rest/api/template/'
+  - name: Atlassian Wiki Rest Api Template API
     description: Needs description.
     tags: []
     properties:
@@ -851,7 +851,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-template--openapi-search.yml
-  - name: ' wiki/rest/api/user/'
+  - name: Atlassian Wiki Rest Api User API
     description: Needs description.
     tags: []
     properties:
@@ -860,7 +860,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-user--openapi-search.yml
-  - name: ' atlassian-connect/1/app/module/'
+  - name: Atlassian Connect 1 App Module API
     description: Needs description.
     tags: []
     properties:
@@ -870,7 +870,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
-  - name: ' wiki/rest/api/analytics/'
+  - name: Atlassian Wiki Rest Api Analytics API
     description: Needs description.
     tags: []
     properties:
