@@ -21,7 +21,15 @@ apis:
         url: overlays/atlassian-rest-api-3-announcementbanner--openapi-search.yml
   - name: Atlassian Jira App API
     description: Needs description.
-    tags: []
+    tags:
+      - Applications
+      - Custom
+      - Fields
+      - REST
+      - Value
+      - Configurations
+      - Context
+      - Keys
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-app--openapi-original.yml
@@ -30,7 +38,13 @@ apis:
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
   - name: Atlassian Jira Application Properties API
     description: Needs description.
-    tags: []
+    tags:
+      - Advanced
+      - Applications
+      - Properties
+      - REST
+      - Settings
+      - Sets
     properties:
       - type: OpenAPI
         url: >-
@@ -41,7 +55,12 @@ apis:
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
   - name: Atlassian Jira Application Role API
     description: Needs description.
-    tags: []
+    tags:
+      - Application Roles
+      - Applications
+      - Keys
+      - REST
+      - Roles
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-applicationrole--openapi-original.yml
@@ -50,7 +69,20 @@ apis:
         url: overlays/atlassian-rest-api-3-applicationrole--openapi-search.yml
   - name: Atlassian Jira Attachment API
     description: Needs description.
-    tags: []
+    tags:
+      - Attachments
+      - Content
+      - REST
+      - Jira
+      - Meta
+      - Settings
+      - Thumbnails
+      - Metadata
+      - Expand
+      - Expanded
+      - Human
+      - Contents
+      - Raw
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-attachment--openapi-original.yml
@@ -59,7 +91,12 @@ apis:
         url: overlays/atlassian-rest-api-3-attachment--openapi-search.yml
   - name: Atlassian Jira Auditing API
     description: Needs description.
-    tags: []
+    tags:
+      - Audit
+      - Auditing
+      - REST
+      - Record
+      - Records
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-auditing--openapi-original.yml
@@ -67,8 +104,14 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
   - name: Atlassian Jira Avatar API
-    description: Needs description.
-    tags: []
+    description: >-
+      The Atlassian Jira Avatar API facilitates interactions with system avatars
+      in Jira Cloud. It allows users to retrieve a list of system avatar details
+      based on the owner type, which could be an issue type, project, or user.
+    tags:
+      - Avatars
+      - Systems
+      - Types
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-avatar--openapi-original.yml
