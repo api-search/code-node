@@ -143,9 +143,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get comments by IDs
+      summary: 'Get Comments By IDs '
       tags:
-        - - - - Issue comments
+        - Comments
+        - IDs
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -208,9 +210,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get comment property keys
+      summary: 'Get Comment Property Keys '
       tags:
-        - - - - Issue comment properties
+        - Comments
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -270,9 +275,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete comment property
+      summary: 'Delete Comment Property '
       tags:
-        - - - - Issue comment properties
+        - Comments
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -333,9 +341,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get comment property
+      summary: 'Get Comment Property '
       tags:
-        - - - - Issue comment properties
+        - Comments
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -414,9 +425,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set comment property
+      summary: 'Set Comment Property '
       tags:
-        - - - - Issue comment properties
+        - Comments
+        - Keys
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
