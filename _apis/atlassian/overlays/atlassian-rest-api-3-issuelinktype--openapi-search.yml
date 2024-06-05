@@ -99,9 +99,12 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Delete issue link type
+      summary: 'Delete Issue Link Type '
       tags:
-        - - - - Issue link types
+        - Issues
+        - Link
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -164,9 +167,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue link type
+      summary: 'Get Issue Link Type '
       tags:
-        - - - - Issue link types
+        - Issues
+        - Link
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -235,9 +241,12 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Update issue link type
+      summary: 'Update Issue Link Type '
       tags:
-        - - - - Issue link types
+        - Issues
+        - Link
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
