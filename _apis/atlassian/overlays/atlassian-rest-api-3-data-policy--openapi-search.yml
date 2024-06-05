@@ -82,9 +82,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get data policy for projects (EAP)
+      summary: 'Get Data Policy For Projects (EAP) '
       tags:
-        - - - - App data policies (EAP)
+        - (EAP)
+        - Data
+        - Policies
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
