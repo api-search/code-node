@@ -2205,51 +2205,140 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-settings/#api-group-settings
   - name: Atlassian Confluence Space API
-    description: Needs description.
-    tags: []
+    description: Used to manage all of the Confluence spaces for an account.
+    tags:
+      - Private
+      - REST
+      - Space
+      - Wiki
+      - Keys
+      - Content
+      - Permission
+      - Custom
+      - Removes
+      - Types
+      - Properties
+      - Settings
+      - States
+      - Suggested
+      - Given
+      - Theme
+      - Sets
+      - Reset
+      - Watchers
+      - Labels
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-space--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-space--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/#api-group-space
   - name: Atlassian Confluence Template API
-    description: Needs description.
-    tags: []
+    description: Provides the ability to manage the templates applied across Confluence.
+    tags:
+      - Blueprints
+      - REST
+      - Templates
+      - Wiki
+      - Content
+      - Page
+      - Removes
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-template--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-template--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-group-template
   - name: Atlassian Confluence User API
-    description: Needs description.
-    tags: []
+    description: Provides the ability to manage users as part of a Confluence instance.
+    tags:
+      - Anonymous
+      - REST
+      - Users
+      - Wiki
+      - Current
+      - Groups
+      - Members
+      - Memberships
+      - Bulk
+      - Ids
+      - Multiple
+      - Using
+      - Content
+      - Status
+      - Watchers
+      - Removes
+      - Labels
+      - Names
+      - Keys
+      - Space
+      - Addresses
+      - Emails
+      - Batches
+      - Properties
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-user--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-user/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-user--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-user/#api-group-user
   - name: Atlassian Confluence Connect App Module API
-    description: Needs description.
-    tags: []
+    description: >-
+      Connect modules are how Connect apps extend and interact with Confluence.
+      If you're not familiar with Connect apps, learn how Connect works first.
+    tags:
+      - Applications
+      - Atlassian
+      - Connect
+      - Dynamic
+      - Modules
+      - Register
+      - Removes
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-atlassian-connect-1-app-module--openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/cloud/confluence/connect-modules/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
+    humanURL: https://developer.atlassian.com/cloud/confluence/connect-modules/
   - name: Atlassian Confluence Analytics API
     description: Needs description.
-    tags: []
+    tags:
+      - Analytics
+      - Content
+      - REST
+      - Views
+      - Wiki
+      - Viewers
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-analytics--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-analytics/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-analytics/#api-group-analytics
   - name: Atlassian BitBucket Addon API
     description: Needs description.
     tags: []
