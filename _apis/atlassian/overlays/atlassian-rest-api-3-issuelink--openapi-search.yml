@@ -95,9 +95,11 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete issue link
+      summary: 'Delete Issue Link '
       tags:
-        - - - - Issue links
+        - Issues
+        - Link
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -169,9 +171,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue link
+      summary: 'Get Issue Link '
       tags:
-        - - - - Issue links
+        - Issues
+        - Link
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
