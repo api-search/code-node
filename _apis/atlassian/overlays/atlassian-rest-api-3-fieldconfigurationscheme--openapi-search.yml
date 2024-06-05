@@ -162,9 +162,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get field configuration issue type items
+      summary: 'Get Field Configuration Issue Type Items '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - Issues
+        - Items
+        - Mapping
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -247,9 +254,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get field configuration schemes for projects
+      summary: 'Get Field Configuration Schemes For Projects '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - Projects
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -317,9 +329,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Assign field configuration scheme to project
+      summary: 'Assign Field Configuration Scheme To Project '
       tags:
-        - - - - Issue field configurations
+        - Assign
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - Projects
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -372,9 +390,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete field configuration scheme
+      summary: 'Delete Field Configuration Scheme '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -451,9 +473,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update field configuration scheme
+      summary: 'Update Field Configuration Scheme '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -524,9 +550,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Assign issue types to field configurations
+      summary: 'Assign Issue Types To Field Configurations '
       tags:
-        - - - - Issue field configurations
+        - Assign
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - Issues
+        - Mapping
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -619,9 +652,17 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove issue types from field configuration scheme
+      summary: 'Remove Issue Types From Field Configuration Scheme '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configuration Scheme
+        - Fields
+        - Issues
+        - Mapping
+        - REST
+        - Removes
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
