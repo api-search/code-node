@@ -70,9 +70,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get approximate license count
+      summary: 'Get Approximate License Count '
       tags:
-        - - - - License metrics
+        - Approximate
+        - Count
+        - Licenses
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -140,9 +143,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get approximate application license count
+      summary: 'Get Approximate Application License Count '
       tags:
-        - - - - License metrics
+        - Applications
+        - Approximate
+        - Count
+        - Keys
+        - Licenses
+        - Products
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
