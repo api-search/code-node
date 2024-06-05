@@ -102,9 +102,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Add field to default screen
+      summary: 'Add Field To Default Screen '
       tags:
-        - - - - Screens
+        - Default
+        - Fields
+        - REST
+        - Screen
+        - Screens
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -190,9 +194,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Get bulk screen tabs
+      summary: 'Get Bulk Screen Tabs '
       tags:
-        - - - - Screen tabs
+        - Bulk
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -252,9 +260,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Delete screen
+      summary: 'Delete Screen '
       tags:
-        - - - - Screens
+        - REST
+        - Screen
+        - Screens
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -332,9 +342,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Update screen
+      summary: 'Update Screen '
       tags:
-        - - - - Screens
+        - REST
+        - Screen
+        - Screens
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -390,9 +402,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Get available screen fields
+      summary: 'Get Available Screen Fields '
       tags:
-        - - - - Screens
+        - Available
+        - Fields
+        - REST
+        - Screen
+        - Screens
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -452,9 +468,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Get all screen tabs
+      summary: 'Get All Screen Tabs '
       tags:
-        - - - - Screen tabs
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -513,9 +532,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Create screen tab
+      summary: 'Create Screen Tab '
       tags:
-        - - - - Screen tabs
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -568,9 +590,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Delete screen tab
+      summary: 'Delete Screen Tab '
       tags:
-        - - - - Screen tabs
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -634,9 +659,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Update screen tab
+      summary: 'Update Screen Tab '
       tags:
-        - - - - Screen tabs
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -701,9 +729,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Get all screen tab fields
+      summary: 'Get All Screen Tab Fields '
       tags:
-        - - - - Screen tab fields
+        - Fields
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -769,9 +801,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Add screen tab field
+      summary: 'Add Screen Tab Field '
       tags:
-        - - - - Screen tab fields
+        - Fields
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -832,9 +868,14 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Remove screen tab field
+      summary: 'Remove Screen Tab Field '
       tags:
-        - - - - Screen tab fields
+        - Fields
+        - REST
+        - Removes
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -909,9 +950,14 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Move screen tab field
+      summary: 'Move Screen Tab Field '
       tags:
-        - - - - Screen tab fields
+        - Fields
+        - Move
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -977,9 +1023,14 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Move screen tab
+      summary: 'Move Screen Tab '
       tags:
-        - - - - Screen tabs
+        - Move
+        - POS
+        - REST
+        - Screen
+        - Screens
+        - Tabs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
