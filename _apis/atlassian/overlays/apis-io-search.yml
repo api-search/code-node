@@ -1251,68 +1251,155 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-roles/#api-group-project-roles
   - name: Atlassian Jira Screens API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents the screens used to record issue details. Use it
+      to get details of all screens, get details of all the fields available for
+      use on screens, create screens, delete screens, update screens, add a
+      field to the default screen.
+    tags:
+      - Default
+      - Fields
+      - REST
+      - Screen
+      - Screens
+      - Bulk
+      - Tabs
+      - Available
+      - Removes
+      - Move
+      - POS
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-screens--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screens/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screens--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screens/
   - name: Atlassian Jira Screens Scheme API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents screen schemes in classic projects. Use it to
+      get, create, update, and delete screen schemes.
+    tags:
+      - REST
+      - Schemes
+      - Screen
+      - Screen Scheme
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-screenscheme--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-schemes/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-screenscheme--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-schemes/#api-group-screen-schemes
   - name: Atlassian Jira Search API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents various ways to search for issues. Use it to
+      search for issues with a JQL query and find issues to populate an issue
+      picker.
+    tags:
+      - IDs
+      - Issues
+      - JQL
+      - REST
+      - Search
+      - Using
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-search--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-search--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/#api-group-issue-search
   - name: Atlassian Jira Security Level API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue security levels. Use it to obtain the
+      details of any issue security level. For more information about issue
+      security levels, see Configuring issue-level security.
+    tags:
+      - Issues
+      - Levels
+      - REST
+      - Security
+      - Security Levels
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-securitylevel--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-level/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-securitylevel--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-level/#api-group-issue-security-level
   - name: Atlassian Jira Server Info API
-    description: Needs description.
+    description: This resource provides information about the Jira instance.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-serverinfo--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-server-info/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-serverinfo--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-server-info/#api-group-server-info
   - name: Atlassian Jira Settings API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents various settings in Jira. Use it to get and
+      update Jira settings and properties.
+    tags:
+      - Columns
+      - Default
+      - Issues
+      - Navigators
+      - REST
+      - Settings
+      - Sets
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-settings--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-settings--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/#api-group-jira-settings
   - name: Atlassian Jira Status API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue workflow statuses. Use it to obtain a list
+      of all statuses associated with workflows and the details of a status.
+    tags:
+      - Names
+      - REST
+      - Status
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-status--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-status--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/#api-rest-api-3-status-get
   - name: Atlassian Jira Status Category API
     description: Needs description.
     tags: []
