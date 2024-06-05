@@ -156,9 +156,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue type scheme items
+      summary: 'Get Issue Type Scheme Items '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issues
+        - Items
+        - Mapping
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -245,9 +251,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue type schemes for projects
+      summary: 'Get Issue Type Schemes For Projects '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -323,9 +334,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Assign issue type scheme to project
+      summary: 'Assign Issue Type Scheme To Project '
       tags:
-        - - - - Issue type schemes
+        - Assign
+        - Issue Type Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -397,9 +414,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete issue type scheme
+      summary: 'Delete Issue Type Scheme '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -475,9 +496,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue type scheme
+      summary: 'Update Issue Type Scheme '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -560,9 +585,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add issue types to issue type scheme
+      summary: 'Add Issue Types To Issue Type Scheme '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issue Types
+        - Issues
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -645,9 +675,17 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Change order of issue types
+      summary: 'Change Order Of Issue Types '
       tags:
-        - - - - Issue type schemes
+        - Change
+        - Issue Type Schemes
+        - Issue Types
+        - Issues
+        - Move
+        - Orders
+        - REST
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -726,9 +764,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove issue type from issue type scheme
+      summary: 'Remove Issue Type From Issue Type Scheme '
       tags:
-        - - - - Issue type schemes
+        - Issue Type Schemes
+        - Issue Types
+        - Issues
+        - REST
+        - Removes
+        - Schemes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
