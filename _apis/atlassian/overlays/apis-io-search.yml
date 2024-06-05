@@ -168,71 +168,171 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-avatars/#api-group-avatars
   - name: Atlassian Jira Classification Levels API
-    description: Needs description.
+    description: Use to manage the classification levels that are used across Jira.
     tags: []
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-rest-api-3-classification-levels--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-classification-levels/
     overlays:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-classification-levels--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-classification-levels/#api-group-classification-levels
   - name: Atlassian Jira Comment API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue comments. Use it to get, create, update,
+      and delete a comment from an issue, get all comments from issue, get a
+      list of comments by comment ID.
+    tags:
+      - Comments
+      - IDs
+      - REST
+      - Keys
+      - Properties
+      - Sets
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-comment--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-comments/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-comment--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-comments/#api-group-issue-comments
   - name: Atlassian Jira Component API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents project components. Use it to get, create,
+      update, and delete project components. Also get components for project and
+      get a count of issues by component.
+    tags:
+      - Components
+      - REST
+      - Count
+      - Counts
+      - Issues
+      - Related
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-component--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-components/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-component--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-components/#api-group-project-components
   - name: Atlassian Jira Configuration API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents various settings in Jira. Use it to get and
+      update Jira settings and properties.
+    tags:
+      - Configurations
+      - Providers
+      - REST
+      - Selected
+      - Time
+      - Time Tracking
+      - Tracking
+      - Options
+      - Settings
+      - Sets
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-configuration--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-configuration--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/#api-group-jira-settings
   - name: Atlassian Jira Custom Field Option API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents custom issue field select list options created in
+      Jira or using the REST API. This resource supports the following field
+      types Checkboxes, Radio Buttons, Select List (single choice), Select List
+      (multiple choices), Select List (cascading).
+    tags:
+      - Custom
+      - Fields
+      - Options
+      - REST
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-rest-api-3-customfieldoption--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-options/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-customfieldoption--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-options/#api-group-issue-custom-field-options
   - name: Atlassian Jira Dashboard API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents dashboards. Use it to obtain the details of
+      dashboards as well as get, create, update, or remove item properties and
+      gadgets from dashboards.
+    tags:
+      - Bulk
+      - Dashboard
+      - Dashboards
+      - Edit
+      - REST
+      - Available
+      - Gadgets
+      - Search
+      - Removes
+      - Items
+      - Keys
+      - Properties
+      - Sets
+      - Copy
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-dashboard--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-dashboards/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-dashboard--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-dashboards/#api-group-dashboards
   - name: Atlassian Jira Data Policy API
-    description: Needs description.
-    tags: []
+    description: >+
+      Atlassian is adding the ability for customers to block app access to data
+      using data security policies with app access rules. App access rules may
+      affect your app by blocking its access to certain data. This guide
+      provides an overview of potential impacts to apps and how to address them.
+
+    tags:
+      - EAP
+      - Data
+      - Policies
+      - Projects
+      - REST
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-data-policy--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/data-security-policy-developer-guide/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-data-policy--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/data-security-policy-developer-guide/
   - name: Atlassian Jira Events API
     description: Needs description.
     tags: []
