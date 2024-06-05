@@ -29,7 +29,9 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-announcement-banner/#api-group-announcement-banner
   - name: Atlassian Jira App API
-    description: Needs description.
+    description: >-
+      This resource represents the values of custom fields added by Forge apps.
+      Use it to update the value of a custom field on issues.
     tags:
       - Applications
       - Custom
@@ -42,11 +44,16 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-app--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-values--apps-/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
   - name: Atlassian Jira Application Properties API
-    description: Needs description.
+    description: >-
+      This resource represents app properties. Use it to store arbitrary data
+      for your Connect app.
     tags:
       - Advanced
       - Applications
@@ -58,12 +65,19 @@ apis:
       - type: OpenAPI
         url: >-
           properties/atlassian-rest-api-3-application-properties--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-app-properties/
     overlays:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-app-properties/#api-group-app-properties
   - name: Atlassian Jira Application Role API
-    description: Needs description.
+    description: >-
+      This resource represents application roles. Use it to get details of an
+      application role or all application roles.
     tags:
       - Application Roles
       - Applications
@@ -73,11 +87,20 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-applicationrole--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-application-roles/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-applicationrole--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-application-roles/#api-group-application-roles
   - name: Atlassian Jira Attachment API
-    description: Needs description.
+    description: >-
+      This resource represents issue attachments and the attachment settings for
+      Jira. Use it to get the metadata for an attachment, delete an attachment,
+      and view the metadata for the contents of an attachment. Also, use it to
+      get the attachment settings for Jira.
     tags:
       - Attachments
       - Content
@@ -95,11 +118,20 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-attachment--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-attachment--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/#api-group-issue-attachments
   - name: Atlassian Jira Auditing API
-    description: Needs description.
+    description: >+
+      Atlassian Audit (Advanced Auditing for DC customers) is a cross-product
+      feature available in Atlassian DC products (Bitbucket, Confluence, and
+      Jira) which is responsible for storing and retrieving audited events.
+
     tags:
       - Audit
       - Auditing
@@ -109,14 +141,17 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-auditing--openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/server/framework/atlassian-sdk/audit/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
+    humanURL: https://developer.atlassian.com/server/framework/atlassian-sdk/audit/
   - name: Atlassian Jira Avatar API
     description: >-
-      The Atlassian Jira Avatar API facilitates interactions with system avatars
-      in Jira Cloud. It allows users to retrieve a list of system avatar details
-      based on the owner type, which could be an issue type, project, or user.
+      This resource represents system and custom avatars. Use it to obtain the
+      details of system or custom avatars, add and remove avatars from a project
+      or issue type, and obtain avatar images.
     tags:
       - Avatars
       - Systems
@@ -124,9 +159,14 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-avatar--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-avatars/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-avatar--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-avatars/#api-group-avatars
   - name: Atlassian Jira Classification Levels API
     description: Needs description.
     tags: []
