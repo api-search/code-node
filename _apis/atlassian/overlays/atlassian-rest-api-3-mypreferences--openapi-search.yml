@@ -52,9 +52,11 @@ paths:
           description: Returned if the authentication credentials are incorrect or missing.
       security:
         - basicAuth: []
-      summary: Delete locale
+      summary: 'Delete Locale '
       tags:
-        - - - - Myself
+        - Locales
+        - Prferences
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: INACCESSIBLE
@@ -92,9 +94,11 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Get locale
+      summary: 'Get Locale '
       tags:
-        - - - - Myself
+        - Locales
+        - Prferences
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -143,9 +147,12 @@ paths:
           description: Returned if the authentication credentials are incorrect or missing.
       security:
         - basicAuth: []
-      summary: Set locale
+      summary: 'Set Locale '
       tags:
-        - - - - Myself
+        - Locales
+        - Prferences
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: INACCESSIBLE
