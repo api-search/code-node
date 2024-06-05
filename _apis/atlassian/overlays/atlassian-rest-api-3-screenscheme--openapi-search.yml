@@ -68,9 +68,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Delete screen scheme
+      summary: 'Delete Screen Scheme '
       tags:
-        - - - - Screen schemes
+        - REST
+        - Schemes
+        - Screen
+        - Screen Scheme
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -147,9 +150,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update screen scheme
+      summary: 'Update Screen Scheme '
       tags:
-        - - - - Screen schemes
+        - REST
+        - Schemes
+        - Screen
+        - Screen Scheme
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
