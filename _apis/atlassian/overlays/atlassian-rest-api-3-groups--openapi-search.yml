@@ -148,9 +148,12 @@ paths:
         - OAuth2:
             - read:jira-user
         - {}
-      summary: Find groups
+      summary: 'Find Groups '
       tags:
-        - - - - Groups
+        - Find
+        - Groups
+        - Picker
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
