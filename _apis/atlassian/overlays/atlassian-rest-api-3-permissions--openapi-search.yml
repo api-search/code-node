@@ -145,9 +145,12 @@ paths:
         - basicAuth: []
         - OAuth2: []
         - {}
-      summary: Get bulk permissions
+      summary: 'Get Bulk Permissions '
       tags:
-        - - - - Permissions
+        - Bulk
+        - Checks
+        - Permissions
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -195,9 +198,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get permitted projects
+      summary: 'Get Permitted Projects '
       tags:
-        - - - - Permissions
+        - Permissions
+        - Permitted
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
