@@ -2320,7 +2320,14 @@ apis:
         url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/confluence/connect-modules/
   - name: Atlassian Confluence Analytics API
-    description: Needs description.
+    description: >-
+      The Confluence Cloud Analytics REST API provides endpoints to access
+      analytics data for Confluence content. It allows you to retrieve
+      information such as the total number of views and distinct viewers for
+      specific content within Confluence Cloud. This API enables developers to
+      integrate analytics functionalities into their applications or services,
+      providing insights into content engagement and audience interactions
+      within Confluence Cloud.
     tags:
       - Analytics
       - Content
@@ -2340,50 +2347,274 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-analytics/#api-group-analytics
   - name: Atlassian BitBucket Addon API
-    description: Needs description.
-    tags: []
+    description: >+
+      The addon resource is intended to use used by Bitbucket Cloud Connect
+      Apps, and only supports JWT authentication.
+
+    tags:
+      - Addons
+      - Applications
+      - Linkers
+      - Keys
+      - Linker
+      - Values
+      - Value
     properties:
       - type: OpenAPI
         url: properties/atlassian-addon--openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/cloud/bitbucket/rest/api-group-addon/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-addon--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-addon/#api-group-addon
   - name: Atlassian BitBucket Hook Events API
-    description: Needs description.
-    tags: []
+    description: >-
+      Webhooks provide a way to configure Bitbucket Cloud to make requests to
+      your server (or another external service) whenever certain events occur in
+      Bitbucket Cloud.
+    tags:
+      - Events
+      - Hook
+      - Subjects
+      - Subscribable
+      - Types
+      - Webhooks
     properties:
       - type: OpenAPI
         url: properties/atlassian-hook-events--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/bitbucket/rest/api-group-webhooks/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-hook-events--openapi-search.yml
-  - name: Atlassian BitBucket Pull Requests Selected User API
-    description: Needs description.
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-webhooks/#api-group-webhooks
+  - name: Atlassian BitBucket Pull Requests API
+    description: >-
+      Pull requests are a feature that makes it easier for developers to
+      collaborate using Bitbucket. They provide a user-friendly web interface
+      for discussing proposed changes before integrating them into the official
+      project.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/atlassian-pullrequests-selected-user--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-pullrequests-selected-user--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/#api-group-pullrequests
   - name: Atlassian BitBucket Repositories API
-    description: Needs description.
-    tags: []
+    description: >-
+      A Git repository is a virtual storage of your project. It allows you to
+      save versions of your code, which you can access when needed. The repo
+      resource allows you to access public repos, or repos that belong to a
+      specific workspace.
+    tags:
+      - Repositories
+      - Workspaces
+      - Slug
+      - Branch
+      - Restrictions
+      - Rules
+      - Branching
+      - Models
+      - Configurations
+      - Settings
+      - Commit
+      - Approve
+      - Unapprove
+      - Comments
+      - Commit's
+      - Applications
+      - Keys
+      - Names
+      - Properties
+      - Contain
+      - Pull
+      - Pull Requests
+      - Reports
+      - Annotations
+      - Bulk
+      - Statuses
+      - Build
+      - Status
+      - Commits
+      - Include/exclude
+      - Revisions
+      - Using
+      - Components
+      - Issues
+      - Default
+      - Reviewers
+      - Removes
+      - Targets
+      - User Names
+      - Users
+      - Deploy
+      - Deployments
+      - Uu
+      - Environments
+      - Variables
+      - Compare
+      - Difference
+      - Statistics
+      - Artifacts
+      - Download
+      - Downloads
+      - Uploads
+      - File Name
+      - Link
+      - Currently
+      - Effective
+      - Changes
+      - File History
+      - Files
+      - Modified
+      - Paths
+      - Forks
+      - Fork
+      - Hooks
+      - Webhooks
+      - Exports
+      - Checks
+      - Tasks
+      - Zip
+      - Import
+      - Attachments
+      - Modify
+      - States
+      - Change
+      - Objects
+      - Votes
+      - Current
+      - If
+      - Voted
+      - Stop
+      - Watching
+      - Is
+      - Ancestor
+      - Base
+      - Between
+      - Common
+      - Merge
+      - Milestones
+      - Inheritance
+      - Overr
+      - Sets
+      - Patch
+      - Explicit
+      - Groups
+      - Permissions
+      - Permission
+      - Selected
+      - Pipelines
+      - Runs
+      - Caches
+      - Cache
+      - Content
+      - URI
+      - Steps
+      - Logs
+      - Container
+      - Given
+      - Services
+      - Summaries
+      - Tests
+      - Cases
+      - (output)
+      - Case
+      - Reasons
+      - Next
+      - Numbers
+      - Schedules
+      - Executions
+      - Pairs
+      - SSH
+      - Hosts
+      - Known
+      - Host
+      - Activity
+      - Reopen
+      - Resolve
+      - Threads
+      - Decline
+      - Pullrequest
+      - Branches
+      - References
+      - Tags
+      - Directory
+      - Root
+      - Uploading
+      - Contents
+      - Defined
+      - Versions
+      - Watchers
     properties:
       - type: OpenAPI
         url: properties/atlassian-repositories--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-repositories--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories
   - name: Atlassian BitBucket Snippets API
-    description: Needs description.
-    tags: []
+    description: >-
+      Snippets allow you share code segments or files with yourself, members of
+      your workspace, or the world. Like pull requests, repositories and
+      workspaces, the full set of snippets is defined by what the current user
+      has access to. This includes all snippets owned by any of the workspaces
+      the user is a member of, or snippets by other users that the current user
+      is either watching or has collaborated on (for instance by commenting on
+      it).
+    tags:
+      - Snippets
+      - Workspaces
+      - Encoded
+      - Comments
+      - Changes
+      - Commits
+      - Change
+      - Previous
+      - Revisions
+      - Files
+      - HEAD
+      - Paths
+      - Raw
+      - Snippet's
+      - Stop
+      - Watching
+      - Checks
+      - Current
+      - If
+      - Is
+      - Users
+      - Watchers
+      - Nodes
+      - Between
+      - Difference
+      - Versions
+      - Patch
     properties:
       - type: OpenAPI
         url: properties/atlassian-snippets--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/bitbucket/rest/api-group-snippets/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-snippets--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-snippets/#api-group-snippets
   - name: Atlassian BitBucket Teams API
     description: Needs description.
     tags: []
@@ -2394,23 +2625,96 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-teams--openapi-search.yml
   - name: Atlassian BitBucket User API
-    description: Needs description.
-    tags: []
+    description: >-
+      The users resource allows you to access public information associated with
+      a user account. Most resources in the users endpoint have been deprecated
+      in favor of workspaces.
+    tags:
+      - Configurations
+      - Explicit
+      - Permissions
+      - Repositories
+      - Slug
+      - Users
+      - Workspaces
+      - Permission
+      - Selected
+      - Current
+      - Addresses
+      - Emails
+      - Pipelines
+      - Variables
+      - Uu
+      - Applications
+      - Keys
+      - Names
+      - Properties
+      - Code
+      - Search
+      - SSH
+      - Projects
     properties:
       - type: OpenAPI
         url: properties/atlassian-user-openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/cloud/bitbucket/rest/api-group-users/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-user-openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-users/#api-group-users
   - name: Atlassian BitBucket Workspaces API
-    description: Needs description.
-    tags: []
+    description: >-
+      A workspace is where you create repositories, collaborate on your code,
+      and organize different streams of work in your Bitbucket Cloud account.
+      Workspaces replace the use of teams and users in API calls.
+    tags:
+      - Workspaces
+      - Hooks
+      - Webhooks
+      - Members
+      - Users
+      - Memberships
+      - Permissions
+      - Repositories
+      - Slug
+      - Configurations
+      - Entities
+      - ID
+      - Known
+      - OIDC
+      - Pipelines
+      - Keys
+      - Keys Json
+      - Variables
+      - Uu
+      - Projects
+      - Branching
+      - Models
+      - Settings
+      - Default
+      - Reviewers
+      - Project's
+      - Removes
+      - Selected
+      - Specific
+      - Deploy
+      - Explicit
+      - Groups
+      - Permission
+      - Code
+      - Search
     properties:
       - type: OpenAPI
         url: properties/atlassian-workspaces--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/bitbucket/rest/api-group-workspaces/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-workspaces--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/bitbucket/rest/api-group-workspaces/#api-group-workspaces
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
