@@ -95,9 +95,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete field configuration
+      summary: 'Delete Field Configuration '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configurations
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -159,9 +162,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update field configuration
+      summary: 'Update Field Configuration '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configurations
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -235,9 +241,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get field configuration items
+      summary: 'Get Field Configuration Items '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configurations
+        - Fields
+        - Items
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -314,9 +324,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update field configuration items
+      summary: 'Update Field Configuration Items '
       tags:
-        - - - - Issue field configurations
+        - Configurations
+        - Field Configurations
+        - Fields
+        - Items
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
