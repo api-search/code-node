@@ -175,8 +175,8 @@ apis:
         url: overlays/github-auth-openapi-search.yml
     humanURL: >-
       https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
-  - name: GitHub Codes API
-    description: Needs description.
+  - name: GitHub Code of Conduct API
+    description: Use the REST API to get information about codes of conduct.
     tags:
       - Codes
       - Conduct
@@ -185,27 +185,42 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/github-codes-openapi-original.yml
+      - type: Documentation
+        url: https://docs.github.com/en/rest/codes-of-conduct/codes-of-conduct
     overlays:
       - type: OpenAPI
         url: overlays/github-codes-openapi-search.yml
+    humanURL: >-
+      https://docs.github.com/en/rest/codes-of-conduct/codes-of-conduct?apiVersion=2022-11-28
   - name: GitHub Emojis API
-    description: Needs description.
+    description: >-
+      Use the REST API to list and view all the available emojis to use on
+      GitHub.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/github-emojis--openapi-original.yml
+      - type: Documentation
+        url: https://docs.github.com/en/rest/emojis
     overlays:
       - type: OpenAPI
         url: overlays/github-emojis--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/emojis?apiVersion=2022-11-28
   - name: GitHub Enterprise API
-    description: Needs description.
+    description: >-
+      Create integrations, retrieve data, and automate your workflows with the
+      GitHub REST API.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/github-enterprise-openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
     overlays:
       - type: OpenAPI
         url: overlays/github-enterprise-openapi-search.yml
+    humanURL: https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
   - name: GitHub Events API
     description: Needs description.
     tags:
