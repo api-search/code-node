@@ -139,9 +139,12 @@ paths:
             - read:jira-work
             - read:jira-user
         - {}
-      summary: Analyse Jira expression
+      summary: 'Analyse Jira Expression '
       tags:
-        - - - - Jira expressions
+        - Analysis
+        - Expression
+        - Jira
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -318,9 +321,13 @@ paths:
             - read:jira-work
             - read:jira-user
         - {}
-      summary: Evaluate Jira expression
+      summary: 'Evaluate Jira Expression '
       tags:
-        - - - - Jira expressions
+        - EULA
+        - Evaluate
+        - Expression
+        - Jira
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
