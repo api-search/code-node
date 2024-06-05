@@ -737,9 +737,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Archive issue(s) by JQL
+      summary: 'Archive Issue(s) By JQL '
       tags:
-        - - - - Issues
+        - Archive
+        - Issues
+        - JQL
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -856,9 +859,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Archive issue(s) by issue ID/key
+      summary: 'Archive Issue(s) By Issue ID/key '
       tags:
-        - - - - Issues
+        - Archive
+        - ID/key
+        - Issues
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1106,9 +1112,11 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Bulk create issue
+      summary: 'Bulk Create Issue '
       tags:
-        - - - - Issues
+        - Bulk
+        - Issues
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1232,9 +1240,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get create issue metadata
+      summary: 'Get Create Issue Metadata '
       tags:
-        - - - - Issues
+        - Issues
+        - Meta
+        - Metadata
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1321,9 +1332,16 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get create metadata issue types for a project
+      summary: 'Get Create Metadata Issue Types For A Project '
       tags:
-        - - - - Issues
+        - Issue Types
+        - Issues
+        - Keys
+        - Meta
+        - Metadata
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1409,9 +1427,17 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get create field metadata for a project and issue type id
+      summary: 'Get Create Field Metadata For A Project And Issue Type Id '
       tags:
-        - - - - Issues
+        - Fields
+        - Issue Types
+        - Issues
+        - Keys
+        - Meta
+        - Metadata
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1501,9 +1527,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue picker suggestions
+      summary: 'Get Issue Picker Suggestions '
       tags:
-        - - - - Issue search
+        - Issues
+        - Picker
+        - REST
+        - Suggestions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1570,9 +1599,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Bulk set issues properties by list
+      summary: 'Bulk Set Issues Properties By List '
       tags:
-        - - - - Issue properties
+        - Bulk
+        - Issues
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1655,9 +1688,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Bulk set issue properties by issue
+      summary: 'Bulk Set Issue Properties By Issue '
       tags:
-        - - - - Issue properties
+        - Bulk
+        - Issues
+        - Multi
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1740,9 +1778,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Bulk delete issue property
+      summary: 'Bulk Delete Issue Property '
       tags:
-        - - - - Issue properties
+        - Bulk
+        - Issues
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1851,9 +1893,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - write:jira-work
-      summary: Bulk set issue property
+      summary: 'Bulk Set Issue Property '
       tags:
-        - - - - Issue properties
+        - Bulk
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1968,9 +2015,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Unarchive issue(s) by issue keys/ID
+      summary: 'Unarchive Issue(s) By Issue Keys/ID '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys/ID
+        - REST
+        - Unarchive
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2031,9 +2081,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get is watching issue bulk
+      summary: 'Get Is Watching Issue Bulk '
       tags:
-        - - - - Issue watchers
+        - Bulk
+        - Is
+        - Issues
+        - REST
+        - Watching
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2103,9 +2157,11 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete issue
+      summary: 'Delete Issue '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2274,9 +2330,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue
+      summary: 'Get Issue '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2491,9 +2549,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Edit issue
+      summary: 'Edit Issue '
       tags:
-        - - - - Issues
+        - Edit
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2566,9 +2627,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Assign issue
+      summary: 'Assign Issue '
       tags:
-        - - - - Issues
+        - Assign
+        - Assignee
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2792,9 +2857,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add attachment
+      summary: 'Add Attachment '
       tags:
-        - - - - Issue attachments
+        - Attachments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2870,9 +2938,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get changelogs
+      summary: 'Get Changelogs '
       tags:
-        - - - - Issues
+        - Change Logs
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2940,9 +3011,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get changelogs by IDs
+      summary: 'Get Changelogs By IDs '
       tags:
-        - - - - Issues
+        - Change Logs
+        - IDs
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3044,9 +3119,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get comments
+      summary: 'Get Comments '
       tags:
-        - - - - Issue comments
+        - Comments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3143,9 +3221,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add comment
+      summary: 'Add Comment '
       tags:
-        - - - - Issue comments
+        - Comments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3209,9 +3290,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete comment
+      summary: 'Delete Comment '
       tags:
-        - - - - Issue comments
+        - Comments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3285,9 +3369,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get comment
+      summary: 'Get Comment '
       tags:
-        - - - - Issue comments
+        - Comments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3411,9 +3498,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Update comment
+      summary: 'Update Comment '
       tags:
-        - - - - Issue comments
+        - Comments
+        - Issues
+        - Keys
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3564,9 +3654,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get edit issue metadata
+      summary: 'Get Edit Issue Metadata '
       tags:
-        - - - - Issues
+        - Edit
+        - Issues
+        - Keys
+        - Metadata
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3656,9 +3750,14 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Send notification for issue
+      summary: 'Send Notification For Issue '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys
+        - Notifications
+        - Notify
+        - REST
+        - Send
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3712,9 +3811,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue property keys
+      summary: 'Get Issue Property Keys '
       tags:
-        - - - - Issue properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3767,9 +3869,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete issue property
+      summary: 'Delete Issue Property '
       tags:
-        - - - - Issue properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3827,9 +3932,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue property
+      summary: 'Get Issue Property '
       tags:
-        - - - - Issue properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3910,9 +4018,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set issue property
+      summary: 'Set Issue Property '
       tags:
-        - - - - Issue properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3983,9 +4095,16 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete remote issue link by global ID
+      summary: 'Delete Remote Issue Link By Global ID '
       tags:
-        - - - - Issue remote links
+        - Global
+        - ID
+        - Issues
+        - Keys
+        - Link
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4074,9 +4193,14 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get remote issue links
+      summary: 'Get Remote Issue Links '
       tags:
-        - - - - Issue remote links
+        - Issues
+        - Keys
+        - Links
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4180,9 +4304,14 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Create or update remote issue link
+      summary: 'Create Or Update Remote Issue Link '
       tags:
-        - - - - Issue remote links
+        - Issues
+        - Keys
+        - Link
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4253,9 +4382,15 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete remote issue link by ID
+      summary: 'Delete Remote Issue Link By ID '
       tags:
-        - - - - Issue remote links
+        - ID
+        - Issues
+        - Keys
+        - Link
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4331,9 +4466,15 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get remote issue link by ID
+      summary: 'Get Remote Issue Link By ID '
       tags:
-        - - - - Issue remote links
+        - ID
+        - Issues
+        - Keys
+        - Link
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4439,9 +4580,15 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Update remote issue link by ID
+      summary: 'Update Remote Issue Link By ID '
       tags:
-        - - - - Issue remote links
+        - ID
+        - Issues
+        - Keys
+        - Link
+        - REST
+        - Remote
+        - Remote Links
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4562,9 +4709,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get transitions
+      summary: 'Get Transitions '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys
+        - REST
+        - Transitions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4690,9 +4840,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Transition issue
+      summary: 'Transition Issue '
       tags:
-        - - - - Issues
+        - Issues
+        - Keys
+        - REST
+        - Transitions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4749,9 +4902,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete vote
+      summary: 'Delete Vote '
       tags:
-        - - - - Issue votes
+        - Issues
+        - Keys
+        - REST
+        - Votes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4819,9 +4975,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get votes
+      summary: 'Get Votes '
       tags:
-        - - - - Issue votes
+        - Issues
+        - Keys
+        - REST
+        - Votes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4884,9 +5043,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add vote
+      summary: 'Add Vote '
       tags:
-        - - - - Issue votes
+        - Issues
+        - Keys
+        - REST
+        - Votes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -4964,9 +5126,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete watcher
+      summary: 'Delete Watcher '
       tags:
-        - - - - Issue watchers
+        - Issues
+        - Keys
+        - REST
+        - Watchers
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5028,9 +5193,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue watchers
+      summary: 'Get Issue Watchers '
       tags:
-        - - - - Issue watchers
+        - Issues
+        - Keys
+        - REST
+        - Watchers
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5104,9 +5272,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add watcher
+      summary: 'Add Watcher '
       tags:
-        - - - - Issue watchers
+        - Issues
+        - Keys
+        - REST
+        - Watchers
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5218,9 +5389,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue worklogs
+      summary: 'Get Issue Worklogs '
       tags:
-        - - - - Issue worklogs
+        - Issues
+        - Keys
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5370,9 +5544,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add worklog
+      summary: 'Add Worklog '
       tags:
-        - - - - Issue worklogs
+        - Issues
+        - Keys
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5500,9 +5677,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete worklog
+      summary: 'Delete Worklog '
       tags:
-        - - - - Issue worklogs
+        - Issues
+        - Keys
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5591,9 +5771,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get worklog
+      summary: 'Get Worklog '
       tags:
-        - - - - Issue worklogs
+        - Issues
+        - Keys
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5751,9 +5934,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Update worklog
+      summary: 'Update Worklog '
       tags:
-        - - - - Issue worklogs
+        - Issues
+        - Keys
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5826,9 +6012,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get worklog property keys
+      summary: 'Get Worklog Property Keys '
       tags:
-        - - - - Issue worklog properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5894,9 +6084,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete worklog property
+      summary: 'Delete Worklog Property '
       tags:
-        - - - - Issue worklog properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -5965,9 +6159,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get worklog property
+      summary: 'Get Worklog Property '
       tags:
-        - - - - Issue worklog properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -6058,9 +6256,14 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set worklog property
+      summary: 'Set Worklog Property '
       tags:
-        - - - - Issue worklog properties
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Sets
+        - Worklogs
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
