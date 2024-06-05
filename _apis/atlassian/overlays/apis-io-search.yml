@@ -558,32 +558,96 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-groups/#api-group-groups
   - name: Atlassian Jira Group User Picker API
-    description: Needs description.
+    description: >-
+      This resource represents a list of users and a list of groups. Use it to
+      obtain the details to populate user and group picker suggestions list.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-groupuserpicker--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-group-and-user-picker/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-groupuserpicker--openapi-search.yml
-  - name: Atlassian Jira Instance API
-    description: Needs description.
-    tags: []
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-group-and-user-picker/#api-group-group-and-user-picker
+  - name: Atlassian Jira License Metrics API
+    description: >-
+      This resource represents license metrics. Use it to get available metrics
+      for Jira licences.
+    tags:
+      - Instances
+      - Licenses
+      - REST
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-instance--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-instance--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/#api-group-license-metrics
   - name: Atlassian Jira Issue API
-    description: Needs description.
-    tags: []
+    description: Used to managine issues for Jira resources.
+    tags:
+      - Archive
+      - Issues
+      - JQL
+      - REST
+      - ID/key
+      - Bulk
+      - Meta
+      - Metadata
+      - Issue Types
+      - Keys
+      - Projects
+      - Types
+      - Fields
+      - Picker
+      - Suggestions
+      - Properties
+      - Sets
+      - Multi
+      - Keys/ID
+      - Unarchive
+      - Is
+      - Watching
+      - Edit
+      - Assign
+      - Assignee
+      - Attachments
+      - Change Logs
+      - IDs
+      - Comments
+      - Notifications
+      - Notify
+      - Send
+      - Global
+      - ID
+      - Link
+      - Remote
+      - Remote Links
+      - Links
+      - Transitions
+      - Votes
+      - Watchers
+      - Worklogs
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issue--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issue--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-group-issues
   - name: Atlassian Jira Issue Link API
     description: Needs description.
     tags: []
