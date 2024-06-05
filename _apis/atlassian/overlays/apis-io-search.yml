@@ -1883,105 +1883,327 @@ apis:
         url: overlays/atlassian-rest-forge-1-app--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/jira/platform/forge/
   - name: Atlassian Confluence Audit API
-    description: Needs description.
-    tags: []
+    description: Allows you to create, get, set, and export audit records from Confluence.
+    tags:
+      - Audit
+      - Exports
+      - REST
+      - Records
+      - Wiki
+      - Period
+      - Retention
+      - Sets
+      - Since
+      - Time
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-audit--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-audit/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-audit--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-audit/#api-group-audit
   - name: Atlassian Confluence Content API
-    description: Needs description.
-    tags: []
+    description: >-
+      This is the reference for the Confluence Cloud REST API v2, with
+      definitions and performance intended to be an improvement over v1. You can
+      click on the meatball menu in the upper right to download the spec or
+      Postman collection.
+    tags:
+      - Archive
+      - Content
+      - Pages
+      - REST
+      - Wiki
+      - Blueprints
+      - Draft
+      - Instances
+      - Publish
+      - Shared
+      - Legacy
+      - CQL
+      - Search
+      - ID
+      - Page
+      - Trees
+      - Child
+      - Children
+      - Locations
+      - Move
+      - Positions
+      - Relative
+      - Targets
+      - Attachments
+      - Properties
+      - Data
+      - Download
+      - URI
+      - Comments
+      - Types
+      - Descendants
+      - History
+      - Body
+      - Macro
+      - Versions
+      - Convert
+      - Representation
+      - Synchronously
+      - Async
+      - Asynchronously
+      - Labels
+      - Parameters
+      - Queries
+      - Removes
+      - Using
+      - Notifications
+      - Watches
+      - Space
+      - Copy
+      - Hierarchy
+      - Page Hierarchy
+      - Single
+      - Checks
+      - Permission
+      - Permissions
+      - Keys
+      - Restrictions
+      - Operation
+      - Groups
+      - Names
+      - Status
+      - Users
+      - States
+      - Publishes
+      - Sets
+      - Available
+      - Restore
+      - Numbers
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-content--openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/cloud/confluence/rest/v2/intro/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content--openapi-search.yml
+    humanURL: https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about
   - name: Atlassian Confluence Content States API
-    description: Needs description.
-    tags: []
+    description: Allows you to manage the various state of content published to Confluence.
+    tags:
+      - Bulk
+      - Content
+      - REST
+      - Removes
+      - States
+      - Wiki
+      - Long
+      - Running
+      - Settings
+      - Tasks
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-wiki-rest-api-content-states--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-states/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content-states--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-states/#api-group-content-states
   - name: Atlassian Confluence Content Body API
-    description: Needs description.
-    tags: []
+    description: Provides you the ability to manage the content body of Confluence pages.
+    tags:
+      - Body
+      - Content
+      - Content Body
+      - Convert
+      - REST
+      - Wiki
+      - Async
+      - Asynchronously
+      - Converted
+      - Current
+      - Status
+      - Tasks
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-contentbody--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-body/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-contentbody--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-body/#api-group-content-body
   - name: Atlassian Confluence Inline Tasks API
-    description: Needs description.
-    tags: []
+    description: Allows you to manage inline tasks across Confluence.
+    tags:
+      - Based
+      - Inline
+      - Inline Tasks
+      - Parameters
+      - REST
+      - Search
+      - Tasks
+      - Wiki
+      - Global
+      - ID
+      - Given
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-inlinetasks--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-inline-tasks
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-inlinetasks--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-inline-tasks#api-group-inline-tasks
   - name: Atlassian Confluence Label API
-    description: Needs description.
+    description: Provides the ability to label content across Confluence.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-label--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-label--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/#api-group-content-labels
   - name: Atlassian Confluence Group API
-    description: Needs description.
-    tags: []
+    description: >-
+      Returns all user groups. The returned groups are ordered alphabetically in
+      ascending order by group name.
+    tags:
+      - Groups
+      - Names
+      - REST
+      - Wiki
+      - Users
+      - Members
+      - Partial
+      - Picker
+      - Queries
+      - Search
+      - Removes
+      - Using
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-group--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-group/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-group--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-group/#api-wiki-rest-api-group-get
   - name: Atlassian Confluence Longtask API
-    description: Needs description.
-    tags: []
+    description: >-
+      Returns information about all active long-running tasks (e.g. space
+      export), such as how long each task has been running and the percentage of
+      each task that has completed.
+    tags:
+      - Long Running
+      - Longtask
+      - REST
+      - Tasks
+      - Wiki
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-longtask--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-long-running-task/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-longtask--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-long-running-task/#api-wiki-rest-api-longtask-get
   - name: Atlassian Confluence Relation API
-    description: Needs description.
-    tags: []
+    description: >-
+      Provides the ability to manage relationships between content across
+      Confluence.
+    tags:
+      - Entities
+      - Find
+      - Keys
+      - Names
+      - REST
+      - Related
+      - Relation
+      - Sources
+      - Targets
+      - Types
+      - Wiki
+      - Relationships
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-relation--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-relation/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-relation--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-relation/
   - name: Atlassian Confluence Search API
-    description: Needs description.
-    tags: []
+    description: Searches content across Confluence.
+    tags:
+      - REST
+      - Search
+      - Users
+      - Wiki
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-search--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-search/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-search--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-search/#api-group-search
   - name: Atlassian Confluence Settings API
-    description: Needs description.
-    tags: []
+    description: Manages the settings for Confluence groups.
+    tags:
+      - Feel
+      - REST
+      - Settings
+      - Wiki
+      - Custom
+      - Reset
+      - Selected
+      - Sets
+      - Info
+      - Systems
+      - Theme
+      - Themes
+      - Global
+      - Keys
     properties:
       - type: OpenAPI
         url: properties/atlassian-wiki-rest-api-settings--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-settings/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-settings--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-settings/#api-group-settings
   - name: Atlassian Confluence Space API
     description: Needs description.
     tags: []
