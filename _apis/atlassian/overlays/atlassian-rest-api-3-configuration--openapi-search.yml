@@ -107,9 +107,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get selected time tracking provider
+      summary: 'Get Selected Time Tracking Provider '
       tags:
-        - - - - Time tracking
+        - Configurations
+        - Providers
+        - REST
+        - Selected
+        - Time
+        - Time Tracking
+        - Tracking
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -156,9 +162,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Select time tracking provider
+      summary: 'Select Time Tracking Provider '
       tags:
-        - - - - Time tracking
+        - Configurations
+        - Providers
+        - REST
+        - Time
+        - Time Tracking
+        - Tracking
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -208,9 +219,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get all time tracking providers
+      summary: 'Get All Time Tracking Providers '
       tags:
-        - - - - Time tracking
+        - Configurations
+        - Providers
+        - REST
+        - Time
+        - Time Tracking
+        - Tracking
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -253,9 +269,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get time tracking settings
+      summary: 'Get Time Tracking Settings '
       tags:
-        - - - - Time tracking
+        - Configurations
+        - Options
+        - REST
+        - Settings
+        - Time
+        - Time Tracking
+        - Tracking
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -308,9 +330,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Set time tracking settings
+      summary: 'Set Time Tracking Settings '
       tags:
-        - - - - Time tracking
+        - Configurations
+        - Options
+        - REST
+        - Sets
+        - Settings
+        - Time
+        - Time Tracking
+        - Tracking
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
