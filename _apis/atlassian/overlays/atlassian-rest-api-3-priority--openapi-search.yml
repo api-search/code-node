@@ -141,9 +141,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Set default priority
+      summary: 'Set Default Priority '
       tags:
-        - - - - Issue priorities
+        - Default
+        - Priorities
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -213,9 +216,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Move priorities
+      summary: 'Move Priorities '
       tags:
-        - - - - Issue priorities
+        - Move
+        - Priorities
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -305,9 +310,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Search priorities
+      summary: 'Search Priorities '
       tags:
-        - - - - Issue priorities
+        - Priorities
+        - REST
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -397,9 +404,10 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete priority
+      summary: 'Delete Priority '
       tags:
-        - - - - Issue priorities
+        - Priorities
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-changes:
@@ -442,9 +450,10 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get priority
+      summary: 'Get Priority '
       tags:
-        - - - - Issue priorities
+        - Priorities
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -527,9 +536,10 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update priority
+      summary: 'Update Priority '
       tags:
-        - - - - Issue priorities
+        - Priorities
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
