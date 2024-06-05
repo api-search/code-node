@@ -126,9 +126,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Export archived issue(s)
+      summary: 'Export Archived Issue(s) '
       tags:
-        - - - - Issues
+        - Archive
+        - Archived
+        - Exports
+        - Issues
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
