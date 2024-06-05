@@ -197,9 +197,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-user
-      summary: Bulk get groups
+      summary: 'Bulk Get Groups '
       tags:
-        - - - - Groups
+        - Bulk
+        - Groups
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -291,9 +293,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get users from group
+      summary: 'Get Users From Group '
       tags:
-        - - - - Groups
+        - Groups
+        - Members
+        - REST
+        - Users
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -379,9 +384,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove user from group
+      summary: 'Remove User From Group '
       tags:
-        - - - - Groups
+        - Groups
+        - REST
+        - Removes
+        - Users
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -457,9 +465,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add user to group
+      summary: 'Add User To Group '
       tags:
-        - - - - Groups
+        - Groups
+        - REST
+        - Users
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
