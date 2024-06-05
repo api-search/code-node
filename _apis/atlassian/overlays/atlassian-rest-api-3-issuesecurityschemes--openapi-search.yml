@@ -352,9 +352,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue security levels
+      summary: 'Get Issue Security Levels '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - REST
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -436,9 +440,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Set default issue security levels
+      summary: 'Set Default Issue Security Levels '
       tags:
-        - - - - Issue security schemes
+        - Default
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - REST
+        - Security
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -547,9 +557,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue security level members
+      summary: 'Get Issue Security Level Members '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - Members
+        - REST
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -640,9 +655,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get projects using issue security schemes
+      summary: 'Get Projects Using Issue Security Schemes '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Security
+        - Using
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -728,9 +749,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Associate security scheme to project
+      summary: 'Associate Security Scheme To Project '
       tags:
-        - - - - Issue security schemes
+        - Associate
+        - Issue Security Schemes
+        - Projects
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -821,9 +847,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Search issue security schemes
+      summary: 'Search Issue Security Schemes '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Search
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -887,9 +918,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Get issue security scheme
+      summary: 'Get Issue Security Scheme '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -971,9 +1006,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue security scheme
+      summary: 'Update Issue Security Scheme '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1065,9 +1104,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue security level members by issue security scheme
+      summary: 'Get Issue Security Level Members By Issue Security Scheme '
       tags:
-        - - - - Issue security level
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - Members
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1143,9 +1188,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete issue security scheme
+      summary: 'Delete Issue Security Scheme '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1227,9 +1276,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add issue security levels
+      summary: 'Add Issue Security Levels '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1321,9 +1375,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove issue security level
+      summary: 'Remove Issue Security Level '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - REST
+        - Removes
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1402,9 +1462,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue security level
+      summary: 'Update Issue Security Level '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1488,9 +1553,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add issue security level members
+      summary: 'Add Issue Security Level Members '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - Members
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -1564,9 +1635,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove member from issue security level
+      summary: 'Remove Member From Issue Security Level '
       tags:
-        - - - - Issue security schemes
+        - Issue Security Schemes
+        - Issues
+        - Levels
+        - Members
+        - REST
+        - Removes
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
