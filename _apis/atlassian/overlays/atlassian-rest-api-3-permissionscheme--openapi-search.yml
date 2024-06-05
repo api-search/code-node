@@ -138,9 +138,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete permission scheme
+      summary: 'Delete Permission Scheme '
       tags:
-        - - - - Permission schemes
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -204,9 +207,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get permission scheme
+      summary: 'Get Permission Scheme '
       tags:
-        - - - - Permission schemes
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -316,9 +322,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update permission scheme
+      summary: 'Update Permission Scheme '
       tags:
-        - - - - Permission schemes
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -391,9 +400,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get permission scheme grants
+      summary: 'Get Permission Scheme Grants '
       tags:
-        - - - - Permission schemes
+        - Grants
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -479,9 +492,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Create permission grant
+      summary: 'Create Permission Grant '
       tags:
-        - - - - Permission schemes
+        - Grants""
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -541,9 +558,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete permission scheme grant
+      summary: 'Delete Permission Scheme Grant '
       tags:
-        - - - - Permission schemes
+        - Grants""
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -612,9 +633,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get permission scheme grant
+      summary: 'Get Permission Scheme Grant '
       tags:
-        - - - - Permission schemes
+        - Grants""
+        - Permission
+        - Permission Schemes
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
