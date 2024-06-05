@@ -150,9 +150,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue types for project
+      summary: 'Get Issue Types For Project '
       tags:
-        - - - - Issue types
+        - Issue Types
+        - Issues
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -222,9 +226,12 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Delete issue type
+      summary: 'Delete Issue Type '
       tags:
-        - - - - Issue types
+        - Issue Types
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -283,9 +290,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue type
+      summary: 'Get Issue Type '
       tags:
-        - - - - Issue types
+        - Issue Types
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -354,9 +364,12 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Update issue type
+      summary: 'Update Issue Type '
       tags:
-        - - - - Issue types
+        - Issue Types
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -421,9 +434,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get alternative issue types
+      summary: 'Get Alternative Issue Types '
       tags:
-        - - - - Issue types
+        - Alternatives
+        - Issue Types
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -540,9 +557,14 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Load issue type avatar
+      summary: 'Load Issue Type Avatar '
       tags:
-        - - - - Issue types
+        - Avatars
+        - Issue Types
+        - Issues
+        - Load
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -603,9 +625,14 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue type property keys
+      summary: 'Get Issue Type Property Keys '
       tags:
-        - - - - Issue type properties
+        - Issue Types
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -661,9 +688,14 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Delete issue type property
+      summary: 'Delete Issue Type Property '
       tags:
-        - - - - Issue type properties
+        - Issue Types
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -729,9 +761,14 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get issue type property
+      summary: 'Get Issue Type Property '
       tags:
-        - - - - Issue type properties
+        - Issue Types
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -822,9 +859,15 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Set issue type property
+      summary: 'Set Issue Type Property '
       tags:
-        - - - - Issue type properties
+        - Issue Types
+        - Issues
+        - Keys
+        - Properties
+        - REST
+        - Sets
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
