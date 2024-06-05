@@ -674,9 +674,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get recent projects
+      summary: 'Get Recent Projects '
       tags:
-        - - - - Projects
+        - Projects
+        - REST
+        - Recent
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -927,9 +929,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get projects paginated
+      summary: 'Get Projects Paginated '
       tags:
-        - - - - Projects
+        - Paginated
+        - Projects
+        - REST
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -984,9 +989,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get all project types
+      summary: 'Get All Project Types '
       tags:
-        - - - - Project types
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1023,9 +1030,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get licensed project types
+      summary: 'Get Licensed Project Types '
       tags:
-        - - - - Project types
+        - Accessible
+        - Licensed
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1078,9 +1089,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project type by key
+      summary: 'Get Project Type By Key '
       tags:
-        - - - - Project types
+        - Keys
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1133,9 +1147,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get accessible project type by key
+      summary: 'Get Accessible Project Type By Key '
       tags:
-        - - - - Project types
+        - Accessible
+        - Keys
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1193,9 +1211,11 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Delete project
+      summary: 'Delete Project '
       tags:
-        - - - - Projects
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1288,9 +1308,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project
+      summary: 'Get Project '
       tags:
-        - - - - Projects
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1413,9 +1435,11 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Update project
+      summary: 'Update Project '
       tags:
-        - - - - Projects
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1478,9 +1502,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Archive project
+      summary: 'Archive Project '
       tags:
-        - - - - Projects
+        - Archive
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1545,9 +1572,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Set project avatar
+      summary: 'Set Project Avatar '
       tags:
-        - - - - Project avatars
+        - Avatars
+        - Keys
+        - Projects
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1603,9 +1634,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Delete project avatar
+      summary: 'Delete Project Avatar '
       tags:
-        - - - - Project avatars
+        - Avatars
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1734,9 +1768,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Load project avatar
+      summary: 'Load Project Avatar '
       tags:
-        - - - - Project avatars
+        - Avatars
+        - Keys
+        - Load
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1790,9 +1828,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get all project avatars
+      summary: 'Get All Project Avatars '
       tags:
-        - - - - Project avatars
+        - Avatars
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1840,9 +1881,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Remove the default data classification level from a project
+      summary: 'Remove The Default Data Classification Level From A Project '
       tags:
-        - - - - Project classification levels
+        - Classifications
+        - Data
+        - Default
+        - Keys
+        - Levels
+        - Projects
+        - REST
+        - Removes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1895,9 +1943,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get the default data classification level of a project
+      summary: 'Get The Default Data Classification Level Of A Project '
       tags:
-        - - - - Project classification levels
+        - Classifications
+        - Data
+        - Default
+        - Keys
+        - Levels
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1953,9 +2007,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Update the default data classification level of a project
+      summary: 'Update The Default Data Classification Level Of A Project '
       tags:
-        - - - - Project classification levels
+        - Classifications
+        - Data
+        - Default
+        - Keys
+        - Levels
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2099,9 +2159,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project components paginated
+      summary: 'Get Project Components Paginated '
       tags:
-        - - - - Project components
+        - Components
+        - Keys
+        - Paginated
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2193,9 +2257,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project components
+      summary: 'Get Project Components '
       tags:
-        - - - - Project components
+        - Components
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2255,9 +2322,12 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Delete project asynchronously
+      summary: 'Delete Project Asynchronously '
       tags:
-        - - - - Projects
+        - Asynchronously
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2310,9 +2380,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get project features
+      summary: 'Get Project Features '
       tags:
-        - - - - Project features
+        - Features
+        - Keys
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2378,9 +2451,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Set project feature state
+      summary: 'Set Project Feature State '
       tags:
-        - - - - Project features
+        - Feature
+        - Features
+        - Keys
+        - Projects
+        - REST
+        - Sets
+        - States
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -2438,9 +2517,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project property keys
+      summary: 'Get Project Property Keys '
       tags:
-        - - - - Project properties
+        - Keys
+        - Projects
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2505,9 +2587,12 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Delete project property
+      summary: 'Delete Project Property '
       tags:
-        - - - - Project properties
+        - Keys
+        - Projects
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2572,9 +2657,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project property
+      summary: 'Get Project Property '
       tags:
-        - - - - Project properties
+        - Keys
+        - Projects
+        - Properties
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2662,9 +2750,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Set project property
+      summary: 'Set Project Property '
       tags:
-        - - - - Project properties
+        - Keys
+        - Projects
+        - Properties
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2734,9 +2826,13 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Restore deleted or archived project
+      summary: 'Restore Deleted Or Archived Project '
       tags:
-        - - - - Projects
+        - Archived
+        - Keys
+        - Projects
+        - REST
+        - Restore
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2815,9 +2911,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project roles for project
+      summary: 'Get Project Roles For Project '
       tags:
-        - - - - Project roles
+        - Keys
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2903,9 +3002,13 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Delete actors from project role
+      summary: 'Delete Actors From Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Keys
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2990,9 +3093,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project role for project
+      summary: 'Get Project Role For Project '
       tags:
-        - - - - Project roles
+        - Keys
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3098,9 +3204,13 @@ paths:
         - OAuth2:
             - manage:jira-configuration
         - {}
-      summary: Add actors to project role
+      summary: 'Add Actors To Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Keys
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3203,9 +3313,14 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Set actors for project role
+      summary: 'Set Actors For Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Keys
+        - Projects
+        - REST
+        - Roles
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3286,9 +3401,14 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project role details
+      summary: 'Get Project Role Details '
       tags:
-        - - - - Project roles
+        - Details
+        - Keys
+        - Projects
+        - REST
+        - Role Details
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3353,9 +3473,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get all statuses for project
+      summary: 'Get All Statuses For Project '
       tags:
-        - - - - Projects
+        - Keys
+        - Projects
+        - REST
+        - Statuses
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3488,9 +3611,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project versions paginated
+      summary: 'Get Project Versions Paginated '
       tags:
-        - - - - Project versions
+        - Keys
+        - Paginated
+        - Projects
+        - REST
+        - Versions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3559,9 +3686,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project versions
+      summary: 'Get Project Versions '
       tags:
-        - - - - Project versions
+        - Keys
+        - Projects
+        - REST
+        - Versions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3615,9 +3745,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Get project's sender email
+      summary: 'Get Project''s Sender Email '
       tags:
-        - - - - Project email
+        - Emails
+        - Project's
+        - Projects
+        - REST
+        - Sender
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3685,9 +3819,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Set project's sender email
+      summary: 'Set Project''s Sender Email '
       tags:
-        - - - - Project email
+        - Emails
+        - Project's
+        - Projects
+        - REST
+        - Sender
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3745,9 +3884,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get project issue type hierarchy
+      summary: 'Get Project Issue Type Hierarchy '
       tags:
-        - - - - Projects
+        - Hierarchy
+        - Issues
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3814,9 +3957,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get project issue security scheme
+      summary: 'Get Project Issue Security Scheme '
       tags:
-        - - - - Project permission schemes
+        - Issue Security Level Scheme
+        - Issues
+        - Keys
+        - Projects
+        - REST
+        - Schemes
+        - Security
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3919,9 +4068,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get project notification scheme
+      summary: 'Get Project Notification Scheme '
       tags:
-        - - - - Projects
+        - Keys
+        - Notifications
+        - Notificationscheme
+        - Projects
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -4003,9 +4157,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get assigned permission scheme
+      summary: 'Get Assigned Permission Scheme '
       tags:
-        - - - - Project permission schemes
+        - Assigned
+        - Keys
+        - Permission
+        - Permission Schemes
+        - Projects
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -4094,9 +4254,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Assign permission scheme
+      summary: 'Assign Permission Scheme '
       tags:
-        - - - - Project permission schemes
+        - Assign
+        - Keys
+        - Permission
+        - Permission Schemes
+        - Projects
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -4165,9 +4331,15 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get project issue security levels
+      summary: 'Get Project Issue Security Levels '
       tags:
-        - - - - Project permission schemes
+        - Issues
+        - Keys
+        - Levels
+        - Projects
+        - REST
+        - Security
+        - Security Levels
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
