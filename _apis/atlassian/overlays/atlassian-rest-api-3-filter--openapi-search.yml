@@ -267,9 +267,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get default share scope
+      summary: 'Get Default Share Scope '
       tags:
-        - - - - Filter sharing
+        - Default
+        - Filter
+        - REST
+        - Scopes
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -315,9 +319,14 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set default share scope
+      summary: 'Set Default Share Scope '
       tags:
-        - - - - Filter sharing
+        - Default
+        - Filter
+        - REST
+        - Scopes
+        - Sets
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -395,9 +404,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get favorite filters
+      summary: 'Get Favorite Filters '
       tags:
-        - - - - Filters
+        - Favorite
+        - Favourite
+        - Filter
+        - Filters
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -487,9 +500,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get my filters
+      summary: 'Get My Filters '
       tags:
-        - - - - Filters
+        - Filter
+        - Filters
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -727,9 +742,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Search for filters
+      summary: 'Search For Filters '
       tags:
-        - - - - Filters
+        - Filter
+        - Filters
+        - REST
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -782,9 +800,10 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete filter
+      summary: 'Delete Filter '
       tags:
-        - - - - Filters
+        - Filter
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -869,9 +888,10 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get filter
+      summary: 'Get Filter '
       tags:
-        - - - - Filters
+        - Filter
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -968,9 +988,10 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Update filter
+      summary: 'Update Filter '
       tags:
-        - - - - Filters
+        - Filter
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1032,9 +1053,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Reset columns
+      summary: 'Reset Columns '
       tags:
-        - - - - Filters
+        - Columns
+        - Filter
+        - REST
+        - Reset
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1097,9 +1121,11 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get columns
+      summary: 'Get Columns '
       tags:
-        - - - - Filters
+        - Columns
+        - Filter
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1181,9 +1207,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Set columns
+      summary: 'Set Columns '
       tags:
-        - - - - Filters
+        - Columns
+        - Filter
+        - REST
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1253,9 +1282,13 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Remove filter as favorite
+      summary: 'Remove Filter As Favorite '
       tags:
-        - - - - Filters
+        - Favorite
+        - Favourite
+        - Filter
+        - REST
+        - Removes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1339,9 +1372,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add filter as favorite
+      summary: 'Add Filter As Favorite '
       tags:
-        - - - - Filters
+        - Favorite
+        - Favourite
+        - Filter
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1414,9 +1450,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Change filter owner
+      summary: 'Change Filter Owner '
       tags:
-        - - - - Filters
+        - Change
+        - Filter
+        - Owners
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1494,9 +1533,13 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get share permissions
+      summary: 'Get Share Permissions '
       tags:
-        - - - - Filter sharing
+        - Filter
+        - Permission
+        - Permissions
+        - REST
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1595,9 +1638,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Add share permission
+      summary: 'Add Share Permission '
       tags:
-        - - - - Filter sharing
+        - Filter
+        - Permission
+        - REST
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1663,9 +1709,12 @@ paths:
         - OAuth2:
             - write:jira-work
         - {}
-      summary: Delete share permission
+      summary: 'Delete Share Permission '
       tags:
-        - - - - Filter sharing
+        - Filter
+        - Permission
+        - REST
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -1735,9 +1784,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get share permission
+      summary: 'Get Share Permission '
       tags:
-        - - - - Filter sharing
+        - Filter
+        - Permission
+        - REST
+        - Share
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
