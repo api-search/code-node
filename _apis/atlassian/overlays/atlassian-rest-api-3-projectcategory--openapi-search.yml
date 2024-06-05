@@ -89,9 +89,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Delete project category
+      summary: 'Delete Project Category '
       tags:
-        - - - - Project categories
+        - Categories
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -137,9 +139,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get project category by ID
+      summary: 'Get Project Category By ID '
       tags:
-        - - - - Project categories
+        - Categories
+        - ID
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -203,9 +208,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-project
-      summary: Update project category
+      summary: 'Update Project Category '
       tags:
-        - - - - Project categories
+        - Categories
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
