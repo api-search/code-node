@@ -168,9 +168,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get projects using notification schemes paginated
+      summary: 'Get Projects Using Notification Schemes Paginated '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - Paginated
+        - Projects
+        - REST
+        - Schemes
+        - Using
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -278,9 +284,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get notification scheme
+      summary: 'Get Notification Scheme '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -369,9 +378,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update notification scheme
+      summary: 'Update Notification Scheme '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -456,9 +468,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add notifications to notification scheme
+      summary: 'Add Notifications To Notification Scheme '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: ADMIN
@@ -522,9 +537,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete notification scheme
+      summary: 'Delete Notification Scheme '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - REST
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -594,9 +612,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove notification from notification scheme
+      summary: 'Remove Notification From Notification Scheme '
       tags:
-        - - - - Issue notification schemes
+        - Notifications
+        - Notificationscheme
+        - REST
+        - Removes
+        - Schemes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: ADMIN
