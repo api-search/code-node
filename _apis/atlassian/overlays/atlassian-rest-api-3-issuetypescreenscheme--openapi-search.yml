@@ -197,9 +197,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue type screen scheme items
+      summary: 'Get Issue Type Screen Scheme Items '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - Items
+        - Mapping
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -277,9 +284,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue type screen schemes for projects
+      summary: 'Get Issue Type Screen Schemes For Projects '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -352,9 +365,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Assign issue type screen scheme to project
+      summary: 'Assign Issue Type Screen Scheme To Project '
       tags:
-        - - - - Issue type screen schemes
+        - Assign
+        - Issue Type Screen Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -414,9 +434,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete issue type screen scheme
+      summary: 'Delete Issue Type Screen Scheme '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -488,9 +513,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue type screen scheme
+      summary: 'Update Issue Type Screen Scheme '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -574,9 +604,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Append mappings to issue type screen scheme
+      summary: 'Append Mappings To Issue Type Screen Scheme '
       tags:
-        - - - - Issue type screen schemes
+        - Append
+        - Issue Type Screen Schemes
+        - Issues
+        - Mapping
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -650,9 +687,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue type screen scheme default screen scheme
+      summary: 'Update Issue Type Screen Scheme Default Screen Scheme '
       tags:
-        - - - - Issue type screen schemes
+        - Default
+        - Issue Type Screen Schemes
+        - Issues
+        - Mapping
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -731,9 +775,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove mappings from issue type screen scheme
+      summary: 'Remove Mappings From Issue Type Screen Scheme '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - Mapping
+        - REST
+        - Removes
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -811,9 +862,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue type screen scheme projects
+      summary: 'Get Issue Type Screen Scheme Projects '
       tags:
-        - - - - Issue type screen schemes
+        - Issue Type Screen Schemes
+        - Issues
+        - Projects
+        - REST
+        - Schemes
+        - Screen
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
