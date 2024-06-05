@@ -608,9 +608,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get fields paginated
+      summary: 'Get Fields Paginated '
       tags:
-        - - - - Issue fields
+        - Fields
+        - Paginated
+        - REST
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -735,9 +738,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get fields in trash paginated
+      summary: 'Get Fields In Trash Paginated '
       tags:
-        - - - - Issue fields
+        - Fields
+        - Paginated
+        - REST
+        - Search
+        - Trash
+        - Trashed
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -814,9 +822,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update custom field
+      summary: 'Update Custom Field '
       tags:
-        - - - - Issue fields
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -924,9 +934,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get custom field contexts
+      summary: 'Get Custom Field Contexts '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Contexts
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1003,9 +1017,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Create custom field context
+      summary: 'Create Custom Field Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1127,9 +1144,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get custom field contexts default values
+      summary: 'Get Custom Field Contexts Default Values '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Contexts
+        - Custom
+        - Default
+        - Fields
+        - REST
+        - Value
+        - Values
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1245,9 +1269,17 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Set custom field contexts default values
+      summary: 'Set Custom Field Contexts Default Values '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Contexts
+        - Custom
+        - Default
+        - Fields
+        - REST
+        - Sets
+        - Value
+        - Values
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1329,9 +1361,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue types for custom field context
+      summary: 'Get Issue Types For Custom Field Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - Issue Type Mappings
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1445,9 +1483,17 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get custom field contexts for projects and issue types
+      summary: 'Get Custom Field Contexts For Projects And Issue Types '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Contexts
+        - Custom
+        - Fields
+        - Issues
+        - Mapping
+        - Projects
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1535,9 +1581,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get project mappings for custom field context
+      summary: 'Get Project Mappings For Custom Field Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - Mapping
+        - Project Mappings
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1606,9 +1658,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete custom field context
+      summary: 'Delete Custom Field Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1685,9 +1740,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update custom field context
+      summary: 'Update Custom Field Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1787,9 +1845,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add issue types to context
+      summary: 'Add Issue Types To Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Fields
+        - Issue Types
+        - Issues
+        - REST
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1874,9 +1937,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove issue types from context
+      summary: 'Remove Issue Types From Context '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Fields
+        - Issue Types
+        - Issues
+        - REST
+        - Removes
+        - Types
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -1988,9 +2057,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get custom field options (context)
+      summary: 'Get Custom Field Options (context) '
       tags:
-        - - - - Issue custom field options
+        - (context)
+        - Context
+        - Custom
+        - Fields
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2092,9 +2166,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Create custom field options (context)
+      summary: 'Create Custom Field Options (context) '
       tags:
-        - - - - Issue custom field options
+        - (context)
+        - Context
+        - Custom
+        - Fields
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2196,9 +2275,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update custom field options (context)
+      summary: 'Update Custom Field Options (context) '
       tags:
-        - - - - Issue custom field options
+        - (context)
+        - Context
+        - Custom
+        - Fields
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2289,9 +2373,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Reorder custom field options (context)
+      summary: 'Reorder Custom Field Options (context) '
       tags:
-        - - - - Issue custom field options
+        - (context)
+        - Context
+        - Custom
+        - Fields
+        - Move
+        - Options
+        - REST
+        - Reorder
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2375,9 +2466,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete custom field options (context)
+      summary: 'Delete Custom Field Options (context) '
       tags:
-        - - - - Issue custom field options
+        - (context)
+        - Context
+        - Custom
+        - Fields
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2460,9 +2556,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Assign custom field context to projects
+      summary: 'Assign Custom Field Context To Projects '
       tags:
-        - - - - Issue custom field contexts
+        - Assign
+        - Context
+        - Custom
+        - Fields
+        - Projects
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2553,9 +2654,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Remove custom field context from projects
+      summary: 'Remove Custom Field Context From Projects '
       tags:
-        - - - - Issue custom field contexts
+        - Context
+        - Custom
+        - Fields
+        - Projects
+        - REST
+        - Removes
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2622,9 +2728,11 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Get contexts for a field
+      summary: 'Get Contexts For A Field '
       tags:
-        - - - - Issue fields
+        - Contexts
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2702,9 +2810,11 @@ paths:
         - OAuth2:
             - manage:jira-project
         - {}
-      summary: Get screens for a field
+      summary: 'Get Screens For A Field '
       tags:
-        - - - - Screens
+        - Fields
+        - REST
+        - Screens
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2794,9 +2904,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get all issue field options
+      summary: 'Get All Issue Field Options '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2894,9 +3008,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Create issue field option
+      summary: 'Create Issue Field Option '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -2983,9 +3101,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get selectable issue field options
+      summary: 'Get Selectable Issue Field Options '
       tags:
-        - - - - Issue custom field options (apps)
+        - Edit
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
+        - Selectable
+        - Suggestions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3072,9 +3197,16 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Get visible issue field options
+      summary: 'Get Visible Issue Field Options '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
+        - Search
+        - Suggestions
+        - Visible
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3143,9 +3275,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete issue field option
+      summary: 'Delete Issue Field Option '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3219,9 +3355,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get issue field option
+      summary: 'Get Issue Field Option '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3329,9 +3469,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update issue field option
+      summary: 'Update Issue Field Option '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3461,9 +3605,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Replace issue field option
+      summary: 'Replace Issue Field Option '
       tags:
-        - - - - Issue custom field options (apps)
+        - Fields
+        - Issues
+        - Keys
+        - Options
+        - REST
+        - Replace
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3548,9 +3697,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete custom field
+      summary: 'Delete Custom Field '
       tags:
-        - - - - Issue fields
+        - Custom
+        - Fields
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -3616,9 +3767,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Restore custom field from trash
+      summary: 'Restore Custom Field From Trash '
       tags:
-        - - - - Issue fields
+        - Custom
+        - Fields
+        - REST
+        - Restore
+        - Trash
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -3684,9 +3839,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Move custom field to trash
+      summary: 'Move Custom Field To Trash '
       tags:
-        - - - - Issue fields
+        - Custom
+        - Fields
+        - Move
+        - REST
+        - Trash
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
