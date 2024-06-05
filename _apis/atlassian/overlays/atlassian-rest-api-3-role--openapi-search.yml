@@ -116,9 +116,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete project role
+      summary: 'Delete Project Role '
       tags:
-        - - - - Project roles
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -175,9 +177,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get project role by ID
+      summary: 'Get Project Role By ID '
       tags:
-        - - - - Project roles
+        - ID
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -254,9 +259,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Partial update project role
+      summary: 'Partial Update Project Role '
       tags:
-        - - - - Project roles
+        - Partial
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -332,9 +340,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Fully update project role
+      summary: 'Fully Update Project Role '
       tags:
-        - - - - Project roles
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -422,9 +432,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete default actors from project role
+      summary: 'Delete Default Actors From Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Default
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -484,9 +498,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get default actors for project role
+      summary: 'Get Default Actors For Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Default
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -559,9 +577,13 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Add default actors to project role
+      summary: 'Add Default Actors To Project Role '
       tags:
-        - - - - Project role actors
+        - Actors
+        - Default
+        - Projects
+        - REST
+        - Roles
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
