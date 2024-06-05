@@ -72,9 +72,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Validate project key
+      summary: 'Validate Project Key '
       tags:
-        - - - - Project key and name validation
+        - Ate
+        - Keys
+        - Projects
+        - Projectval
+        - REST
+        - Validate
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -117,9 +122,15 @@ paths:
           description: Returned if the authentication credentials are incorrect.
       security:
         - basicAuth: []
-      summary: Get valid project key
+      summary: 'Get Valid Project Key '
       tags:
-        - - - - Project key and name validation
+        - Ate
+        - Keys
+        - Projects
+        - Projectval
+        - REST
+        - Val
+        - Valid
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: READ
@@ -159,9 +170,15 @@ paths:
           description: Returned if a valid project name cannot be generated.
       security:
         - basicAuth: []
-      summary: Get valid project name
+      summary: 'Get Valid Project Name '
       tags:
-        - - - - Project key and name validation
+        - Ate
+        - Names
+        - Projects
+        - Projectval
+        - REST
+        - Val
+        - Valid
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-connect-scope: READ
