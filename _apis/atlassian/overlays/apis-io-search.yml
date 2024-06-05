@@ -649,60 +649,147 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-group-issues
   - name: Atlassian Jira Issue Link API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents links between issues. Use it to get, create, and
+      delete links between issues.
+    tags:
+      - Issues
+      - Link
+      - REST
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issuelink--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelink--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/#api-group-issue-links
   - name: Atlassian Jira Issue Link Type API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents links between issues. Use it to get, create, and
+      delete links between issues.
+    tags:
+      - Issues
+      - Link
+      - REST
+      - Types
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issuelinktype--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/#api-group-issue-links
   - name: Atlassian Jira Issue Link Type API
-    description: Needs description.
-    tags: []
+    description: >+
+      This resource represents issue link types. Use it to get, create, update,
+      and delete link issue types as well as get lists of all link issue types.
+
+    tags:
+      - Issues
+      - Link
+      - REST
+      - Types
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issuelinktype--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-link-types/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-link-types/#api-group-issue-link-types
   - name: Atlassian Jira Issues API
-    description: Needs description.
-    tags: []
+    description: This is for managing the issues across Jira resources.
+    tags:
+      - Archive
+      - Archived
+      - Exports
+      - Issues
+      - REST
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issues--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issues--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-group-issues
   - name: Atlassian Jira Issue Security Schemes API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue security schemes. Use it to get an issue
+      security scheme or a list of issue security schemes. Issue security
+      schemes control which users or groups of users can view an issue. When an
+      issue security scheme is associated with a project, its security levels
+      can be applied to issues in that project. Sub-tasks also inherit the
+      security level of their parent issue.
+    tags:
+      - Issue Security Schemes
+      - Issues
+      - Levels
+      - REST
+      - Security
+      - Default
+      - Sets
+      - Members
+      - Projects
+      - Schemes
+      - Using
+      - Associate
+      - Search
+      - Removes
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-rest-api-3-issuesecurityschemes--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-schemes/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuesecurityschemes--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-schemes/#api-group-issue-security-schemes
   - name: Atlassian Jira Issue Type API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issues types. Use it to get, create, update, and
+      delete issue types, get all issue types for a user, get alternative issue
+      types, and set an avatar for an issue type.
+    tags:
+      - Issue Types
+      - Issues
+      - Projects
+      - REST
+      - Types
+      - Alternatives
+      - Avatars
+      - Load
+      - Keys
+      - Properties
+      - Sets
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-issuetype--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-types/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-issuetype--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-types/#api-group-issue-types
   - name: Atlassian Jira Issue Type Scheme API
     description: Needs description.
     tags: []
