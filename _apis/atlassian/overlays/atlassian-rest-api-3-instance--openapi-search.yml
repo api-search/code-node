@@ -52,9 +52,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Get license
+      summary: 'Get License '
       tags:
-        - - - - License metrics
+        - Instances
+        - Licenses
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
