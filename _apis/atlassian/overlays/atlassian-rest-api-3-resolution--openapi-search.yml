@@ -135,9 +135,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Set default resolution
+      summary: 'Set Default Resolution '
       tags:
-        - - - - Issue resolutions
+        - Default
+        - REST
+        - Resolutions
+        - Sets
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -207,9 +210,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Move resolutions
+      summary: 'Move Resolutions '
       tags:
-        - - - - Issue resolutions
+        - Move
+        - REST
+        - Resolutions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -279,9 +284,11 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Search resolutions
+      summary: 'Search Resolutions '
       tags:
-        - - - - Issue resolutions
+        - REST
+        - Resolutions
+        - Search
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -376,9 +383,10 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Delete resolution
+      summary: 'Delete Resolution '
       tags:
-        - - - - Issue resolutions
+        - REST
+        - Resolutions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
@@ -417,9 +425,10 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get resolution
+      summary: 'Get Resolution '
       tags:
-        - - - - Issue resolutions
+        - REST
+        - Resolutions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -500,9 +509,10 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Update resolution
+      summary: 'Update Resolution '
       tags:
-        - - - - Issue resolutions
+        - REST
+        - Resolutions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-experimental: true
