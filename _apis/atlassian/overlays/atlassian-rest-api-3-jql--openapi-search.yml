@@ -184,9 +184,15 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get field reference data (GET)
+      summary: 'Get Field Reference Data (GET) '
       tags:
-        - - - - JQL
+        - (GET)
+        - Autocomplete Data
+        - Data
+        - Fields
+        - JQL
+        - REST
+        - References
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -265,9 +271,15 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get field reference data (POST)
+      summary: 'Get Field Reference Data (POST) '
       tags:
-        - - - - JQL
+        - (POST)
+        - Autocomplete Data
+        - Data
+        - Fields
+        - JQL
+        - REST
+        - References
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -346,9 +358,15 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Get field auto complete suggestions
+      summary: 'Get Field Auto Complete Suggestions '
       tags:
-        - - - - JQL
+        - Auto
+        - Autocomplete Data
+        - Complete
+        - Fields
+        - JQL
+        - REST
+        - Suggestions
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -440,9 +458,14 @@ paths:
       security:
         - basicAuth: []
         - OAuth2: []
-      summary: Get precomputations (apps)
+      summary: 'Get Precomputations (apps) '
       tags:
-        - - - - JQL functions (apps)
+        - (apps)
+        - Computation
+        - Functions
+        - JQL
+        - Pre Computations
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -494,9 +517,14 @@ paths:
       security:
         - basicAuth: []
         - OAuth2: []
-      summary: Update precomputations (apps)
+      summary: 'Update Precomputations (apps) '
       tags:
-        - - - - JQL functions (apps)
+        - (apps)
+        - Computation
+        - Functions
+        - JQL
+        - Pre Computations
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -556,9 +584,14 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-work
-      summary: Check issues against JQL
+      summary: 'Check Issues Against JQL '
       tags:
-        - - - - Issue search
+        - Against
+        - Checks
+        - Issues
+        - JQL
+        - Match
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -666,9 +699,12 @@ paths:
         - OAuth2:
             - read:jira-work
         - {}
-      summary: Parse JQL query
+      summary: 'Parse JQL Query '
       tags:
-        - - - - JQL
+        - JQL
+        - Parse
+        - Queries
+        - REST
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
@@ -747,9 +783,15 @@ paths:
         - basicAuth: []
         - OAuth2:
             - read:jira-user
-      summary: Convert user identifiers to account IDs in JQL queries
+      summary: 'Convert User Identifiers To Account IDs In JQL Queries '
       tags:
-        - - - - JQL
+        - Accounts
+        - Convert
+        - IDs
+        - JQL
+        - Queries
+        - REST
+        - Users
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: true
       x-atlassian-oauth2-scopes:
@@ -858,9 +900,12 @@ paths:
         - basicAuth: []
         - OAuth2:
             - manage:jira-configuration
-      summary: Sanitize JQL queries
+      summary: 'Sanitize JQL Queries '
       tags:
-        - - - - JQL
+        - JQL
+        - Queries
+        - REST
+        - Sanitize
       x-atlassian-data-security-policy:
         - app-access-rule-exempt: false
       x-atlassian-oauth2-scopes:
