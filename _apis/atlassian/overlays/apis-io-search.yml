@@ -1401,132 +1401,380 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/#api-rest-api-3-status-get
   - name: Atlassian Jira Status Category API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents status categories. Use it to obtain a list of all
+      status categories and the details of a category. Status categories
+      provided a mechanism for categorizing statuses.
+    tags:
+      - Categories
+      - Keys
+      - REST
+      - Status
+      - Status Categories
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-statuscategory--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-status-categories/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuscategory--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-status-categories/#api-group-workflow-status-categories
   - name: Atlassian Jira Statuses API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue workflow statuses. Use it to obtain a list
+      of all statuses associated with workflows and the details of a status.
+    tags:
+      - Paginated
+      - REST
+      - Search
+      - Statuses
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-statuses--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-statuses--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/#api-rest-api-3-status-get
   - name: Atlassian Jira Task API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents a long-running asynchronous tasks. Use it to
+      obtain details about the progress of a long-running task or cancel a
+      long-running task.
+    tags:
+      - REST
+      - Tasks
+      - Cancel
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-task--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-tasks/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
-  - name: Atlassian Jira Ui Modifications API
-    description: Needs description.
-    tags: []
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-tasks/#api-group-tasks
+  - name: Atlassian Jira UI Modifications API
+    description: >-
+      UI modifications is a feature available for Forge apps only. It enables
+      Forge apps to control how selected Jira fields behave on the following
+      views: global issue create, issue view. For example: hide specific fields,
+      set them as required, etc.
+    tags:
+      - Modifications
+      - REST
+      - UI
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-uimodifications--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications--apps-/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-uimodifications--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications--apps-/#api-group-ui-modifications--apps-
   - name: Atlassian Jira Universal Avatar API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents system and custom avatars. Use it to obtain the
+      details of system or custom avatars, add and remove avatars from a project
+      or issue type, and obtain avatar images.
+    tags:
+      - Avatars
+      - Entities
+      - Owners
+      - REST
+      - Types
+      - Universal
+      - Load
+      - Objects
+      - Owning
+      - Images
+      - View
+      - ID
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-universal-avatar--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-avatars/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-universal-avatar--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-avatars/#api-group-avatars
   - name: Atlassian Jira User API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represent users. Use it to get, get a list of, create, and
+      delete users, get, set, and reset a user's default issue table columns,
+      get a list of the groups the user belongs to, and get a list of user
+      account IDs for a list of usernames or user keys.
+    tags:
+      - Assignable
+      - Find
+      - Multi
+      - Projects
+      - REST
+      - Search
+      - Users
+      - Issues
+      - Bulk
+      - Accounts
+      - IDs
+      - Migrations
+      - Columns
+      - Default
+      - Reset
+      - Sets
+      - Emails
+      - Groups
+      - Permission
+      - Permissions
+      - Picker
+      - Keys
+      - Properties
+      - Queries
+      - Browse
+      - View Issues
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-user--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-user--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/#api-group-users
   - name: Atlassian Jira Users API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represent users. Use it to get, get a list of, create, and
+      delete users, get, set, and reset a user's default issue table columns,
+      get a list of the groups the user belongs to, and get a list of user
+      account IDs for a list of usernames or user keys.
+    tags:
+      - REST
+      - Search
+      - Users
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-users--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-users--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/
   - name: Atlassian Jira Version API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents project versions. Use it to get, get lists of,
+      create, update, move, merge, and delete project versions. This resource
+      also provides counts of issues by version.
+    tags:
+      - REST
+      - Versions
+      - Issues
+      - Merge
+      - Mergeto
+      - Move
+      - Count
+      - Counts
+      - Related
+      - Version's
+      - Related Work
+      - Work
+      - Removes
+      - Replace
+      - Swap
+      - Unresolved
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-version--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-versions/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-version--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-versions/#api-group-project-versions
   - name: Atlassian Jira Webhook API
-    description: Needs description.
-    tags: []
+    description: >-
+      A webhook is a user-defined callback over HTTP. You can use Jira webhooks
+      to notify your app or web application when certain events occur in Jira.
+      For example, you might want to alert your remote application when an issue
+      is updated or when sprint is started. Using a webhook to do this means
+      that your remote application doesn't have to periodically poll Jira (via
+      the REST APIs) to determine whether changes have occurred.
+    tags:
+      - Failed
+      - REST
+      - Webhooks
+      - Extend
+      - Life
+      - Refresh
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-webhook--openapi-original.yml
+      - type: Documentation
+        url: https://developer.atlassian.com/server/jira/platform/webhooks/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-webhook--openapi-search.yml
+    humanURL: https://developer.atlassian.com/server/jira/platform/webhooks/
   - name: Atlassian Jira Workflow API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents workflows. Use it to Get workflows, Create
+      workflows, Update workflows, Delete inactive workflows, Get workflow
+      capabilities
+    tags:
+      - Configurations
+      - REST
+      - Rules
+      - Transitions
+      - Workflows
+      - Paginated
+      - Search
+      - Properties
+      - Entities
+      - Inactive
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-workflow--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflow--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/#api-group-workflows
   - name: Atlassian Jira Workflows API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents workflows. Use it to Get workflows, Create
+      workflows, Update workflows, Delete inactive workflows, Get workflow
+      capabilities
+    tags:
+      - Available
+      - Capabilities
+      - REST
+      - Workflows
+      - Bulk
+      - Ation
+      - Val
+      - Validate
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-workflows--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflows--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/
   - name: Atlassian Jira Workflow Scheme API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents workflow schemes. Use it to manage workflow
+      schemes and the workflow scheme's workflows and issue types. A workflow
+      scheme maps issue types to workflows. A workflow scheme can be associated
+      with one or more projects, which enables the projects to use the
+      workflow-issue type mappings.
+    tags:
+      - Associations
+      - Projects
+      - REST
+      - Schemes
+      - Workflow Scheme
+      - Workflows
+      - Assign
+      - Bulk
+      - Read
+      - Mapping
+      - Required
+      - Status
+      - Classic
+      - Draft
+      - Drafts
+      - Default
+      - Issue Types
+      - Issues
+      - Types
+      - Sets
+      - Publish
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-workflowscheme--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-workflow-schemes/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-workflowscheme--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-workflow-schemes/#api-group-workflow-schemes
   - name: Atlassian Jira Worklog API
-    description: Needs description.
-    tags: []
+    description: >-
+      This resource represents issue worklogs. Use it to get, create, update,
+      and delete worklogs, obtain lists of updated or deleted worklogs.
+    tags:
+      - IDs
+      - REST
+      - Worklogs
     properties:
       - type: OpenAPI
         url: properties/atlassian-rest-api-3-worklog--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-worklog--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/#api-group-issue-worklogs
   - name: Atlassian Jira Connect Addons API
-    description: Needs description.
-    tags: []
+    description: >+
+      Connect is a development framework for extending Atlassian cloud products.
+      Connect gives you control over the tech stack, infrastructure, and
+      integration with Atlassian Cloud products. You determine your security
+      implementation and authentication with external cloud providers, such as
+      AWS, Google Cloud, or Heroku. It handles discovery, installation,
+      authentication, and seamless integration into the user interface.
+
+    tags:
+      - Addons
+      - Applications
+      - Atlassian
+      - Connect
+      - Keys
+      - Properties
+      - REST
+      - Sets
     properties:
       - type: OpenAPI
         url: >-
           properties/atlassian-rest-atlassian-connect-1-addons--openapi-original.yml
+      - type: Documentation
+        url: >-
+          https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-atlassian-connect-1-addons--openapi-search.yml
+    humanURL: >-
+      https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/
   - name: Atlassian Jira Connect App API
     description: Needs description.
     tags: []
