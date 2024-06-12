@@ -15,7 +15,11 @@ apis:
       configuration settings for an announcement banner on a website or
       application. Users can access this resource to manage the appearance and
       content of the banner displayed to their audience.
-    tags: []
+    tags:
+      - Announcement
+      - Banner
+      - Configurations
+      - REST
     properties:
       - type: OpenAPI
         url: >-
