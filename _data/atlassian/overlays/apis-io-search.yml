@@ -30,6 +30,9 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-announcementbanner--openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/atlassian-rest-api-3-announcementbanner--openapi-api-evangelist-ratings.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-announcement-banner/#api-group-announcement-banner
   - name: Atlassian Jira App API
