@@ -57,6 +57,8 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/atlassian-rest-api-3-app--openapi-api-evangelist-ratings.yml
   - name: Atlassian Jira Application Properties API
     description: >-
       This resource represents app properties. Use it to store arbitrary data
