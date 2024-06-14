@@ -84,50 +84,47 @@ apis:
       Use the REST API to retrieve information about GitHub Apps and GitHub App
       installations.
     tags:
-      - Applications
-      - Authenticated
-      - Code
-      - Conversions
-      - Git
-      - Hub
-      - Manifests
-      - Configurations
-      - Hook
-      - Webhooks
-      - Deliveries
-      - Attempts
-      - Redeliver
-      - Installations
       - Access
-      - Tokens
-      - Suspend
-      - Suspended
-      - Unsuspend
-      - Grants
-      - Your
-      - Grants""
-      - Single
-      - Authorization
-      - Clients
-      - Checks
-      - Reset
-      - Scoped
-      - Slug
       - Actions
+      - Applications
       - Approvals
-      - History
-      - Owners
-      - Repositories
-      - Reviews
-      - Runs
-      - Workflows
+      - Attempts
+      - Authenticated
+      - Authorization
       - Branch
       - Branches
+      - Checks
+      - Clients
+      - Code
+      - Configurations
+      - Conversions
+      - Deliveries
+      - Git
+      - Grants
+      - History
+      - Hook
+      - Hub
+      - Installations
+      - Manifests
+      - Owners
       - Protected
       - Protection
+      - Redeliver
+      - Repositories
+      - Reset
       - Restrictions
+      - Reviews
+      - Runs
+      - Scoped
       - Sets
-      - Removes
+      - Single
+      - Slug
+      - Suspend
+      - Suspended
+      - Tokens
+      - Unsuspend
+      - Webhooks
+      - Workflows
     properties:
       - type: OpenAPI
         url: properties/github-app-openapi-original.yml
@@ -137,33 +134,30 @@ apis:
       - type: OpenAPI
         url: overlays/github-app-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/apps?apiVersion=2022-11-28
+    baseURL: https://api.github.com
   - name: GitHub Auth API
     description: >-
       You can authenticate to the REST API to access more endpoints and have a
       higher rate limit.
     tags:
       - Administrative
-      - Authorization
-      - Impersonation
-      - OAuth
-      - Tokens
-      - User Names
-      - Users
-      - Your
       - Applications
-      - Clients
-      - Get Or Create
-      - Specific
-      - Fingerprint
-      - Get Or Create
-      - Single
-      - Existing
+      - Authorization
       - Authorized
+      - Clients
+      - Existing
+      - Fingerprint
+      - Impersonation
       - Keys
+      - OAuth
       - SSH
       - Settings
       - Setup
-      - Removes
+      - Single
+      - Specific
+      - Tokens
+      - User Names
+      - Users
     properties:
       - type: OpenAPI
         url: properties/github-auth-openapi-original.yml
@@ -175,12 +169,13 @@ apis:
         url: overlays/github-auth-openapi-search.yml
     humanURL: >-
       https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
+    baseURL: https://api.github.com
   - name: GitHub Code of Conduct API
     description: Use the REST API to get information about codes of conduct.
     tags:
+      - Code
       - Codes
       - Conduct
-      - Code
       - Keys
     properties:
       - type: OpenAPI
@@ -192,6 +187,7 @@ apis:
         url: overlays/github-codes-openapi-search.yml
     humanURL: >-
       https://docs.github.com/en/rest/codes-of-conduct/codes-of-conduct?apiVersion=2022-11-28
+    baseURL: https://api.github.com
   - name: GitHub Emojis API
     description: >-
       Use the REST API to list and view all the available emojis to use on
@@ -206,6 +202,7 @@ apis:
       - type: OpenAPI
         url: overlays/github-emojis--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/emojis?apiVersion=2022-11-28
+    baseURL: https://api.github.com
   - name: GitHub Enterprise API
     description: >-
       Create integrations, retrieve data, and automate your workflows with the
@@ -221,26 +218,32 @@ apis:
       - type: OpenAPI
         url: overlays/github-enterprise-openapi-search.yml
     humanURL: https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
+    baseURL: https://api.github.com
   - name: GitHub Events API
-    description: Needs description.
+    description: Use the REST API to interact with GitHub events.
     tags:
+      - Authenticated
       - Events
       - Issues
-      - Owners
-      - Repositories
-      - Authenticated
       - Organizations
+      - Owners
+      - Public
+      - Repositories
       - User Names
       - Users
-      - Public
     properties:
       - type: OpenAPI
         url: properties/github-events--openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-events--openapi-search.yml
+    baseURL: https://api.github.com
+    humanURL: https://docs.github.com/en/rest/activity/events?apiVersion=2022-11-28
   - name: GitHub Feeds API
-    description: Needs description.
+    description: >-
+      Use the REST API to interact with GitHub feeds. Lists the feeds available
+      to the authenticated user. The response provides a URL for each feed. You
+      can then get a specific feed by sending a request to one of the feed URLs.
     tags: []
     properties:
       - type: OpenAPI
@@ -248,31 +251,37 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-feeds--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/activity/feeds?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Gists API
-    description: Needs description.
+    description: >-
+      Use the REST API to list, create, update and delete the public gists on
+      GitHub.
     tags:
-      - Gists
-      - Public
-      - Starred
+      - Checks
       - Comments
       - Commits
-      - Forks
       - Fork
-      - Checks
-      - If
-      - Is
-      - Star
-      - Unstar
+      - Forks
+      - Gists
+      - Public
       - Revisions
       - SHA
+      - Star
+      - Starred
+      - Unstar
     properties:
       - type: OpenAPI
         url: properties/github-gists--openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-gists--openapi-search.yml
+    baseURL: https://api.github.com/
+    humanURL: https://docs.github.com/en/rest/gists?apiVersion=2022-11-28
   - name: GitHub Gitignore Templates API
-    description: Needs description.
+    description: >-
+      Use the REST API to get .gitignore templates that can be used to ignore
+      files and directories.
     tags:
       - Git Ignore
       - Names
@@ -283,62 +292,70 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-gitignore-templates--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/gitignore?apiVersion=2022-11-28
+    baseURL: https://api.github.com
   - name: GitHub Installation API
-    description: Needs description.
+    description: >-
+      Use the REST API to get information about GitHub App installations and
+      perform actions within those installations.
     tags:
+      - Access
+      - Accessible
       - Applications
       - Authenticated
       - Installations
-      - Access
-      - Tokens
-      - Suspend
-      - Suspended
-      - Unsuspend
-      - Accessible
-      - Repositories
-      - Revoke
       - Organizations
       - Owners
-      - Users
-      - Removes
+      - Repositories
+      - Revoke
+      - Suspend
+      - Suspended
+      - Tokens
+      - Unsuspend
       - User Names
+      - Users
     properties:
       - type: OpenAPI
         url: properties/github-installation-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-installation-openapi-search.yml
+    baseURL: https://api.github.com/
   - name: GitHub Issues API
-    description: Needs description.
+    description: >-
+      Use the REST API to view and manage issues, including issue assignees,
+      comments, labels, and milestones.
     tags:
-      - Comments
-      - Issues
-      - Owners
-      - Repositories
-      - Reactions
-      - Events
-      - Numbers
-      - Assignees
-      - Removes
       - Assigned
       - Assignee
+      - Assignees
       - Checks
-      - If
-      - Users
+      - Comments
+      - Events
+      - Issues
       - Labels
-      - Sets
-      - Names
       - Locks
-      - Unlock
+      - Names
+      - Numbers
+      - Owners
+      - Reactions
+      - Repositories
+      - Sets
       - Timeline
+      - Unlock
+      - Users
     properties:
       - type: OpenAPI
         url: properties/github-issues--openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-issues--openapi-search.yml
+    baseURL: https://api.github.com/
+    humanURL: https://docs.github.com/en/rest/issues?apiVersion=2022-11-28
   - name: GitHub Licenses API
-    description: Needs description.
+    description: >-
+      Use the REST API to retrieve popular open source licenses and information
+      about a particular project's license file.
     tags:
       - Licenses
     properties:
@@ -347,6 +364,8 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-licenses--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/licenses?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Manage API
     description: Needs description.
     tags:
@@ -355,12 +374,12 @@ apis:
       - Manage
       - Metadata
       - Nodes
+      - Releases
       - Replicas
       - Replication
       - Running
       - Services
       - Status
-      - Releases
       - Versions
     properties:
       - type: OpenAPI
@@ -368,8 +387,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-manage-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Markdown API
-    description: Needs description.
+    description: >-
+      Use the REST API to render a Markdown document as an HTML page or as raw
+      text.
     tags:
       - Documents
       - Markdown
@@ -379,18 +402,28 @@ apis:
     properties:
       - type: OpenAPI
         url: properties/github-markdown--openapi-original.yml
+      - type: Documentation
+        url: https://docs.github.com/en/rest/markdown
     overlays:
       - type: OpenAPI
         url: overlays/github-markdown--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/markdown?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Meta API
-    description: Needs description.
+    description: >-
+      Use the REST API to get meta information about GitHub, including the IP
+      addresses of GitHub services.
     tags: []
     properties:
       - type: OpenAPI
         url: properties/github-meta--openapi-original.yml
+      - type: Documentation
+        url: https://docs.github.com/en/rest/meta
     overlays:
       - type: OpenAPI
         url: overlays/github-meta--openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/meta?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Networks API
     description: Needs description.
     tags:
@@ -405,8 +438,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-networks-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Notifications API
-    description: Needs description.
+    description: |+
+      Use the REST API to manage GitHub notifications.
+
     tags:
       - Notifications
       - Threads
@@ -422,6 +459,9 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-notifications--openapi-search.yml
+    humanURL: >-
+      https://docs.github.com/en/rest/activity/notifications?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Octocat API
     description: Needs description.
     tags: []
@@ -431,190 +471,168 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-octocat--openapi-search.yml
+    humanURL: https://github.com/octokit/octokit.js
+    baseURL: https://api.github.com/
   - name: GitHub Org API
-    description: Needs description.
+    description: Use the REST API to control and manage all your GitHub organizations.
     tags:
-      - Administrative
-      - Organizations
-      - Names
-      - Enterprise
-      - Statistics
-      - Actions
-      - Enabled
-      - Enterprises
-      - Git
-      - Hub
-      - Permissions
-      - Selected
-      - Sets
-      - Enable
-      - Disable
       - Access
-      - Groups
-      - Runners
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Removes
-      - Self Hosted
-      - Custom
-      - Deprecated
-      - Repositories
-      - Roles
-      - Cache
-      - Usage
-      - Claim
-      - Customizations
-      - OIDC
-      - Subjects
-      - Templates
-      - Allowed
-      - Default
-      - Workflows
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Applications
-      - Downloads
-      - Registrations
-      - Tokens
-      - Self Hosted
-      - Self Hosted
-      - Labels
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Self Hosted
-      - Secrets
-      - Keys
-      - Public
-      - Variables
-      - Announcement
-      - Banner
-      - Audit
-      - Logs
+      - Actions
+      - Active
+      - Administrative
+      - Advanced
       - Alerts
+      - Allowed
+      - Announcement
+      - Applications
+      - Archive
+      - Assigned
+      - Attempts
+      - Audit
+      - Authenticated
+      - Banner
+      - Between
+      - Billing
+      - Cache
+      - Checks
+      - Child
+      - Claim
       - Code
-      - Scanning
-      - Dependabot
+      - Collaborators
+      - Comments
+      - Committers
+      - Configurations
       - Conflicting
       - Conflicts
+      - Connections
+      - Convert
+      - Custom
+      - Customizations
+      - Default
+      - Deliveries
+      - Dependabot
+      - Deprecated
+      - Disable
+      - Discussion
+      - Discussions
       - Docker
+      - Download
+      - Downloads
       - During
-      - Migrations
-      - Packages
+      - Enable
+      - Enabled
+      - Enablement
+      - Enforcement
+      - Enterprise
+      - Enterprises
       - Events
       - External
-      - Hooks
-      - Webhooks
-      - Hook
-      - Configurations
-      - Deliveries
-      - Attempts
-      - Redeliver
-      - Ping
-      - Pings
-      - Authenticated
-      - Installations
-      - Assigned
-      - Issues
-      - Users
-      - Members
-      - Checks
-      - Memberships
-      - User Names
-      - Status
-      - Archive
-      - Download
-      - Locks
-      - Unlock
-      - Collaborators
-      - Outside
-      - Convert
-      - Types
-      - Restore
-      - Owned
-      - Versions
-      - Pre
-      - Pre Receive
-      - Receive
-      - Pre Receive
-      - Enforcement
-      - Pre Receive
-      - Pre Receive
-      - Projects
+      - Feature
       - Fine
       - Fine Grained
+      - Git
       - Grained
+      - Groups
+      - Hook
+      - Hooks
+      - Hub
+      - Installations
+      - Issues
+      - Keys
+      - Labels
+      - Locks
+      - Logs
       - Managers
-      - Security
-      - Teams
-      - Slug
-      - Active
-      - Advanced
-      - Billing
-      - Committers
-      - Settings
-      - Discussions
-      - Discussion
+      - Members
+      - Memberships
+      - Migrations
+      - Names
       - Numbers
-      - Comments
-      - Reactions
-      - Between
-      - Connections
+      - OIDC
+      - Organizations
+      - Outside
+      - Owned
       - Owners
-      - Child
-      - Enablement
-      - Feature
+      - Packages
+      - Permissions
+      - Pings
+      - Pre
+      - Pre Receive
       - Products
+      - Projects
+      - Public
+      - Reactions
+      - Receive
+      - Redeliver
+      - Registrations
+      - Repositories
+      - Restore
+      - Roles
+      - Runners
+      - Scanning
+      - Secrets
+      - Security
+      - Selected
+      - Self Hosted
+      - Sets
+      - Settings
+      - Slug
+      - Statistics
+      - Status
+      - Subjects
+      - Teams
+      - Templates
+      - Tokens
+      - Types
+      - Unlock
+      - Usage
+      - User Names
+      - Users
+      - Variables
+      - Versions
+      - Webhooks
+      - Workflows
     properties:
       - type: OpenAPI
         url: properties/github-org-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-org-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/orgs?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Projects API
-    description: Needs description.
+    description: >-
+      Use the REST API to create, list, update, delete and customize projects
+      (classic).
     tags:
-      - Organizations
-      - Projects
-      - Slug
-      - Teams
-      - Checks
-      - Permissions
-      - Removes
       - Cards
+      - Checks
+      - Collaborators
       - Columns
       - Existing
       - Move
       - Moves
-      - Collaborators
+      - Organizations
+      - Owners
+      - Permission
+      - Permissions
+      - Projects
+      - Repositories
+      - Slug
+      - Teams
       - User Names
       - Users
-      - Permission
-      - Owners
-      - Repositories
-      - (Legacy)
     properties:
       - type: OpenAPI
         url: properties/github-projects-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/github-projects-openapi-search.yml
+    baseURL: https://api.github.com/
   - name: GitHub Rate Limit API
-    description: Needs description.
+    description: >-
+      Learn about REST API rate limits, how to avoid exceeding them, and what to
+      do if you do exceed them.
     tags: []
     properties:
       - type: OpenAPI
@@ -622,8 +640,13 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-rate-limit--openapi-search.yml
+    humanURL: >-
+      https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Repos API
-    description: Needs description.
+    description: >-
+      Use the REST API to create, manage and control the workflow of public and
+      private GitHub repositories.
     tags:
       - Enterprise
       - Repositories
@@ -892,19 +915,23 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-repos-openapi-search.yml
-  - name: GitHub Scim API
-    description: Needs description.
+    humanURL: https://docs.github.com/en/rest/repos?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
+  - name: GitHub SCIM API
+    description: >-
+      Use the REST API to control and manage your GitHub organization members'
+      access with SCIM.
     tags:
+      - Attributes
       - Enterprise
       - Groups
-      - Provisioned
-      - SCIM
-      - Provision
-      - Information
-      - Provisioning
-      - Sets
-      - Attributes
       - Identities
+      - Information
+      - Provision
+      - Provisioned
+      - Provisioning
+      - SCIM
+      - Sets
       - Users
     properties:
       - type: OpenAPI
@@ -912,8 +939,11 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-scim-openapi-search.yml
+    humanURL: >-
+      https://docs.github.com/en/enterprise-cloud@latest/rest/scim?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Search API
-    description: Needs description.
+    description: Use the REST API to search for specific items on GitHub.
     tags:
       - Code
       - Search
@@ -930,6 +960,8 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-search-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Setup API
     description: Needs description.
     tags:
@@ -959,6 +991,59 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-setup-openapi-search.yml
+    humanURL: >-
+      https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
+  - name: GitHub Teams API
+    description: Use the REST API to create and manage teams in your GitHub organization.
+    tags:
+      - Administrative
+      - LDAP
+      - Mapping
+      - Teams
+      - Sync
+      - Managers
+      - Organizations
+      - Security
+      - Slug
+      - Removes
+      - Names
+      - Discussions
+      - Discussion
+      - Numbers
+      - Comments
+      - Reactions
+      - Between
+      - Connections
+      - External
+      - Groups
+      - Members
+      - Memberships
+      - User Names
+      - Users
+      - Projects
+      - Checks
+      - Permissions
+      - Repositories
+      - Owners
+      - Child
+      - Access
+      - Branch
+      - Branches
+      - Protected
+      - Protection
+      - Restrictions
+      - Sets
+      - (Legacy)
+      - Authenticated
+    properties:
+      - type: OpenAPI
+        url: properties/github-teams-openapi-original.yml
+    overlays:
+      - type: OpenAPI
+        url: overlays/github-teams-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/teams?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
   - name: GitHub Teams API
     description: Needs description.
     tags:
@@ -1007,54 +1092,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-teams-openapi-search.yml
-  - name: GitHub Teams API
-    description: Needs description.
-    tags:
-      - Administrative
-      - LDAP
-      - Mapping
-      - Teams
-      - Sync
-      - Managers
-      - Organizations
-      - Security
-      - Slug
-      - Removes
-      - Names
-      - Discussions
-      - Discussion
-      - Numbers
-      - Comments
-      - Reactions
-      - Between
-      - Connections
-      - External
-      - Groups
-      - Members
-      - Memberships
-      - User Names
-      - Users
-      - Projects
-      - Checks
-      - Permissions
-      - Repositories
-      - Owners
-      - Child
-      - Access
-      - Branch
-      - Branches
-      - Protected
-      - Protection
-      - Restrictions
-      - Sets
-      - (Legacy)
-      - Authenticated
-    properties:
-      - type: OpenAPI
-        url: properties/github-teams-openapi-original.yml
-    overlays:
-      - type: OpenAPI
-        url: overlays/github-teams-openapi-search.yml
+    baseURL: https://api.github.com/
   - name: GitHub Zen API
     description: Needs description.
     tags: []
@@ -1065,7 +1103,9 @@ apis:
       - type: OpenAPI
         url: overlays/github-zen--openapi-search.yml
   - name: GitHub User API
-    description: Needs description.
+    description: >-
+      Use the REST API to get public and private information about authenticated
+      users.
     tags:
       - Administrative
       - LDAP
@@ -1166,6 +1206,8 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-user-openapi-search.yml
+    humanURL: https://docs.github.com/en/rest/users?apiVersion=2022-11-28
+    baseURL: https://api.github.com/
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
