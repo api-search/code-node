@@ -30,6 +30,7 @@ apis:
       - type: APIs.io Search
         url: overlays/gitlab-openapi-search.yml
     aid: gitlab:gitlab-rest-api
+    humanURL: https://docs.gitlab.com/ee/api/rest/
   - name: GitLab Graph Ql API
     description: >-
       GraphQL is a query language for APIs. You can use it to request the exact
@@ -41,8 +42,10 @@ apis:
     tags: []
     overlays: []
     aid: gitlab:gitlab-graphql-api
-  - name: ' api/v4/groups'
-    description: Needs description.
+  - name: GitLab Groups API
+    description: >-
+      Interact with groups by using the REST API. The fields returned in
+      responses vary based on the permissions of the authenticated user.
     tags: []
     properties:
       - type: OpenAPI
@@ -50,87 +53,206 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-groups-openapi-search.yml
-  - name: ' api/v4/projects'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/groups.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Projects API
+    description: Interact with projects by using the REST API.
+    tags:
+      - Access
+      - Alerts
+      - Approve
+      - Approves
+      - Authenticated
+      - Authorize
+      - Badge
+      - Badges
+      - Branch
+      - Branches
+      - Denies
+      - Given
+      - Iid
+      - Images
+      - Jobs
+      - Management
+      - Manual
+      - Merged
+      - Metrics
+      - Play
+      - Previews
+      - Projects
+      - Protect
+      - Render
+      - Repositories
+      - Runs
+      - Single
+      - Unprotect
+      - Users
+      - Viewable
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-projects-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-projects-openapi-search.yml
-  - name: ' api/v4/admin'
-    description: Needs description.
-    tags: []
+    baseURL: https://gitlab.com/api/v4/
+    humanURL: https://docs.gitlab.com/ee/api/projects.html
+  - name: GitLab Admin API
+    description: >-
+      The Admin Area provides a web UI to manage and configure features of
+      GitLab self-managed instances.
+    tags:
+      - Administrative
+      - Background
+      - Batched
+      - Clusters
+      - Databases
+      - Dictionaries
+      - Edit
+      - Existing
+      - Instances
+      - Keys
+      - Mark
+      - Migrations
+      - Names
+      - Pause
+      - Resume
+      - Single
+      - Tables
+      - Timestamp
+      - Variables
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-admin-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-admin-openapi-search.yml
-  - name: ' api/v4/applications'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/administration/admin_area.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Applications API
+    description: >-
+      The Applications API operates on instance-wide OAuth applications for
+      Using GitLab as an authentication provider. Allowing access to GitLab
+      resources on a user’s behalf. The Applications API cannot be used to
+      manage group applications or applications of individual users.
+    tags:
+      - Applications
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-applications-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-applications-openapi-search.yml
-  - name: ' api/v4/avatar'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/applications.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Avatar API
+    description: >-
+      Get a single avatar URL for a user with the given email address. If No
+      user with the given public email address is found, results from external
+      avatar services are returned. Public visibility is restricted, response is
+      403 Forbidden when unauthenticated.
+    tags:
+      - Avatars
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-avatar-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-avatar-openapi-search.yml
-  - name: ' api/v4/broadcast messages'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/avatar.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Broadcast Messages API
+    description: >-
+      Broadcast messages API operates on broadcast messages. GET requests do not
+      require authentication. All other broadcast message API endpoints are
+      accessible only to administrators. Non-GET requests by Guests result in
+      401 Unauthorized. Regular users result in 403 Forbidden.
+    tags:
+      - Broadcast
+      - Messages
+      - Specific
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-broadcast-messages-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-broadcast-messages-openapi-search.yml
-  - name: ' api/v4/bulk imports'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/broadcast_messages.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Bulk Imports API
+    description: Use the Import API to import repositories from GitHub or Bitbucket Server.
+    tags:
+      - Bulk
+      - Details
+      - Entities
+      - Git
+      - Import
+      - Imports
+      - Labs
+      - Migrations
+      - Migrations'
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-bulk-imports-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-bulk-imports-openapi-search.yml
-  - name: ' api/v4/application'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/import.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Application API
+    description: >-
+      The Applications API operates on instance-wide OAuth applications for
+      Using GitLab as an authentication provider. Allowing access to GitLab
+      resources on a user’s behalf. The Applications API cannot be used to
+      manage group applications or applications of individual users.
+    tags:
+      - Applications
+      - Appearances
+      - Current
+      - Limits
+      - Plans
+      - Change
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-application-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-application-openapi-search.yml
-  - name: ' api/v4/metadata'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/applications.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Metadata API
+    description: Retrieve metadata information for this GitLab instance.
+    tags:
+      - Git
+      - Information
+      - Instances
+      - Labs
+      - Metadata
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-metadata-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-metadata-openapi-search.yml
-  - name: ' api/v4/version'
-    description: Needs description.
-    tags: []
+    humanURL: https://docs.gitlab.com/ee/api/metadata.html
+    baseURL: https://gitlab.com/api/v4/
+  - name: GitLab Version API
+    description: >-
+      Retrieves version information for the GitLab instance. Responds with 200
+      OK for authenticated users.
+    tags:
+      - Git
+      - Information
+      - Instances
+      - Labs
+      - Versions
     properties:
       - type: OpenAPI
         url: properties/gitlab-api-v4-version-openapi-original.yml
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-version-openapi-search.yml
+    humanURL: https://docs.gitlab.com/ee/api/version.html
+    baseURL: https://gitlab.com/api/v4/
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
