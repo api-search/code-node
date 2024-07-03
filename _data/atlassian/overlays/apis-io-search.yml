@@ -36,6 +36,7 @@ apis:
           overlays/atlassian-rest-api-3-announcementbanner--openapi-api-evangelist-ratings.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-announcement-banner/#api-group-announcement-banner
+    aid: atlassian:atlassian-jira-announcement-banner-api
   - name: Atlassian Jira App API
     description: >-
       This resource represents the values of custom fields added by Forge apps.
@@ -60,6 +61,7 @@ apis:
         url: overlays/atlassian-rest-api-3-app--openapi-search.yml
       - type: API Evangelist Ratings
         url: overlays/atlassian-rest-api-3-app--openapi-api-evangelist-ratings.yml
+    aid: atlassian:atlassian-jira-app-api
   - name: Atlassian Jira Application Properties API
     description: >-
       This resource represents app properties. Use it to store arbitrary data
@@ -84,6 +86,7 @@ apis:
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-app-properties/#api-group-app-properties
+    aid: atlassian:atlassian-jira-application-properties-api
   - name: Atlassian Jira Application Role API
     description: >-
       This resource represents application roles. Use it to get details of an
@@ -105,6 +108,7 @@ apis:
         url: overlays/atlassian-rest-api-3-applicationrole--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-application-roles/#api-group-application-roles
+    aid: atlassian:atlassian-jira-application-role-api
   - name: Atlassian Jira Attachment API
     description: >-
       This resource represents issue attachments and the attachment settings for
@@ -136,6 +140,7 @@ apis:
         url: overlays/atlassian-rest-api-3-attachment--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/#api-group-issue-attachments
+    aid: atlassian:atlassian-jira-attachment-api
   - name: Atlassian Jira Auditing API
     description: >+
       Atlassian Audit (Advanced Auditing for DC customers) is a cross-product
@@ -157,6 +162,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
     humanURL: https://developer.atlassian.com/server/framework/atlassian-sdk/audit/
+    aid: atlassian:atlassian-jira-auditing-api
   - name: Atlassian Jira Avatar API
     description: >-
       This resource represents system and custom avatars. Use it to obtain the
@@ -177,6 +183,7 @@ apis:
         url: overlays/atlassian-rest-api-3-avatar--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-avatars/#api-group-avatars
+    aid: atlassian:atlassian-jira-avatar-api
   - name: Atlassian Jira Classification Levels API
     description: Use to manage the classification levels that are used across Jira.
     tags: []
@@ -193,6 +200,7 @@ apis:
           overlays/atlassian-rest-api-3-classification-levels--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-classification-levels/#api-group-classification-levels
+    aid: atlassian:atlassian-jira-classification-levels-api
   - name: Atlassian Jira Comment API
     description: >-
       This resource represents issue comments. Use it to get, create, update,
@@ -216,6 +224,7 @@ apis:
         url: overlays/atlassian-rest-api-3-comment--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-comments/#api-group-issue-comments
+    aid: atlassian:atlassian-jira-comment-api
   - name: Atlassian Jira Component API
     description: >-
       This resource represents project components. Use it to get, create,
@@ -239,6 +248,7 @@ apis:
         url: overlays/atlassian-rest-api-3-component--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-components/#api-group-project-components
+    aid: atlassian:atlassian-jira-component-api
   - name: Atlassian Jira Configuration API
     description: >-
       This resource represents various settings in Jira. Use it to get and
@@ -265,6 +275,7 @@ apis:
         url: overlays/atlassian-rest-api-3-configuration--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/#api-group-jira-settings
+    aid: atlassian:atlassian-jira-configuration-api
   - name: Atlassian Jira Custom Field Option API
     description: >-
       This resource represents custom issue field select list options created in
@@ -288,6 +299,7 @@ apis:
         url: overlays/atlassian-rest-api-3-customfieldoption--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-options/#api-group-issue-custom-field-options
+    aid: atlassian:atlassian-jira-custom-field-option-api
   - name: Atlassian Jira Dashboard API
     description: >-
       This resource represents dashboards. Use it to obtain the details of
@@ -319,6 +331,7 @@ apis:
         url: overlays/atlassian-rest-api-3-dashboard--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-dashboards/#api-group-dashboards
+    aid: atlassian:atlassian-jira-dashboard-api
   - name: Atlassian Jira Data Policy API
     description: >+
       Atlassian is adding the ability for customers to block app access to data
@@ -343,6 +356,7 @@ apis:
         url: overlays/atlassian-rest-api-3-data-policy--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/data-security-policy-developer-guide/
+    aid: atlassian:atlassian-jira-data-policy-api
   - name: Atlassian Jira Events API
     description: >-
       Used to manage events that are aavailable across the resources made
@@ -357,6 +371,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-events--openapi-search.yml
     humanURL: https://developer.atlassian.com/platform/forge/events-reference/jira/
+    aid: atlassian:atlassian-jira-events-api
   - name: Atlassian Jira Expression API
     description: >-
       Jira expressions is a domain-specific language designed with Jira in mind,
@@ -380,6 +395,7 @@ apis:
         url: overlays/atlassian-rest-api-3-expression--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-expressions/#api-group-jira-expressions
+    aid: atlassian:atlassian-jira-expression-api
   - name: Atlassian Jira Field API
     description: >-
       This resource represents issue fields, both system and custom fields. Use
@@ -430,6 +446,7 @@ apis:
         url: overlays/atlassian-rest-api-3-field--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-fields/#api-group-issue-fields
+    aid: atlassian:atlassian-jira-field-api
   - name: Atlassian Jira Field Configuration API
     description: >-
       This resource represents issue field configurations. Use it to get, set,
@@ -452,6 +469,7 @@ apis:
         url: overlays/atlassian-rest-api-3-fieldconfiguration--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/#api-group-issue-field-configurations
+    aid: atlassian:atlassian-jira-field-configuration-api
   - name: Atlassian Jira Field Configuration Scheme API
     description: >-
       This resource represents issue field configurations. Use it to get, set,
@@ -482,6 +500,7 @@ apis:
           overlays/atlassian-rest-api-3-fieldconfigurationscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/#api-group-issue-field-configurations
+    aid: atlassian:atlassian-jira-field-configuration-scheme-api
   - name: Atlassian Jira Filter API
     description: >-
 
@@ -521,6 +540,7 @@ apis:
         url: overlays/atlassian-rest-api-3-filter--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-filters/#api-group-filters
+    aid: atlassian:atlassian-jira-filter-api
   - name: Atlassian Jira Group API
     description: >-
       This resource represents groups of users. Use it to get, create, find, and
@@ -545,6 +565,7 @@ apis:
         url: overlays/atlassian-rest-api-3-group--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-groups/#api-group-groups
+    aid: atlassian:atlassian-jira-group-api
   - name: Atlassian Jira Groups API
     description: >-
       This resource represents groups of users. Use it to get, create, find, and
@@ -567,6 +588,7 @@ apis:
         url: overlays/atlassian-rest-api-3-groups--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-groups/#api-group-groups
+    aid: atlassian:atlassian-jira-groups-api
   - name: Atlassian Jira Group User Picker API
     description: >-
       This resource represents a list of users and a list of groups. Use it to
@@ -583,6 +605,7 @@ apis:
         url: overlays/atlassian-rest-api-3-groupuserpicker--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-group-and-user-picker/#api-group-group-and-user-picker
+    aid: atlassian:atlassian-jira-group-user-picker-api
   - name: Atlassian Jira License Metrics API
     description: >-
       This resource represents license metrics. Use it to get available metrics
@@ -602,6 +625,7 @@ apis:
         url: overlays/atlassian-rest-api-3-instance--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/#api-group-license-metrics
+    aid: atlassian:atlassian-jira-license-metrics-api
   - name: Atlassian Jira Issue API
     description: Used to managine issues for Jira resources.
     tags:
@@ -658,6 +682,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issue--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-group-issues
+    aid: atlassian:atlassian-jira-issue-api
   - name: Atlassian Jira Issue Link API
     description: >-
       This resource represents links between issues. Use it to get, create, and
@@ -677,6 +702,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuelink--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/#api-group-issue-links
+    aid: atlassian:atlassian-jira-issue-link-api
   - name: Atlassian Jira Issue Link Type API
     description: >-
       This resource represents links between issues. Use it to get, create, and
@@ -697,6 +723,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-links/#api-group-issue-links
+    aid: atlassian:atlassian-jira-issue-link-type-api
   - name: Atlassian Jira Issue Link Type API
     description: >+
       This resource represents issue link types. Use it to get, create, update,
@@ -718,6 +745,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuelinktype--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-link-types/#api-group-issue-link-types
+    aid: atlassian:atlassian-jira-issue-link-type-api
   - name: Atlassian Jira Issues API
     description: This is for managing the issues across Jira resources.
     tags:
@@ -737,6 +765,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issues--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-group-issues
+    aid: atlassian:atlassian-jira-issues-api
   - name: Atlassian Jira Issue Security Schemes API
     description: >-
       This resource represents issue security schemes. Use it to get an issue
@@ -772,6 +801,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuesecurityschemes--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-schemes/#api-group-issue-security-schemes
+    aid: atlassian:atlassian-jira-issue-security-schemes-api
   - name: Atlassian Jira Issue Type API
     description: >-
       This resource represents issues types. Use it to get, create, update, and
@@ -800,6 +830,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuetype--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-types/#api-group-issue-types
+    aid: atlassian:atlassian-jira-issue-type-api
   - name: Atlassian Jira Issue Type Scheme API
     description: >-
       This resource represents issue type schemes in classic projects. Use it to
@@ -833,6 +864,7 @@ apis:
         url: overlays/atlassian-rest-api-3-issuetypescheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-type-schemes/#api-group-issue-type-schemes
+    aid: atlassian:atlassian-jira-issue-type-scheme-api
   - name: Atlassian Jira Issue Type Screen Scheme API
     description: >-
       This resource represents issue type screen schemes. Use it to get issue
@@ -869,6 +901,7 @@ apis:
           overlays/atlassian-rest-api-3-issuetypescreenscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-type-screen-schemes/#api-group-issue-type-screen-schemes
+    aid: atlassian:atlassian-jira-issue-type-screen-scheme-api
   - name: Atlassian Jira Jql API
     description: >-
       This resource represents various ways to search for issues. Use it to
@@ -912,6 +945,7 @@ apis:
         url: overlays/atlassian-rest-api-3-jql--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/#api-group-issue-search
+    aid: atlassian:atlassian-jira-jql-api
   - name: Atlassian Jira Label API
     description: >-
       This resource represents available labels. Use it to get available labels
@@ -928,6 +962,7 @@ apis:
         url: overlays/atlassian-rest-api-3-label--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-labels/#api-group-labels
+    aid: atlassian:atlassian-jira-label-api
   - name: Atlassian Jira License API
     description: >+
       Atlassian Connect provides a set of REST APIs specifically designed for
@@ -953,6 +988,7 @@ apis:
         url: overlays/atlassian-rest-api-3-license--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/platform/marketplace/license-api-for-cloud-apps/
+    aid: atlassian:atlassian-jira-license-api
   - name: Atlassian Jira My Permissions API
     description: >-
       This resource represents permissions. Use it to obtain details of all
@@ -969,6 +1005,7 @@ apis:
         url: overlays/atlassian-rest-api-3-mypermissions--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-permissions/#api-group-permissions
+    aid: atlassian:atlassian-jira-my-permissions-api
   - name: Atlassian Jira My Preferences API
     description: >-
       This resource represents information about the current user, such as basic
@@ -991,6 +1028,7 @@ apis:
         url: overlays/atlassian-rest-api-3-mypreferences--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-myself/#api-group-myself
+    aid: atlassian:atlassian-jira-my-preferences-api
   - name: Atlassian Jira Myself API
     description: >-
       This resource represents information about the current user, such as basic
@@ -1009,6 +1047,7 @@ apis:
         url: overlays/atlassian-rest-api-3-myself--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-myself/#api-group-myself
+    aid: atlassian:atlassian-jira-myself-api
   - name: Atlassian Jira Notification Scheme API
     description: >-
       This resource represents notification schemes, lists of events and the
@@ -1035,6 +1074,7 @@ apis:
         url: overlays/atlassian-rest-api-3-notificationscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-notification-schemes/#api-group-issue-notification-schemes
+    aid: atlassian:atlassian-jira-notification-scheme-api
   - name: Atlassian Jira Permissions API
     description: >-
       This resource represents permissions. Use it to obtain details of all
@@ -1057,6 +1097,7 @@ apis:
         url: overlays/atlassian-rest-api-3-permissions--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-permissions/#api-group-permissions
+    aid: atlassian:atlassian-jira-permissions-api
   - name: Atlassian Jira Permission Scheme API
     description: >-
       This resource represents permission schemes for a project. Use this
@@ -1082,6 +1123,7 @@ apis:
         url: overlays/atlassian-rest-api-3-permissionscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-permission-schemes/#api-group-project-permission-schemes
+    aid: atlassian:atlassian-jira-permission-scheme-api
   - name: Atlassian Jira Priority API
     description: >-
       his resource represents issue priorities. Use it to get, create and update
@@ -1104,6 +1146,7 @@ apis:
         url: overlays/atlassian-rest-api-3-priority--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-priorities/#api-group-issue-priorities
+    aid: atlassian:atlassian-jira-priority-api
   - name: Atlassian Jira Project API
     description: >-
       This resource represents projects. Use it to get, create, update, and
@@ -1168,6 +1211,7 @@ apis:
         url: overlays/atlassian-rest-api-3-project--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-projects/#api-group-projects
+    aid: atlassian:atlassian-jira-project-api
   - name: Atlassian Jira Project Category API
     description: >-
       This resource represents project categories. Use it to create, update, and
@@ -1191,6 +1235,7 @@ apis:
         url: overlays/atlassian-rest-api-3-projectcategory--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-categories/#api-group-project-categories
+    aid: atlassian:atlassian-jira-project-category-api
   - name: Atlassian Jira Project Validate API
     description: This resource provides validation for project keys and names.
     tags:
@@ -1214,6 +1259,7 @@ apis:
         url: overlays/atlassian-rest-api-3-projectvalidate--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-key-and-name-validation/#api-group-project-key-and-name-validation
+    aid: atlassian:atlassian-jira-project-validate-api
   - name: Atlassian Jira Resolution API
     description: >-
       This resource represents issue resolution values. Use it to obtain a list
@@ -1237,6 +1283,7 @@ apis:
         url: overlays/atlassian-rest-api-3-resolution--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-resolutions/#api-group-issue-resolutions
+    aid: atlassian:atlassian-jira-resolution-api
   - name: Atlassian Jira Role API
     description: >-
       This resource represents the roles that users can play in projects. Use
@@ -1260,6 +1307,7 @@ apis:
         url: overlays/atlassian-rest-api-3-role--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-roles/#api-group-project-roles
+    aid: atlassian:atlassian-jira-role-api
   - name: Atlassian Jira Screens API
     description: >-
       This resource represents the screens used to record issue details. Use it
@@ -1289,6 +1337,7 @@ apis:
         url: overlays/atlassian-rest-api-3-screens--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screens/
+    aid: atlassian:atlassian-jira-screens-api
   - name: Atlassian Jira Screens Scheme API
     description: >-
       This resource represents screen schemes in classic projects. Use it to
@@ -1309,6 +1358,7 @@ apis:
         url: overlays/atlassian-rest-api-3-screenscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-schemes/#api-group-screen-schemes
+    aid: atlassian:atlassian-jira-screens-scheme-api
   - name: Atlassian Jira Search API
     description: >-
       This resource represents various ways to search for issues. Use it to
@@ -1332,6 +1382,7 @@ apis:
         url: overlays/atlassian-rest-api-3-search--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/#api-group-issue-search
+    aid: atlassian:atlassian-jira-search-api
   - name: Atlassian Jira Security Level API
     description: >-
       This resource represents issue security levels. Use it to obtain the
@@ -1354,6 +1405,7 @@ apis:
         url: overlays/atlassian-rest-api-3-securitylevel--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-security-level/#api-group-issue-security-level
+    aid: atlassian:atlassian-jira-security-level-api
   - name: Atlassian Jira Server Info API
     description: This resource provides information about the Jira instance.
     tags: []
@@ -1368,6 +1420,7 @@ apis:
         url: overlays/atlassian-rest-api-3-serverinfo--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-server-info/#api-group-server-info
+    aid: atlassian:atlassian-jira-server-info-api
   - name: Atlassian Jira Settings API
     description: >-
       This resource represents various settings in Jira. Use it to get and
@@ -1391,6 +1444,7 @@ apis:
         url: overlays/atlassian-rest-api-3-settings--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/#api-group-jira-settings
+    aid: atlassian:atlassian-jira-settings-api
   - name: Atlassian Jira Status API
     description: >-
       This resource represents issue workflow statuses. Use it to obtain a list
@@ -1410,6 +1464,7 @@ apis:
         url: overlays/atlassian-rest-api-3-status--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/#api-rest-api-3-status-get
+    aid: atlassian:atlassian-jira-status-api
   - name: Atlassian Jira Status Category API
     description: >-
       This resource represents status categories. Use it to obtain a list of all
@@ -1432,6 +1487,7 @@ apis:
         url: overlays/atlassian-rest-api-3-statuscategory--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-status-categories/#api-group-workflow-status-categories
+    aid: atlassian:atlassian-jira-status-category-api
   - name: Atlassian Jira Statuses API
     description: >-
       This resource represents issue workflow statuses. Use it to obtain a list
@@ -1452,6 +1508,7 @@ apis:
         url: overlays/atlassian-rest-api-3-statuses--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/#api-rest-api-3-status-get
+    aid: atlassian:atlassian-jira-statuses-api
   - name: Atlassian Jira Task API
     description: >-
       This resource represents a long-running asynchronous tasks. Use it to
@@ -1472,6 +1529,7 @@ apis:
         url: overlays/atlassian-rest-api-3-task--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-tasks/#api-group-tasks
+    aid: atlassian:atlassian-jira-task-api
   - name: Atlassian Jira UI Modifications API
     description: >-
       UI modifications is a feature available for Forge apps only. It enables
@@ -1493,6 +1551,7 @@ apis:
         url: overlays/atlassian-rest-api-3-uimodifications--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-ui-modifications--apps-/#api-group-ui-modifications--apps-
+    aid: atlassian:atlassian-jira-ui-modifications-api
   - name: Atlassian Jira Universal Avatar API
     description: >-
       This resource represents system and custom avatars. Use it to obtain the
@@ -1522,6 +1581,7 @@ apis:
         url: overlays/atlassian-rest-api-3-universal-avatar--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-avatars/#api-group-avatars
+    aid: atlassian:atlassian-jira-universal-avatar-api
   - name: Atlassian Jira User API
     description: >-
       This resource represent users. Use it to get, get a list of, create, and
@@ -1566,6 +1626,7 @@ apis:
         url: overlays/atlassian-rest-api-3-user--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/#api-group-users
+    aid: atlassian:atlassian-jira-user-api
   - name: Atlassian Jira Users API
     description: >-
       This resource represent users. Use it to get, get a list of, create, and
@@ -1587,6 +1648,7 @@ apis:
         url: overlays/atlassian-rest-api-3-users--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/
+    aid: atlassian:atlassian-jira-users-api
   - name: Atlassian Jira Version API
     description: >-
       This resource represents project versions. Use it to get, get lists of,
@@ -1620,6 +1682,7 @@ apis:
         url: overlays/atlassian-rest-api-3-version--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-versions/#api-group-project-versions
+    aid: atlassian:atlassian-jira-version-api
   - name: Atlassian Jira Webhook API
     description: >-
       A webhook is a user-defined callback over HTTP. You can use Jira webhooks
@@ -1644,6 +1707,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-webhook--openapi-search.yml
     humanURL: https://developer.atlassian.com/server/jira/platform/webhooks/
+    aid: atlassian:atlassian-jira-webhook-api
   - name: Atlassian Jira Workflow API
     description: >-
       This resource represents workflows. Use it to Get workflows, Create
@@ -1671,6 +1735,7 @@ apis:
         url: overlays/atlassian-rest-api-3-workflow--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/#api-group-workflows
+    aid: atlassian:atlassian-jira-workflow-api
   - name: Atlassian Jira Workflows API
     description: >-
       This resource represents workflows. Use it to Get workflows, Create
@@ -1696,6 +1761,7 @@ apis:
         url: overlays/atlassian-rest-api-3-workflows--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/
+    aid: atlassian:atlassian-jira-workflows-api
   - name: Atlassian Jira Workflow Scheme API
     description: >-
       This resource represents workflow schemes. Use it to manage workflow
@@ -1736,6 +1802,7 @@ apis:
         url: overlays/atlassian-rest-api-3-workflowscheme--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-workflow-schemes/#api-group-workflow-schemes
+    aid: atlassian:atlassian-jira-workflow-scheme-api
   - name: Atlassian Jira Worklog API
     description: >-
       This resource represents issue worklogs. Use it to get, create, update,
@@ -1755,6 +1822,7 @@ apis:
         url: overlays/atlassian-rest-api-3-worklog--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-worklogs/#api-group-issue-worklogs
+    aid: atlassian:atlassian-jira-worklog-api
   - name: Atlassian Jira Connect Addons API
     description: >+
       Connect is a development framework for extending Atlassian cloud products.
@@ -1785,6 +1853,7 @@ apis:
         url: overlays/atlassian-rest-atlassian-connect-1-addons--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/
+    aid: atlassian:atlassian-jira-connect-addons-api
   - name: Atlassian Jira Connect App API
     description: >+
       Connect is a development framework for extending Atlassian cloud products.
@@ -1815,6 +1884,7 @@ apis:
         url: overlays/atlassian-rest-atlassian-connect-1-app--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/
+    aid: atlassian:atlassian-jira-connect-app-api
   - name: Atlassian Jira Connect Migration API
     description: >-
       This Atlassian Connect feature provide a mechanism for apps to signal
@@ -1853,6 +1923,7 @@ apis:
         url: >-
           overlays/atlassian-rest-atlassian-connect-1-migration--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/jira/platform/connect-api-migration/
+    aid: atlassian:atlassian-jira-connect-migration-api
   - name: Atlassian Jira Connect Service Registry API
     description: >-
       This resource represents a service registry. Use it to retrieve attributes
@@ -1871,6 +1942,7 @@ apis:
           overlays/atlassian-rest-atlassian-connect-1-service-registry--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-service-registry/#api-group-service-registry
+    aid: atlassian:atlassian-jira-connect-service-registry-api
   - name: Atlassian Jira Forge App API
     description: >-
       Forge is Atlassian's new development platform for building Jira and
@@ -1892,6 +1964,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-rest-forge-1-app--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/jira/platform/forge/
+    aid: atlassian:atlassian-jira-forge-app-api
   - name: Atlassian Confluence Audit API
     description: Allows you to create, get, set, and export audit records from Confluence.
     tags:
@@ -1916,6 +1989,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-audit--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-audit/#api-group-audit
+    aid: atlassian:atlassian-confluence-audit-api
   - name: Atlassian Confluence Content API
     description: >-
       This is the reference for the Confluence Cloud REST API v2, with
@@ -2000,6 +2074,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-wiki-rest-api-content--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/confluence/rest/v2/intro/#about
+    aid: atlassian:atlassian-confluence-content-api
   - name: Atlassian Confluence Content States API
     description: Allows you to manage the various state of content published to Confluence.
     tags:
@@ -2025,6 +2100,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-content-states--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-states/#api-group-content-states
+    aid: atlassian:atlassian-confluence-content-states-api
   - name: Atlassian Confluence Content Body API
     description: Provides you the ability to manage the content body of Confluence pages.
     tags:
@@ -2051,6 +2127,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-contentbody--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-body/#api-group-content-body
+    aid: atlassian:atlassian-confluence-content-body-api
   - name: Atlassian Confluence Inline Tasks API
     description: Allows you to manage inline tasks across Confluence.
     tags:
@@ -2076,6 +2153,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-inlinetasks--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-inline-tasks#api-group-inline-tasks
+    aid: atlassian:atlassian-confluence-inline-tasks-api
   - name: Atlassian Confluence Label API
     description: Provides the ability to label content across Confluence.
     tags: []
@@ -2090,6 +2168,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-label--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/#api-group-content-labels
+    aid: atlassian:atlassian-confluence-label-api
   - name: Atlassian Confluence Group API
     description: >-
       Returns all user groups. The returned groups are ordered alphabetically in
@@ -2118,6 +2197,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-group--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-group/#api-wiki-rest-api-group-get
+    aid: atlassian:atlassian-confluence-group-api
   - name: Atlassian Confluence Longtask API
     description: >-
       Returns information about all active long-running tasks (e.g. space
@@ -2140,6 +2220,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-longtask--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-long-running-task/#api-wiki-rest-api-longtask-get
+    aid: atlassian:atlassian-confluence-longtask-api
   - name: Atlassian Confluence Relation API
     description: >-
       Provides the ability to manage relationships between content across
@@ -2168,6 +2249,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-relation--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-relation/
+    aid: atlassian:atlassian-confluence-relation-api
   - name: Atlassian Confluence Search API
     description: Searches content across Confluence.
     tags:
@@ -2186,6 +2268,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-search--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-search/#api-group-search
+    aid: atlassian:atlassian-confluence-search-api
   - name: Atlassian Confluence Settings API
     description: Manages the settings for Confluence groups.
     tags:
@@ -2214,6 +2297,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-settings--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-settings/#api-group-settings
+    aid: atlassian:atlassian-confluence-settings-api
   - name: Atlassian Confluence Space API
     description: Used to manage all of the Confluence spaces for an account.
     tags:
@@ -2248,6 +2332,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-space--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/#api-group-space
+    aid: atlassian:atlassian-confluence-space-api
   - name: Atlassian Confluence Template API
     description: Provides the ability to manage the templates applied across Confluence.
     tags:
@@ -2269,6 +2354,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-template--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-template/#api-group-template
+    aid: atlassian:atlassian-confluence-template-api
   - name: Atlassian Confluence User API
     description: Provides the ability to manage users as part of a Confluence instance.
     tags:
@@ -2307,6 +2393,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-user--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-user/#api-group-user
+    aid: atlassian:atlassian-confluence-user-api
   - name: Atlassian Confluence Connect App Module API
     description: >-
       Connect modules are how Connect apps extend and interact with Confluence.
@@ -2329,6 +2416,7 @@ apis:
       - type: OpenAPI
         url: overlays/atlassian-atlassian-connect-1-app-module--openapi-search.yml
     humanURL: https://developer.atlassian.com/cloud/confluence/connect-modules/
+    aid: atlassian:atlassian-confluence-connect-app-module-api
   - name: Atlassian Confluence Analytics API
     description: >-
       The Confluence Cloud Analytics REST API provides endpoints to access
@@ -2356,6 +2444,7 @@ apis:
         url: overlays/atlassian-wiki-rest-api-analytics--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-analytics/#api-group-analytics
+    aid: atlassian:atlassian-confluence-analytics-api
   - name: Atlassian BitBucket Addon API
     description: >+
       The addon resource is intended to use used by Bitbucket Cloud Connect
@@ -2379,6 +2468,7 @@ apis:
         url: overlays/atlassian-addon--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-addon/#api-group-addon
+    aid: atlassian:atlassian-bitbucket-addon-api
   - name: Atlassian BitBucket Hook Events API
     description: >-
       Webhooks provide a way to configure Bitbucket Cloud to make requests to
@@ -2402,6 +2492,7 @@ apis:
         url: overlays/atlassian-hook-events--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-webhooks/#api-group-webhooks
+    aid: atlassian:atlassian-bitbucket-hook-events-api
   - name: Atlassian BitBucket Pull Requests API
     description: >-
       Pull requests are a feature that makes it easier for developers to
@@ -2420,6 +2511,7 @@ apis:
         url: overlays/atlassian-pullrequests-selected-user--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/#api-group-pullrequests
+    aid: atlassian:atlassian-bitbucket-pull-requests-api
   - name: Atlassian BitBucket Repositories API
     description: >-
       A Git repository is a virtual storage of your project. It allows you to
@@ -2577,6 +2669,7 @@ apis:
         url: overlays/atlassian-repositories--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories
+    aid: atlassian:atlassian-bitbucket-repositories-api
   - name: Atlassian BitBucket Snippets API
     description: >-
       Snippets allow you share code segments or files with yourself, members of
@@ -2625,6 +2718,7 @@ apis:
         url: overlays/atlassian-snippets--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-snippets/#api-group-snippets
+    aid: atlassian:atlassian-bitbucket-snippets-api
   - name: Atlassian BitBucket Teams API
     description: Needs description.
     tags: []
@@ -2634,6 +2728,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-teams--openapi-search.yml
+    aid: atlassian:atlassian-bitbucket-teams-api
   - name: Atlassian BitBucket User API
     description: >-
       The users resource allows you to access public information associated with
@@ -2673,6 +2768,7 @@ apis:
         url: overlays/atlassian-user-openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-users/#api-group-users
+    aid: atlassian:atlassian-bitbucket-user-api
   - name: Atlassian BitBucket Workspaces API
     description: >-
       A workspace is where you create repositories, collaborate on your code,
@@ -2725,6 +2821,7 @@ apis:
         url: overlays/atlassian-workspaces--openapi-search.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-workspaces/#api-group-workspaces
+    aid: atlassian:atlassian-bitbucket-workspaces-api
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
