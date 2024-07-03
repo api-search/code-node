@@ -7,8 +7,8 @@ description: >-
 url: >-
   https://raw.githubusercontent.com/apis-json/artisanal/main/apis/stack-exchange.yml
 created: 2024/04/14
-modified: 2024/04/14
-specificationVersion: '0.16'
+modified: '2024-07-03'
+specificationVersion: '0.18'
 tags: []
 apis:
   - name: Stack Exchange API
@@ -32,3 +32,7 @@ maintainers:
     url: http://example.com
     email: info@example.com
 aid: stack-exchange
+score: 13
+overlays:
+  - type: API Evangelist Ratings
+    url: /overlays/api-evangelist-ratings.yml
