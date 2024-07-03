@@ -84,9 +84,13 @@ apis:
       - type: OpenAPI
         url: >-
           overlays/atlassian-rest-api-3-application-properties--openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/atlassian-rest-api-3-application-properties--openapi-api-evangelist-ratings.yml
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-app-properties/#api-group-app-properties
     aid: atlassian:atlassian-jira-application-properties-api
+    score: 74
   - name: Atlassian Jira Application Role API
     description: >-
       This resource represents application roles. Use it to get details of an
@@ -2827,3 +2831,7 @@ maintainers:
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: atlassian
+score: 2830
+overlays:
+  - type: API Evangelist Ratings
+    url: /overlays/api-evangelist-ratings.yml
