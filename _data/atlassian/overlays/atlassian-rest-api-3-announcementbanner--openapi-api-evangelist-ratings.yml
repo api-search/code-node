@@ -1,9 +1,7 @@
-weekNumber: 24
+weekNumber: 27
 rule:
   - code: openapi-security-schemes-error
     message: Security Scheme
-  - code: openapi-schema-examples-info
-    message: Schema Examples
   - code: openapi-info-contact-info
     message: Contact Object
   - code: openapi-info-contact-name-error
