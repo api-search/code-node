@@ -10,9 +10,10 @@ description: >-
   users, with 1 million being active licensed users.
 url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/gitlab.yml
 created: 2024/04/14
-modified: 2024/04/14
-specificationVersion: '0.16'
-tags: []
+modified: '2024-07-03'
+specificationVersion: '0.18'
+tags:
+  - Code
 apis:
   - name: GitLab Rest API
     description: >+
@@ -41,7 +42,7 @@ apis:
       creating breaking changes. This enables us to have a versionless API.
     tags: []
     overlays: []
-    aid: gitlab:gitlab-graphql-api
+    aid: gitlab:gitlab-graph-ql-api
   - name: GitLab Groups API
     description: >-
       Interact with groups by using the REST API. The fields returned in
@@ -55,6 +56,7 @@ apis:
         url: overlays/gitlab-api-v4-groups-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/groups.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-groups-api
   - name: GitLab Projects API
     description: Interact with projects by using the REST API.
     tags:
@@ -94,8 +96,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-projects-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/gitlab-api-v4-projects-openapi-api-evangelist-ratings.yml
     baseURL: https://gitlab.com/api/v4/
     humanURL: https://docs.gitlab.com/ee/api/projects.html
+    aid: gitlab:gitlab-projects-api
+    score: 1206
   - name: GitLab Admin API
     description: >-
       The Admin Area provides a web UI to manage and configure features of
@@ -128,6 +134,7 @@ apis:
         url: overlays/gitlab-api-v4-admin-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/administration/admin_area.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-admin-api
   - name: GitLab Applications API
     description: >-
       The Applications API operates on instance-wide OAuth applications for
@@ -142,8 +149,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-applications-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/gitlab-api-v4-applications-openapi-api-evangelist-ratings.yml
     humanURL: https://docs.gitlab.com/ee/api/applications.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-applications-api
+    score: 121
   - name: GitLab Avatar API
     description: >-
       Get a single avatar URL for a user with the given email address. If No
@@ -158,8 +169,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-avatar-openapi-search.yml
+      - type: API Evangelist Ratings
+        url: overlays/gitlab-api-v4-avatar-openapi-api-evangelist-ratings.yml
     humanURL: https://docs.gitlab.com/ee/api/avatar.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-avatar-api
+    score: 56
   - name: GitLab Broadcast Messages API
     description: >-
       Broadcast messages API operates on broadcast messages. GET requests do not
@@ -178,6 +193,7 @@ apis:
         url: overlays/gitlab-api-v4-broadcast-messages-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/broadcast_messages.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-broadcast-messages-api
   - name: GitLab Bulk Imports API
     description: Use the Import API to import repositories from GitHub or Bitbucket Server.
     tags:
@@ -198,6 +214,7 @@ apis:
         url: overlays/gitlab-api-v4-bulk-imports-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/import.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-bulk-imports-api
   - name: GitLab Application API
     description: >-
       The Applications API operates on instance-wide OAuth applications for
@@ -219,6 +236,7 @@ apis:
         url: overlays/gitlab-api-v4-application-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/applications.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-application-api
   - name: GitLab Metadata API
     description: Retrieve metadata information for this GitLab instance.
     tags:
@@ -235,6 +253,7 @@ apis:
         url: overlays/gitlab-api-v4-metadata-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/metadata.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-metadata-api
   - name: GitLab Version API
     description: >-
       Retrieves version information for the GitLab instance. Responds with 200
@@ -253,8 +272,13 @@ apis:
         url: overlays/gitlab-api-v4-version-openapi-search.yml
     humanURL: https://docs.gitlab.com/ee/api/version.html
     baseURL: https://gitlab.com/api/v4/
+    aid: gitlab:gitlab-version-api
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: gitlab
+score: 318
+overlays:
+  - type: API Evangelist Ratings
+    url: /overlays/api-evangelist-ratings.yml
