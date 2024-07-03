@@ -5,9 +5,10 @@ description: >-
   teams.
 url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/atlassian.yml
 created: 2024/04/14
-modified: 2024/04/14
-specificationVersion: '0.16'
-tags: []
+modified: '2024-07-03'
+specificationVersion: '0.18'
+tags:
+  - Code
 apis:
   - name: Atlassian Jira Announcement Banner API
     description: >-
