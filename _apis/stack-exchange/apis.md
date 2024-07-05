@@ -6,12 +6,12 @@ description: >-
   and users are subject to a reputation award process. The reputation system
   allows the sites to be self-moderating
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/stack-exchange.yml
+url: https://raw.githubusercontent.com/api-search/code/main/_apis/stack-exchange/apis.md
 created: 2023/11/15
 modified: 2023/11/15
 specificationVersion: '0.16'
-tags: []
+tags:
+  - Code
 apis:
   - name: Stack Exchange API
     description: >-

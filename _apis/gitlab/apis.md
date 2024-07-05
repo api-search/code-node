@@ -10,7 +10,7 @@ description: >-
   companies in the world.[14] GitLab has an estimated 30 million registered
   users, with 1 million being active licensed users.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/gitlab.yml
+url: https://raw.githubusercontent.com/api-search/code/main/_apis/gitlab/apis.md
 created: 2023/11/10
 modified: 2023/11/10
 specificationVersion: '0.16'

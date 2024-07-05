@@ -8,7 +8,7 @@ description: >-
   promoted remote work,[13] and is known as one of the largest all-remote
   companies in the world.[14] GitLab has an estimated 30 million registered
   users, with 1 million being active licensed users.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/gitlab.yml
+url: https://raw.githubusercontent.com/api-search/code/main/_data/gitlab/overlays/apis-io-search.yml
 created: 2024/04/14
 modified: '2024-07-03'
 specificationVersion: '0.18'

@@ -6,7 +6,7 @@ description: >-
   tracking, software feature requests, task management, continuous integration,
   and wikis for every project.[6] Headquartered in California, it has been a
   subsidiary of Microsoft since 2018.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/github.yml
+url: https://raw.githubusercontent.com/api-search/code/main/_data/github/overlays/apis-io-search.yml
 created: 2024/04/14
 modified: '2024-07-03'
 specificationVersion: '0.18'
