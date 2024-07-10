@@ -1,4 +1,4 @@
-weekNumber: 27
+weekNumber: 28
 rule:
   - code: openapi-security-schemes-error
     message: Security Scheme
