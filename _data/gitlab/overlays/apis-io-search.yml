@@ -15,24 +15,7 @@ specificationVersion: '0.18'
 tags:
   - Code
 apis:
-  - name: GitLab Rest API
-    description: >+
-      The REST APIs have been around for a longer time compared to GraphQL APIs,
-      which may make them more familiar to some developers. It is often a good
-      choice for developers who are more comfortable with traditional API
-      architecture.
-
-    tags: []
-    overlays:
-      - type: APIs.io Search
-        url: overlays/gitlab-openapi-original.yml
-      - type: API Evangelist Ratings
-        url: overlays/gitlab-openapi-api-evangelist-ratings.yaml
-      - type: APIs.io Search
-        url: overlays/gitlab-openapi-search.yml
-    aid: gitlab:gitlab-rest-api
-    humanURL: https://docs.gitlab.com/ee/api/rest/
-  - name: GitLab Graph Ql API
+  - name: GitLab GraphQL API
     description: >-
       GraphQL is a query language for APIs. You can use it to request the exact
       data you need, and therefore limit the number of requests you need.
