@@ -3,9 +3,10 @@ description: >-
   Atlassian Corporation is an Australian software company that develops products
   for software developers, project managers and other software development
   teams.
-url: https://raw.githubusercontent.com/api-search/code/main/_data/atlassian/overlays/apis-io-search.yml
+url: >-
+  https://raw.githubusercontent.com/api-search/code/main/_data/atlassian/overlays/apis-io-search.yml
 created: 2024/04/14
-modified: '2024-07-03'
+modified: '2024-07-10'
 specificationVersion: '0.18'
 tags:
   - Code
@@ -37,6 +38,7 @@ apis:
     humanURL: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-announcement-banner/#api-group-announcement-banner
     aid: atlassian:atlassian-jira-announcement-banner-api
+    score: 36
   - name: Atlassian Jira App API
     description: >-
       This resource represents the values of custom fields added by Forge apps.
@@ -165,8 +167,12 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/atlassian-rest-api-3-auditing--openapi-search.yml
+      - type: API Evangelist Ratings
+        url: >-
+          overlays/atlassian-rest-api-3-auditing--openapi-api-evangelist-ratings.yml
     humanURL: https://developer.atlassian.com/server/framework/atlassian-sdk/audit/
     aid: atlassian:atlassian-jira-auditing-api
+    score: 95
   - name: Atlassian Jira Avatar API
     description: >-
       This resource represents system and custom avatars. Use it to obtain the
