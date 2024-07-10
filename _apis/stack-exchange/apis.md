@@ -27,8 +27,7 @@ apis:
       - type: Documentation
         url: https://api.stackexchange.com/docs
       - type: OpenAPI
-        url: >-
-          https://raw.githubusercontent.com/openapis/api-specs/master/stackexchange/stackexchange-api-v2.2_swagger-v2.0.yaml
+        url: properties/stack-exchange-openapi-original.yml
     contact:
       - FN: Stack Exchange
         url: http://stackapps.com/
