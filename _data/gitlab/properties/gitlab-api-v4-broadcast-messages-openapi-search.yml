@@ -1,0 +1,250 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/broadcast messages'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/broadcast_messages/{id}:
+    get:
+      tags:
+        - Broadcast
+        - Messages
+        - Specific
+      summary: 'Get A Specific Broadcast Message '
+      description: This feature was introduced in GitLab 8.12.
+      operationId: getApiV4BroadcastMessagesId
+      parameters:
+        - name: id
+          in: path
+          description: Broadcast message ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Get a specific broadcast message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BroadcastMessage'
+    put:
+      tags:
+        - Broadcast
+        - Messages
+      summary: 'Update A Broadcast Message '
+      description: This feature was introduced in GitLab 8.12.
+      operationId: putApiV4BroadcastMessagesId
+      parameters:
+        - name: id
+          in: path
+          description: Broadcast message ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                message:
+                  type: string
+                  description: Message to display
+                starts_at:
+                  type: string
+                  description: Starting time
+                  format: date-time
+                ends_at:
+                  type: string
+                  description: Ending time
+                  format: date-time
+                color:
+                  type: string
+                  description: Background color
+                font:
+                  type: string
+                  description: Foreground color
+                target_access_levels:
+                  type: array
+                  description: Target user roles
+                  items:
+                    type: integer
+                    format: int32
+                    enum:
+                      - 10
+                      - 20
+                      - 30
+                      - 40
+                      - 50
+                target_path:
+                  type: string
+                  description: Target path
+                broadcast_type:
+                  type: string
+                  description: Broadcast Type
+                  enum:
+                    - banner
+                    - notification
+                dismissable:
+                  type: boolean
+                  description: Is dismissable
+      responses:
+        '200':
+          description: Update a broadcast message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BroadcastMessage'
+    delete:
+      tags:
+        - Broadcast
+        - Messages
+      summary: 'Delete A Broadcast Message '
+      description: This feature was introduced in GitLab 8.12.
+      operationId: deleteApiV4BroadcastMessagesId
+      parameters:
+        - name: id
+          in: path
+          description: Broadcast message ID
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Delete a broadcast message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BroadcastMessage'
+  /api/v4/broadcast_messages:
+    get:
+      tags:
+        - Broadcast
+        - Messages
+      summary: 'Get All Broadcast Messages '
+      description: This feature was introduced in GitLab 8.12.
+      operationId: getApiV4BroadcastMessages
+      parameters:
+        - name: page
+          in: query
+          description: Current page number
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of items per page
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Get all broadcast messages
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BroadcastMessage'
+    post:
+      tags:
+        - Broadcast
+        - Messages
+      summary: 'Create A Broadcast Message '
+      description: This feature was introduced in GitLab 8.12.
+      operationId: postApiV4BroadcastMessages
+      requestBody:
+        content:
+          application/json:
+            schema:
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  description: Message to display
+                starts_at:
+                  type: string
+                  description: Starting time
+                  format: date-time
+                ends_at:
+                  type: string
+                  description: Ending time
+                  format: date-time
+                color:
+                  type: string
+                  description: Background color
+                font:
+                  type: string
+                  description: Foreground color
+                target_access_levels:
+                  type: array
+                  description: Target user roles
+                  items:
+                    type: integer
+                    format: int32
+                    enum:
+                      - 10
+                      - 20
+                      - 30
+                      - 40
+                      - 50
+                target_path:
+                  type: string
+                  description: Target path
+                broadcast_type:
+                  type: string
+                  description: Broadcast type. Defaults to banner
+                  enum:
+                    - banner
+                    - notification
+                dismissable:
+                  type: boolean
+                  description: Is dismissable
+        required: true
+      responses:
+        '201':
+          description: Create a broadcast message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_BroadcastMessage'
+components:
+  schemas:
+    API_Entities_BroadcastMessage:
+      type: object
+      properties:
+        id:
+          type: string
+        message:
+          type: string
+        starts_at:
+          type: string
+        ends_at:
+          type: string
+        color:
+          type: string
+        font:
+          type: string
+        target_access_levels:
+          type: string
+        target_path:
+          type: string
+        broadcast_type:
+          type: string
+        dismissable:
+          type: string
+        active:
+          type: string
+      description: API_Entities_BroadcastMessage model

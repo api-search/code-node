@@ -1,0 +1,63 @@
+openapi: 3.0.1
+info:
+  title: ' api/v4/version'
+  version: v4
+  description: Needs description.
+  termsOfService: https://about.gitlab.com/terms/
+  license:
+    name: CC BY-SA 4.0
+    url: https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+servers:
+  - url: https://www.gitlab.com/api/
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /api/v4/version:
+    get:
+      tags:
+        - Git
+        - Information
+        - Instances
+        - Labs
+        - Versions
+      summary: 'Retrieves Version Information For The Git Lab Instance '
+      description: >-
+        This feature was introduced in GitLab 8.13 and deprecated in 15.5. We
+        recommend you instead use the Metadata API.
+      operationId: getApiV4Version
+      responses:
+        '200':
+          description: Retrieves version information for the GitLab instance
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/API_Entities_Metadata'
+        '401':
+          description: Unauthorized
+          content: {}
+components:
+  schemas:
+    API_Entities_Metadata:
+      type: object
+      properties:
+        version:
+          type: string
+          example: 15.2-pre
+        revision:
+          type: string
+          example: c401a659d0c
+        kas:
+          type: object
+          properties:
+            enabled:
+              type: boolean
+            externalUrl:
+              type: string
+              example: grpc://gitlab.example.com:8150
+            version:
+              type: string
+              example: 15.0.0
+        enterprise:
+          type: boolean
+      description: API_Entities_Metadata model
