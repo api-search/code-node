@@ -1,4 +1,3 @@
----
 name: GitLab
 description: >-
   GitLab Inc. is an open-core company that operates GitLab, a DevOps software
@@ -50,6 +49,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-groups-openapi-search.yml
+    aid: gitlab:apiv4groups
   - name: ' api/v4/projects'
     description: Needs description.
     tags: []
@@ -59,6 +59,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-projects-openapi-search.yml
+    aid: gitlab:apiv4projects
   - name: ' api/v4/admin'
     description: Needs description.
     tags: []
@@ -68,6 +69,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-admin-openapi-search.yml
+    aid: gitlab:apiv4admin
   - name: ' api/v4/applications'
     description: Needs description.
     tags: []
@@ -77,6 +79,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-applications-openapi-search.yml
+    aid: gitlab:apiv4applications
   - name: ' api/v4/avatar'
     description: Needs description.
     tags: []
@@ -86,6 +89,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-avatar-openapi-search.yml
+    aid: gitlab:apiv4avatar
   - name: ' api/v4/broadcast messages'
     description: Needs description.
     tags: []
@@ -95,6 +99,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-broadcast-messages-openapi-search.yml
+    aid: gitlab:apiv4broadcast-messages
   - name: ' api/v4/bulk imports'
     description: Needs description.
     tags: []
@@ -104,6 +109,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-bulk-imports-openapi-search.yml
+    aid: gitlab:apiv4bulk-imports
   - name: ' api/v4/application'
     description: Needs description.
     tags: []
@@ -113,6 +119,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-application-openapi-search.yml
+    aid: gitlab:apiv4application
   - name: ' api/v4/metadata'
     description: Needs description.
     tags: []
@@ -122,6 +129,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-metadata-openapi-search.yml
+    aid: gitlab:apiv4metadata
   - name: ' api/v4/version'
     description: Needs description.
     tags: []
@@ -131,6 +139,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/gitlab-api-v4-version-openapi-search.yml
+    aid: gitlab:apiv4version
 common:
   - type: Terms of Service
     url: https://about.gitlab.com/terms/
@@ -152,5 +161,3 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: gitlab
-
----

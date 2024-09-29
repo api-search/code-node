@@ -1,4 +1,3 @@
----
 name: GitHub
 description: >-
   GitHub is a platform and cloud-based service for software development and
@@ -35,7 +34,7 @@ apis:
       flexible queries than the GitHub REST API.
     tags: []
     overlays: []
-    aid: github:github-graphql-api
+    aid: github:github-graph-api
   - name: GitHub Admin API
     description: Use the REST API to administer your enterprise.
     tags:
@@ -80,6 +79,7 @@ apis:
         url: overlays/github-admin-openapi-search.yml
     humanURL: >-
       https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin?apiVersion=2022-11-28
+    aid: github:github-admin-api
   - name: GitHub App API
     description: >-
       Use the REST API to retrieve information about GitHub Apps and GitHub App
@@ -136,6 +136,7 @@ apis:
         url: overlays/github-app-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/apps?apiVersion=2022-11-28
     baseURL: https://api.github.com
+    aid: github:github-app-api
   - name: GitHub Auth API
     description: >-
       You can authenticate to the REST API to access more endpoints and have a
@@ -171,6 +172,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
     baseURL: https://api.github.com
+    aid: github:github-auth-api
   - name: GitHub Code of Conduct API
     description: Use the REST API to get information about codes of conduct.
     tags:
@@ -189,6 +191,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/rest/codes-of-conduct/codes-of-conduct?apiVersion=2022-11-28
     baseURL: https://api.github.com
+    aid: github:github-code-of-conduct-api
   - name: GitHub Emojis API
     description: >-
       Use the REST API to list and view all the available emojis to use on
@@ -204,6 +207,7 @@ apis:
         url: overlays/github-emojis--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/emojis?apiVersion=2022-11-28
     baseURL: https://api.github.com
+    aid: github:github-emojis-api
   - name: GitHub Enterprise API
     description: >-
       Create integrations, retrieve data, and automate your workflows with the
@@ -220,6 +224,7 @@ apis:
         url: overlays/github-enterprise-openapi-search.yml
     humanURL: https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
     baseURL: https://api.github.com
+    aid: github:github-enterprise-api
   - name: GitHub Events API
     description: Use the REST API to interact with GitHub events.
     tags:
@@ -240,6 +245,7 @@ apis:
         url: overlays/github-events--openapi-search.yml
     baseURL: https://api.github.com
     humanURL: https://docs.github.com/en/rest/activity/events?apiVersion=2022-11-28
+    aid: github:github-events-api
   - name: GitHub Feeds API
     description: >-
       Use the REST API to interact with GitHub feeds. Lists the feeds available
@@ -254,6 +260,7 @@ apis:
         url: overlays/github-feeds--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/activity/feeds?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-feeds-api
   - name: GitHub Gists API
     description: >-
       Use the REST API to list, create, update and delete the public gists on
@@ -279,6 +286,7 @@ apis:
         url: overlays/github-gists--openapi-search.yml
     baseURL: https://api.github.com/
     humanURL: https://docs.github.com/en/rest/gists?apiVersion=2022-11-28
+    aid: github:github-gists-api
   - name: GitHub Gitignore Templates API
     description: >-
       Use the REST API to get .gitignore templates that can be used to ignore
@@ -295,6 +303,7 @@ apis:
         url: overlays/github-gitignore-templates--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/gitignore?apiVersion=2022-11-28
     baseURL: https://api.github.com
+    aid: github:github-gitignore-templates-api
   - name: GitHub Installation API
     description: >-
       Use the REST API to get information about GitHub App installations and
@@ -322,6 +331,7 @@ apis:
       - type: OpenAPI
         url: overlays/github-installation-openapi-search.yml
     baseURL: https://api.github.com/
+    aid: github:github-installation-api
   - name: GitHub Issues API
     description: >-
       Use the REST API to view and manage issues, including issue assignees,
@@ -353,6 +363,7 @@ apis:
         url: overlays/github-issues--openapi-search.yml
     baseURL: https://api.github.com/
     humanURL: https://docs.github.com/en/rest/issues?apiVersion=2022-11-28
+    aid: github:github-issues-api
   - name: GitHub Licenses API
     description: >-
       Use the REST API to retrieve popular open source licenses and information
@@ -367,6 +378,7 @@ apis:
         url: overlays/github-licenses--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/licenses?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-licenses-api
   - name: GitHub Manage API
     description: Needs description.
     tags:
@@ -390,6 +402,7 @@ apis:
         url: overlays/github-manage-openapi-search.yml
     humanURL: https://docs.github.com/en/rest?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-manage-api
   - name: GitHub Markdown API
     description: >-
       Use the REST API to render a Markdown document as an HTML page or as raw
@@ -410,6 +423,7 @@ apis:
         url: overlays/github-markdown--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/markdown?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-markdown-api
   - name: GitHub Meta API
     description: >-
       Use the REST API to get meta information about GitHub, including the IP
@@ -425,6 +439,7 @@ apis:
         url: overlays/github-meta--openapi-search.yml
     humanURL: https://docs.github.com/en/rest/meta?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-meta-api
   - name: GitHub Networks API
     description: Needs description.
     tags:
@@ -441,6 +456,7 @@ apis:
         url: overlays/github-networks-openapi-search.yml
     humanURL: https://docs.github.com/en/rest?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-networks-api
   - name: GitHub Notifications API
     description: |+
       Use the REST API to manage GitHub notifications.
@@ -463,6 +479,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/rest/activity/notifications?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-notifications-api
   - name: GitHub Octocat API
     description: Needs description.
     tags: []
@@ -474,6 +491,7 @@ apis:
         url: overlays/github-octocat--openapi-search.yml
     humanURL: https://github.com/octokit/octokit.js
     baseURL: https://api.github.com/
+    aid: github:github-octocat-api
   - name: GitHub Org API
     description: Use the REST API to control and manage all your GitHub organizations.
     tags:
@@ -601,6 +619,7 @@ apis:
         url: overlays/github-org-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/orgs?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-org-api
   - name: GitHub Projects API
     description: >-
       Use the REST API to create, list, update, delete and customize projects
@@ -630,6 +649,7 @@ apis:
       - type: OpenAPI
         url: overlays/github-projects-openapi-search.yml
     baseURL: https://api.github.com/
+    aid: github:github-projects-api
   - name: GitHub Rate Limit API
     description: >-
       Learn about REST API rate limits, how to avoid exceeding them, and what to
@@ -644,6 +664,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-rate-limit-api
   - name: GitHub Repos API
     description: >-
       Use the REST API to create, manage and control the workflow of public and
@@ -918,6 +939,7 @@ apis:
         url: overlays/github-repos-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/repos?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-repos-api
   - name: GitHub SCIM API
     description: >-
       Use the REST API to control and manage your GitHub organization members'
@@ -943,6 +965,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/enterprise-cloud@latest/rest/scim?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-scim-api
   - name: GitHub Search API
     description: Use the REST API to search for specific items on GitHub.
     tags:
@@ -963,6 +986,7 @@ apis:
         url: overlays/github-search-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/search/search?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-search-api
   - name: GitHub Setup API
     description: Needs description.
     tags:
@@ -995,6 +1019,7 @@ apis:
     humanURL: >-
       https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-setup-api
   - name: GitHub Teams API
     description: Use the REST API to create and manage teams in your GitHub organization.
     tags:
@@ -1045,6 +1070,7 @@ apis:
         url: overlays/github-teams-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/teams?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-teams-api
   - name: GitHub Teams API
     description: Needs description.
     tags:
@@ -1094,6 +1120,7 @@ apis:
       - type: OpenAPI
         url: overlays/github-teams-openapi-search.yml
     baseURL: https://api.github.com/
+    aid: github:github-teams-api
   - name: GitHub Zen API
     description: Needs description.
     tags: []
@@ -1103,6 +1130,7 @@ apis:
     overlays:
       - type: OpenAPI
         url: overlays/github-zen--openapi-search.yml
+    aid: github:github-zen-api
   - name: GitHub User API
     description: >-
       Use the REST API to get public and private information about authenticated
@@ -1209,10 +1237,9 @@ apis:
         url: overlays/github-user-openapi-search.yml
     humanURL: https://docs.github.com/en/rest/users?apiVersion=2022-11-28
     baseURL: https://api.github.com/
+    aid: github:github-user-api
 maintainers:
   - FN: API Evangelist
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: github
-
----
