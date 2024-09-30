@@ -1,3 +1,4 @@
+---
 name: GitLab
 description: >-
   GitLab Inc. is an open-core company that operates GitLab, a DevOps software
@@ -161,3 +162,4 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: gitlab
+---

@@ -1,3 +1,4 @@
+---
 name: Atlassian
 description: >-
   Atlassian Corporation is an Australian software company that develops products
@@ -2826,3 +2827,4 @@ maintainers:
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: atlassian
+---

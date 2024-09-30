@@ -1,3 +1,4 @@
+---
 name: Stack Exchange
 description: >-
   Stack Exchange is a network of question-and-answer websites on topics in
@@ -60,3 +61,4 @@ overlays:
   - type: API Evangelist Ratings
     url: overlays/apis-io-search.yml
 aid: stack-exchange
+---

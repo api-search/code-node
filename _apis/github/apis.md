@@ -1,3 +1,4 @@
+---
 name: GitHub
 description: >-
   GitHub is a platform and cloud-based service for software development and
@@ -1243,3 +1244,4 @@ maintainers:
     url: http://apievangelist.com
     email: info@apievangelist.com
 aid: github
+---
